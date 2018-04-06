@@ -1,10 +1,11 @@
 body {
-	background-color: #C6C6C6;
-	font-family: Source Sans Pro;
+	background-color: #ededed;
+	font-family: "Source Sans Pro";
+	margin: 0px;
 }
 
 h1, h2, h4 {
-	font-family: Merriweather, serif;
+	font-family: "Merriweather", serif;
 }
 
 h1, nav, li {
@@ -14,11 +15,24 @@ h1, nav, li {
 h1 {
 	color: yellow;
 	padding-left: 20px;
+	font-size: 20px;
 }
 
 h2 {
 	text-align: center;
 	clear: both;
+	font-size: 20px;
+	padding: 20px 0;
+	margin-top: 0;
+}
+
+h5 {
+	font-size: 20px;
+	padding: 10px;
+}
+
+p {
+	font-size: 16px;
 }
 
 .grayText {
@@ -34,22 +48,36 @@ h2 {
 	text-decoration-color: yellow;
 }
 
+.italics {
+	font-style: italic;
+}
+
+.clear {
+	clear: both;
+}
+
 button {
 	background-color: #C6C6C6;
 	border-radius: 5px;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 /*
  *	nav
  */
 
-nav li a, footer {
+nav li a, .copyright {
 	color: white;
 }
 
 nav {
 	float: right;
-	margin: 15px;
+	margin: 0 15px 15px;
+	font-size: 16x;
 }
 
 nav li a {
@@ -89,10 +117,23 @@ header, footer {
 
 .tagline {
 	padding-bottom: 5px;
+	background-color: #C6C6C6;
 }
 
 .hero {
-	background-image: url(coworking.jpg);
+	background: url("coworking.jpg") no-repeat 50%/100%;
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	background-size: auto auto;
+	background-position: center center;
+	position: relative;
+}
+
+.hero img {
+	vertical-align: top;
+    width: 100%;
+    opacity: 0;
 }
 
 .meetYourMatch, a, button {
@@ -102,12 +143,20 @@ header, footer {
 .meetYourMatch {
 	width: 40%;
 	height: auto;
-	background-color: rgba(255, 255, 255, .5);
-	box-shadow: 15px 15px;
+	background-color: rgba(255, 255, 255, .75);
+	box-shadow: 3px 3px 10px 1px;
+	float: right;
+	position: absolute;
+	top: 10%;
+	right: 5%;
 }
 
 .yellowButton {
 	background-color: yellow;
+}
+
+.meetYourMatch, .action {
+	padding: 20px 30px 30px;
 }
 
 
@@ -115,45 +164,53 @@ header, footer {
  *	content
  */
 
+.content {
+	width: 100%;
+	padding: 20px 0;
+}
+
 .action {
-	background-color: #ededed;
-	width: 30%;
 	display: inline-block;
+	border-right: 1px solid #C6C6C6;
+}
+
+.noBorder {
+	border-right: 0;
 }
 
 
 
-
-
-
-
-
 /*
-Three Google Fonts are being used:
-"Source Sans Pro"
-"Merriweather"
-"Oswald"
+ *	animation
+ */
 
-body
-font-family: "Source Sans Pro"
+#animation img {
+	width: 500px;
+	height: 100%;
+}
 
-logo, tagline (two brains are better...), actions (Create a Profile; Find a Developer; Find a Designer)
-font-family: "Merriweather", serif;
+#animation {
+ 	position: fixed;
+ 	animation: myAnim 20s;
+ 	animation-fill-mode: forwards;
+ 	z-index: 999;
+ 	background-color: rgba(255, 255, 255, .7);
+ 	text-align: center;
 
+ }
 
-
-Notes:
-1) Set the image as a background CSS style (also look for background-position and backround-size)
-2) To round the button's corners, look up the border-radius CSS property
-3) To create the shadow for the buttons, look up box-shadow
-4) Use the "rgba" color value to set the see-thru background of the "Meet your Match" element
-
-Bonus:
-
-When you have finished, copy your solution into a new folder called 'startup-matchmaker-flexbox'. Instead of using SimpleGrid, I'd like you to try using a built in CSS tool called flexbox.
-
-Try using these resources as a guide:
-
-* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
-* https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
-*/
+ @keyframes myAnim {
+ 	0% {
+ 		left: 20px;
+ 		top: 20px;
+ 	}
+ 	99% {
+ 		left: 2300px;
+ 		top: 1500px;
+ 	}
+ 	100% {
+ 		width: 0px;
+ 		height: 0px;
+ 		visibility: hidden;
+ 	}
+ }

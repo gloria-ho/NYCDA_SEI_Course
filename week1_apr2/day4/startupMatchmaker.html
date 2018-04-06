@@ -2,85 +2,93 @@
 <html>
 <head>
 	<title>Startup Matchmaker</title>
+	<link rel="stylesheet" type="text/css" href="simple-grid.css">
 	<link rel="stylesheet" type="text/css" href="startupMatchmakerStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 </head>
 
-<!-- TO DO
-	include some animation -->
 
 <body>
 
-<header>
-	<h1>Startup Matchmaker</h1>
+	<header>
+		<h1>Startup Matchmaker</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Developers</a></li>
+				<li><a href="#">Designers</a></li>
+				<li><a href="#">How It Works</a></li>
+				<li><a href="#">Our Team</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<nav>
-		<ul>
-			<li><a href="#">Developers</a></li>
-			<li><a href="#">Designers</a></li>
-			<li><a href="#">How It Works</a></li>
-			<li><a href="#">Our Team</a></li>
-			<li><a href="#">Blog</a></li>
-		</ul>
-	</nav>
-</header>
-
-<div class="tagline">
-	<h2>Because two brains <span class="strikeThrough grayText">taste</span> <span class="underline">are</span> better than one.
-	</h2>
-</div>
-
-<!-- <div>
-	<img src="coworking.jpg" alt="People working at a coffee shop">
-	TO DO 
-		change this image to a background img
-</div>
- -->
-<div class="hero">
-	<div class="meetYourMatch">
-		<h3>Meet your Match!</h3>
-		<p>Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designders and developers to find each other.</p>
-		<button class="yellowButton">
-		<!-- TO DO ** add CREATE A PROFILE button here -->
-		Create a profile
-		</button>
-	</div>
-</div>
-
-<div class="content">
-	<div class="action">
-		<h4>Create a Profile</h4>
-		<p>Are You a Designer? Developer? Put yourself out htere so that others can find you!</p>
-		<button>
-			<!-- TO DO ** add SIGN UP NOW button here -->
-			Sign up now
-		</button>
+	<div id="animation">
+		<img src="https://c.pxhere.com/photos/c3/95/coffee_cup_drink_restaurant_table_tea-916972.jpg!d" alt="image of coffee" alt="welcome image people working at cafe"">
+		<h5>Welcome to Startup Matchmaker!</h5>
 	</div>
 
-	<div class="action">
-		<h4>Find a Developer</h4>
-		<p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
-		<button>
-			<!-- TO DO ** add START YOUR SEARCH button here -->
-			Start your search
-		</button>
+	<div class="tagline">
+		<h2><span class="italics">Because two brains <span class="strikeThrough grayText">taste</span> <span class="underline">are</span> better than one.</span>
+		</h2>
 	</div>
 
-	<div class="action">
-		<h4>Find a Designer</h4>
-		<p>Need someone who can make a product intuitive and appealing? Get Ready.</p>
-		<button>
-			<!-- TO DO ** add START YOUR SEARCH button here -->
-			Start your search
-		</button>
+	<div class="hero">
+		<img src="coworking.jpg" alt="People working at a coffee shop">
+
+		<div class="meetYourMatch">
+			<h3>Meet your Match!</h3>
+			<p>Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designders and developers to find each other.</p>
+			<button class="yellowButton">
+			Create a profile
+			</button>
+		</div>
+
 	</div>
 
-</div>
+	<div class="clear"></div>
 
-<footer>
-	<div class="copyright">
-		&copy; 2013 Startup Matchmaker. Made in NY.
+	<div class="row content">
+		<div class="col-4">
+			<div class="action">
+				<h4>Create a Profile</h4>
+				<p>Are You a Designer? Developer? Put yourself out htere so that others can find you!</p>
+				<button>
+					Sign up now
+				</button>
+			</div>
+		</div>
+
+		<div class="col-4">
+			<div class="action">
+				<h4>Find a Developer</h4>
+				<p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
+				<button>
+					Start your search
+				</button>
+			</div>
+		</div>
+
+		<div class="col-4">
+			<div class="action noBorder">
+				<h4>Find a Designer</h4>
+				<p>Need someone who can make a product intuitive and appealing? Get Ready.</p>
+				<button>
+					Start your search
+				</button>
+			</div>
+		</div>
 	</div>
-</footer>
+
+				
+	<footer>
+		<div class="copyright">
+			&copy; 2013 Startup Matchmaker. Made in NY.
+		</div>
+	</footer>
 
 </body>
 </html>
