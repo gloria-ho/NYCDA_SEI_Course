@@ -1,0 +1,38 @@
+* {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+p {
+	width: 250px;
+	border: 2px solid blue;
+	padding: 10px;
+	display: inline-block;
+	margin: 10px;
+}
+
+span {
+	font-weight: bold;
+	font-style: italic;
+	color: blue;
+}
+
+.para1 {
+	border-radius: 20px;
+	border-style: dotted;
+	display: block;
+}
+
+.para2 {
+	border-color: red;
+}
+
+.para3 {
+	background-color: gray;
+	color: white;
+}
+
+.para4 {
+	border-width: 5px;
+	border-style: dashed;
+}

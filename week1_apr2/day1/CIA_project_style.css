@@ -1,0 +1,26 @@
+* {
+	font-family: Georgia;
+}
+
+h1 {
+	color: green;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+.image {
+	float: left;
+	margin-right: -175px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+img {
+	height: 300px;
+}
+
+li {
+	margin-left: 350px;
+}

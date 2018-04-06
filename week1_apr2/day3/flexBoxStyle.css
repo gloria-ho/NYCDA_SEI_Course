@@ -1,0 +1,67 @@
+#container {
+	display: flex;
+	flex-direction: row;
+	background-color: red;
+	justify-content: center;
+	align-items: stretch;
+	height: 200px;
+}
+
+#box1, #box2, #box3, #box4 {
+	background-color: skyblue;
+	width: 100px;
+/*	height: 100px;*/
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+#box1 {
+	order: 4;
+}
+
+#box2 {
+	order: 1;
+}
+
+#box3 {
+	order: 2;
+	flex-basis: 50px;
+}
+
+#box4 {
+	order: 3;
+}
+/*
+#container{
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    align-items: center;
+    justify-content: space-around;
+    outline: 8px ridge lavenderblush;
+    flex-flow: column;
+}
+#boxin{
+    font-variant: small-caps;
+    text-align: center;
+    line-height: 90px;
+    font-size: 65px;
+    font-family: fantasy;
+    outline: 8px dotted coral;
+    text-shadow: 2px 2px #FFFFFF;
+    color: skyblue;
+}
+#box1, #box2, #box3, #box4{
+    background-color: skyblue;
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 3px solid yellow;
+}
+
+*/

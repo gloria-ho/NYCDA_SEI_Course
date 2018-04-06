@@ -1,0 +1,159 @@
+body {
+	background-color: #C6C6C6;
+	font-family: Source Sans Pro;
+}
+
+h1, h2, h4 {
+	font-family: Merriweather, serif;
+}
+
+h1, nav, li {
+	display: inline-block;
+}
+
+h1 {
+	color: yellow;
+	padding-left: 20px;
+}
+
+h2 {
+	text-align: center;
+	clear: both;
+}
+
+.grayText {
+	color: #808080;
+}
+
+.strikeThrough {
+	text-decoration: line-through;
+}
+
+.underline {
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+button {
+	background-color: #C6C6C6;
+	border-radius: 5px;
+}
+
+/*
+ *	nav
+ */
+
+nav li a, footer {
+	color: white;
+}
+
+nav {
+	float: right;
+	margin: 15px;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+nav li {
+	padding-left: 10px;
+}
+
+
+nav li:first-of-type {
+	padding-left: 0px;
+}
+
+
+/*
+ *	header footer
+ */
+
+header {
+	border-bottom: 5px solid yellow;
+}
+
+header, footer {
+	background-color: black;
+}
+
+.copyright {
+	padding: 20px;
+}
+
+
+/*
+ *	hero
+ */
+
+.tagline {
+	padding-bottom: 5px;
+}
+
+.hero {
+	background-image: url(coworking.jpg);
+}
+
+.meetYourMatch, a, button {
+	font-family: Oswald;
+}
+
+.meetYourMatch {
+	width: 40%;
+	height: auto;
+	background-color: rgba(255, 255, 255, .5);
+	box-shadow: 15px 15px;
+}
+
+.yellowButton {
+	background-color: yellow;
+}
+
+
+/*
+ *	content
+ */
+
+.action {
+	background-color: #ededed;
+	width: 30%;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+/*
+Three Google Fonts are being used:
+"Source Sans Pro"
+"Merriweather"
+"Oswald"
+
+body
+font-family: "Source Sans Pro"
+
+logo, tagline (two brains are better...), actions (Create a Profile; Find a Developer; Find a Designer)
+font-family: "Merriweather", serif;
+
+
+
+Notes:
+1) Set the image as a background CSS style (also look for background-position and backround-size)
+2) To round the button's corners, look up the border-radius CSS property
+3) To create the shadow for the buttons, look up box-shadow
+4) Use the "rgba" color value to set the see-thru background of the "Meet your Match" element
+
+Bonus:
+
+When you have finished, copy your solution into a new folder called 'startup-matchmaker-flexbox'. Instead of using SimpleGrid, I'd like you to try using a built in CSS tool called flexbox.
+
+Try using these resources as a guide:
+
+* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
+* https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+*/

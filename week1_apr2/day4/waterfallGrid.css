@@ -1,0 +1,49 @@
+
+.row {
+	animation: loadWaterfall 5s;
+}
+
+#r2 {
+	animation-delay: .2s;
+}
+
+#r3 {
+	animation-delay: .3s;
+}
+
+#r4 {
+	animation-delay: .4s;
+}
+
+
+@keyframes loadWaterfall {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 500px) {
+	img {
+		width: 25%;
+		height: 25%;
+	}
+}
+
+
+@media (min-width: 501px) and (max-width: 900px) {
+	img {
+		width: 125px;
+		height: 125px;
+	}
+}
+
+
+@media (min-width: 901ßpx) {
+	img{
+		width: 200px;
+		height: 200px;
+	}
+}

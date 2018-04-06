@@ -1,0 +1,101 @@
+* {
+	color: #3c3c3d;
+	background-color: white;
+	background: rgba(255,255,255,0);
+
+}
+
+body {
+	background-image: url("http://c7.alamy.com/comp/J8NY5K/live-music-background-drum-on-stageconcert-and-night-lifestyle-J8NY5K.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	color: teal;
+	text-align: center;
+}
+
+h3 {
+	color: purple;
+}
+
+ul{
+	padding: 0;
+}
+
+h3, ul {
+	margin: 0 15%;
+}
+
+.transparent {
+  	background: #7f7f7f;
+	background: rgba(255,255,255,0.5)
+}
+
+.bandPhoto {
+	display: inline-block;
+	float: right;
+	margin: -20px 15% 0 0;
+	padding: 15px;
+}
+
+img {
+	border-radius: 15%;
+	width: 350px;
+}
+
+nav {
+	text-transform: uppercase;
+	font-size: 15px;	
+	list-style-type: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+a {
+	color: #0500c4;
+	text-decoration: none;
+}
+
+.bold {
+	font-weight: bold;
+	color: blue;
+}
+
+.italic {
+	font-style: italic;
+	color: red;
+}
+
+.about, .discography {
+	margin: 0 20%;
+	padding: 15px;
+}
+
+
+.messageForm {
+	margin: 100px 20%;
+	background: #7f7f7f;
+	background: rgba(255,255,255,0.6);
+	padding: 10px 20px;
+}
+
+input {
+	margin: 10px;
+	border: 1px solid purple;
+}
+
+input.message {
+	padding: 10px;
+}
