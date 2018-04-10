@@ -51,13 +51,15 @@ function exer4() {
 
 // Exercise #5
 
-const name5 = {
-	eyeColor: 'brown'
+let name5 = {
+	name: 'Gloria',
+	eyeColor: 'blue'
 }
-name5.hairColor = 'blonde'
-console.log(name5)
+name5.eyeColor = 'brown';
+name5.hairColor = 'blonde';
+console.log(name5);
 
-const movies = {
+let movies = {
 	topMovieOne: 'Monsters, Inc.',
 	topMovieTwo: 'Up',
 	topMovieThree: 'Toy Story'
