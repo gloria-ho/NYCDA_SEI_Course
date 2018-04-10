@@ -65,3 +65,18 @@ let movies = {
 	topMovieThree: 'Toy Story'
 }
 console.log(`My favorite movies are ${movies.topMovieOne} and ${movies.topMovieTwo}, but I really enjoy ${movies.topMovieThree}`);
+
+
+// Exercise #Bonus
+let plus = '+'
+function pyramid(count) {
+	while (count > 0) {
+		console.log(plus.repeat(count));
+		count --;
+	}
+}
+
+
+
+
+
