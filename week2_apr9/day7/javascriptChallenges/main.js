@@ -5,7 +5,6 @@ Using a for loop, compute the sum of the numbers in the array named prices; stor
 
 let prices = [33 , 26, 99, 120, 12, 45];
 let sum = 0;
-// Your code here
 function sumOfPrices(x) {
 	for (i = 0; i < x.length; i++ ) {
 		sum += x[i];
@@ -31,8 +30,8 @@ There's no one left to defend Westeros now. */
 
 
 function countingCrows(y) {
-	for (c = 1; c < y; y-- ) {
-		console.log(`${y} crows on the wall.\n${y} crows.\n 1 fell down and became a wight./\n ${y-1}crows on the wall`);
+	for (count = 1; count < y; y-- ) {
+		console.log(`${y} crows on the wall. ${y} crows.\n1 fell down and became a wight./\n${y-1}crows on the wall`);
 	}
-	console.log('1 crow on the wall.\n 1 single crow.\n It fell down and became a wight.\n There\'s no one left to defend Westeros now.');
+	console.log('1 crow on the wall.\n1 single crow.\nIt fell down and became a wight.\nThere\'s no one left to defend Westeros now.');
 }

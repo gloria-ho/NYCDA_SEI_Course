@@ -1,24 +1,3 @@
-/*
-
-//practice code
-
-for (let i=0; i<5; i++) {
-	debug(i);
-}
-
-let i=0;
-while(i<5) {
-	debug(i);
-	i++;
-}
-
-*/
-
-
-alert('test');
-
-
-
 function checkNum(num) {
 	if (num > 10) {
 		alert('Your variable is less than 10');
