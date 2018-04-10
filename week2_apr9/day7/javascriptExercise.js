@@ -48,3 +48,18 @@ function exer4() {
 	];
 	console.log(multiDim[2][0]);
 }
+
+// Exercise #5
+
+const name5 = {
+	eyeColor: 'brown'
+}
+name5.hairColor = 'blonde'
+console.log(name5)
+
+const movies = {
+	topMovieOne: 'Monsters, Inc.',
+	topMovieTwo: 'Up',
+	topMovieThree: 'Toy Story'
+}
+console.log(`My favorite movies are ${movies.topMovieOne} and ${movies.topMovieTwo}, but I really enjoy ${movies.topMovieThree}`);
