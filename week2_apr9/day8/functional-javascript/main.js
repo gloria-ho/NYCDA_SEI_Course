@@ -11,9 +11,8 @@ function calculator(word, x, y) {
 		return x * y;
 	} else if (word === 'divide') {
 		return x / y;
-	} else {
-		alert('Please pick a valid operator: add, subtract, multiply, divide.');
 	}
+	alert('Please pick a valid operator: add, subtract, multiply, divide.');
 }
 
 var  answer = calculator( "add", 4, 2);
@@ -35,9 +34,8 @@ function ask(question, answer){
 	let userAns = prompt(question);
 	if (userAns === answer) {
 		return 1;
-	} else {
-		return 0;
 	}
+	return 0;
 }
 
 var point = ask("Is Kim the best?", "true");
@@ -62,7 +60,8 @@ function askQues(questions, answers){
 		let userAnswer = prompt(questions[i]);
 		if (userAnswer === answers[i]) {
 			score += 1;
-		} else score += 0;
+		}
+		score += 0;
 	}
 	console.log(score);
 	alert(`Your final score is ${score}!`);

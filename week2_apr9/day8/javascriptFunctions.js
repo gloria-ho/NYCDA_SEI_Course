@@ -48,10 +48,12 @@ function greaterOfThree(x,y,z) {
 	if (x > y) {
 		if (x > z) {
 			return x;
-		} return z;
+		}
+		return z;
 	} else if (y > x) {
 		return y;
-	} else return z;
+	}
+	return z;
 }
 
 /*
@@ -84,7 +86,8 @@ ex : royalizer(“male”, “David”) returns “His Majesty David” , for fe
 function royalizer(gender, name) {
 	if (gender === 'male') {
 		return`His Majesty ${name}`;
-	} else return `Her Majesty ${name}`;
+	}
+	return `Her Majesty ${name}`;
 }
 
 /*
@@ -123,9 +126,8 @@ function checkHorizontal(board) {
 		return board[0][0];
 	} else if (board[0][2] === board [1][1] && board [0][2] === board[2][0]) {
 		return board[0][2];
-	} else {
-		return "No winner."
 	}
+	return "No winner."
 }
 
 
