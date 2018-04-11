@@ -55,24 +55,28 @@ function ticTacToe(board) {
 	// for loop that loops each row
 	for (let row = 0; row < board[0].length; row ++) {
 	// if statement that checks for 3 in a row
-		if (board[row][0] === board[row][1] && board[row][0] === board[row][2]) {
-			return (board[row][0]);
+		if (board[row][0] === board[row][1] && 
+				board[row][0] === board[row][2]) {
+			return `${board[row][0]} won!`;
 		}
 	}
 	// for loop that loops each column
 	for (let col = 0; col < board.length; col++) {
-		if (board[0][col] === board[1][col] && board[0][col] === board[2][col]) {
-			return board[0][col];
+	// if statement that checks for 3 in a column
+		if (board[0][col] === board[1][col] && 
+				board[0][col] === board[2][col]) {
+			return `${board[0][col]} won!`;
 		}
 	}
 	// if statement to check diagonal ELSE if statement to check alternate diagonal
-	if (board[0][0] === board[1][1] && board[0][0] === board[2][2]) {
+	if (board[0][0] === board[1][1] && 
+			board[0][0] === board[2][2]) {
 		return board[0][0];
-	} else if (board[0][2] === board [1][1] && board [0][2] === board[2][0]) {
+	} else if (board[0][2] === board [1][1] && 
+			board [0][2] === board[2][0]) {
 		return board[0][2];
-	} else {
-		return "No winner."
 	}
+	return "No winner."
 }
 
 ticTacToe(board1);
