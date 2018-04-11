@@ -131,6 +131,5 @@ function checkHorizontal(board) {
 	return "No winner."
 }
 
-
 /*
 *** Solve some of the problems from yesterday using functions */
