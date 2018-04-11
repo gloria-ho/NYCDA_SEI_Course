@@ -3,7 +3,7 @@
 define an array of names, and use .map to return a new array with each element being `Hello $ {name}`
 */
 let names = ['Gloria', 'Al', 'Q', 'Eddie'];
-names.map(name => `Hello ${name}`)
+names.map(name => `Hello ${name}`);
 
 /*
 Function with no arguments
@@ -33,8 +33,10 @@ function magicDoor(door) {
 		alert('You win a brand new car!');
 	} else if (door === 2) {
 		alert('You win a NYCDA t-shirt!');
-	} else {
+	} else if (door === 3) {
 		alert('You\'ve been sucked into a black hole and teleported to Antarctica!');
+	} else {
+		alert('Your door does not exist. There is no door.');
 	}
 }
 

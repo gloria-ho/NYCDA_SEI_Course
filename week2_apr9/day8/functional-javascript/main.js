@@ -9,8 +9,10 @@ function calculator(word, x, y) {
 		return x - y;
 	} else if (word === 'multiply') {
 		return x * y;
-	} else {
+	} else if (word === 'divide') {
 		return x / y;
+	} else {
+		alert('Please pick a valid operator: add, subtract, multiply, divide.');
 	}
 }
 
@@ -68,5 +70,10 @@ function askQues(questions, answers){
 
 askQues(questions, answers);
 
+/* Bonus:
+If you got through The Kardashian quiz with your  sanity , try to make your quiz more complex. Maybe make a version that tells you which Kardashian you are.*/
 
+function kardashQuiz() {
+
+}
 
