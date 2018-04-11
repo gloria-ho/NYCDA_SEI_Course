@@ -11,7 +11,7 @@ Declare a function called bestTeacher that takes no arguments and logs to the co
 */
 function bestTeacher() {
 	let yourTeacher = 'Name';
-	console.log(`${yourTeacher} is the best teacher in the world`)
+	console.log(`${yourTeacher} is the best teacher in the world`);
 }
 
 /*
