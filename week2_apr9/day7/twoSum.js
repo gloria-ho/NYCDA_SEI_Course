@@ -20,7 +20,7 @@ let target = 26;
 // While the index variable is less than the length of the array, index of num 1 will increase
 for (let i = 0; i < nums.length; i++) {
 	// While the index varaiable is less than the length of the array, index of num 2 will increase
-	for (let j = 1 + 1; j < nums.length; j++) {
+	for (let j = i + 1; j < nums.length; j++) {
 		// Compare sum to target
 		if (nums[i] + nums[j] === target) {
 			// print to console
