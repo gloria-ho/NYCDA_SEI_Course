@@ -66,7 +66,7 @@ function ticTacToe(board) {
 		}
 	
 	}
-	// if statement to check diagonal else if statement to check alternate diagonal
+	// if statement to check diagonal ELSE if statement to check alternate diagonal
 	if (board[0][0] === board[1][1] && board[0][0] === board[2][2]) {
 		return board[0][0];
 	} else if (board[0][2] === board [1][1] && board [0][2] === board[2][0]) {
