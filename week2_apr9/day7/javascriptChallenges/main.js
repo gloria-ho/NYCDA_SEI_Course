@@ -9,7 +9,7 @@ function sumOfPrices(x) {
 	for (i = 0; i < x.length; i++ ) {
 		sum += x[i];
 	}
-	console.log( "The sum is: " , sum);
+	console.log(`The sum is: ${sum}`);
 }
 
 
@@ -31,7 +31,7 @@ There's no one left to defend Westeros now. */
 
 function countingCrows(y) {
 	for (count = 1; count < y; y-- ) {
-		console.log(`${y} crows on the wall. ${y} crows.\n1 fell down and became a wight./\n${y-1}crows on the wall`);
+		console.log(`${y} crows on the wall. ${y} crows.\n1 fell down and became a wight.\n${y-1}crows on the wall`);
 	}
-	console.log('1 crow on the wall.\n1 single crow.\nIt fell down and became a wight.\nThere\'s no one left to defend Westeros now.');
+	console.log('1 crow on the wall. 1 single crow.\nIt fell down and became a wight.\nThere\'s no one left to defend Westeros now.');
 }

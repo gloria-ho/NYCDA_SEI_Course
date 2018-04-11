@@ -68,7 +68,7 @@ console.log(`My favorite movies are ${movies.topMovieOne} and ${movies.topMovieT
 
 
 // Exercise #Bonus
-let plus = '+'
+let plus = '+';
 function pyramid(count) {
 	while (count > 0) {
 		console.log(plus.repeat(count));
@@ -76,6 +76,38 @@ function pyramid(count) {
 	}
 }
 
+
+// Taken out of function
+/*
+let plus = '+';
+let count = 10;
+while (count > 0) {
+	console.log(plus.repeat(count));
+	count --;
+}
+*/
+
+
+// Intructor's code
+for (let i = 0; i <10; i++) {
+	let pluses = '';
+	for (let j =10; j >i; j--) {
+		pluses += '+';
+	}
+	console.log(pluses);
+}
+
+/* console.log version
+for (let i = 0; i < 10; i++) {
+ let pluses = "";
+ console.log(`i = ${i} OUTTER LOOP`);
+ for (let j = 10; j > i; j--) {
+   console.log(`j = ${j} INNER LOOP`);
+   console.log(`i = ${i} INNER LOOP`);
+   pluses += "+";
+ }
+ console.log(pluses);
+}*/
 
 
 
