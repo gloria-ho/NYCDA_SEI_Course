@@ -112,13 +112,14 @@ function checkHorizontal(board) {
 	for (let row = 0; row < board[0].length; row ++) {
 	// if statement that checks for 3 in a row
 		if (board[row][0] === board[row][1] && board[row][0] === board[row][2]) {
-			return (board[row][0]);
+			return `${board[row][0]} won!`;
 		}
 	}
 	// for loop that loops each column
 	for (let col = 0; col < board.length; col++) {
+	// if statement that checks for 3 in a column
 		if (board[0][col] === board[1][col] && board[0][col] === board[2][col]) {
-			return board[0][col];
+			return `${board[0][col]} won!`;
 		}
 	}
 	// if statement to check diagonal ELSE if statement to check alternate diagonal
