@@ -60,7 +60,7 @@ Stores a dictionary of values.
 let myPets = ['max', 'sandy', 'harry'];
 ```
 
-**anatomy:** *`[`(value`,`value`,`)(...)`]``;`*
+**anatomy:** *`[`(value`,`value`,`)(...)`]` `;`*
 
 ##### Indexes
 
@@ -87,7 +87,7 @@ name: 'buzzie',
 age: 3
 };
 ```
-**anatomy:** *`{`(key / colon / value)`.`(...)`}``;`*
+**anatomy:** *`{`(key / colon / value)`.`(...)`}` `;`*
 
 Calling a value of a key within an object:
 
@@ -179,7 +179,7 @@ function myFunction (...) {
 };
 ```
 
-**anatomy:** *identifier `(`parameter(s)`)` `{`code`}``;`*
+**anatomy:** *identifier `(`parameter(s)`)` `{`code`}`*
 
 Calling a function:
 
@@ -230,7 +230,7 @@ while ( ... ) {
 }
 ```
 
-**anatomy:** *keyword`(`condition`)``{`loopBody`}`*
+**anatomy:** *keyword`(`condition`)` `{`loopBody`}`*
 
 
 
