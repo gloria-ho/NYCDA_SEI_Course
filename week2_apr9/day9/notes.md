@@ -1,5 +1,7 @@
 
 
+
+
 ## Variables
 
 Create a variable using the keywords `let` or `const`.
@@ -12,8 +14,9 @@ let myNumber = 40;
 
 
 
+
 ## Primitive Values
-* **integer** - any whole number
+#### **integer** - any whole number
 
 ```javascript
 10, 45, -100, 5000, 0
@@ -45,6 +48,8 @@ undefined
 
 
 
+
+
 ## Non-primitive Values
 
 ### Arrays
@@ -71,8 +76,6 @@ myPets[0]
 * index 1 = sandy
 * index 2 = harry
 
-
-
 ### Objects
 
 A dictionary of keys and their values.
@@ -93,6 +96,9 @@ myDog.name
 ```
 
 **anatomy:** *variableName`.`key*
+
+
+
 
 ## Operators
 
@@ -158,6 +164,9 @@ let c = a!= b;
 
 * **`!==` *strict* is not equal to**
 
+
+
+
 ## Functions
 
 Takes (an) input(s), performs the function's actions, outputs the result.
@@ -178,6 +187,10 @@ Calling a function:
 let dog1 = myFunction();
 console.log(dog1.name);
 ```
+
+
+
+
 
 ## If Statements
 Checks conditions to determine what code to run next.
@@ -205,3 +218,7 @@ if (...) {
 
 ### Boolean Operators:
 `&&` `||`
+
+
+
+
