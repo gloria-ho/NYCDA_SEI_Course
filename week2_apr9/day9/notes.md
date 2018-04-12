@@ -60,7 +60,7 @@ Stores a dictionary of values.
 let myPets = ['max', 'sandy', 'harry'];
 ```
 
-**anatomy:** *`[`(value`,`value`,`)(...)`]` `;`*
+**anatomy:** *`[`(value`,`value`,`)(...)`]` 	`;`*
 
 ##### Indexes
 
@@ -194,6 +194,7 @@ console.log(dog1.name);
 
 ## If Statements
 Checks conditions to determine what code to run next.
+
 `if` `else if` `else`
 
 ```javascript
