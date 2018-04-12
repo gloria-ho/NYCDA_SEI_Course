@@ -156,7 +156,7 @@ let c = a!= b
 Takes an input and performs the 
 
 ```javascipt
-myFunction (...) {
+function myFunction (...) {
 	... ...
 }
 ```
