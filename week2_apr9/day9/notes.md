@@ -134,7 +134,7 @@ var c = !oldEnough;
 * **== is equal to** *(results in boolean)*
 
 ```javascript
-var c = a == b
+var c = a == b;
 ```
 
 *results in boolean*
@@ -142,7 +142,7 @@ var c = a == b
 * **!= is not equal to** *(results in boolean)*
 
 ```javascript
-let c = a!= b
+let c = a!= b;
 ```
 
 *results in boolean*
@@ -158,7 +158,7 @@ Takes an input and performs the
 ```javascipt
 function myFunction (...) {
 	... ...
-}
+};
 ```
 
 **anatomy** *identifier / open parenthesis / parameter(s) / close parenthesis / curly bracket / code / curly bracket/ semi-colon*
