@@ -1,12 +1,12 @@
 ## Variables
 
-Create a variable using the keywords let or const.
+Create a variable using the keywords `let` or `const`.
 
 ```javascript
 let myNumber = 40;
 ```
 
-**anatomy** *keyword / identifier = value / semi-colon*
+**anatomy** *keyword / identifier / equal sign / value / semi-colon*
 
 
 ## Primitive Values
@@ -44,6 +44,8 @@ undefined
 
 ### Arrays
 
+Stores a dictionary of values.
+
 ```javascript
 let myPets = ['max', 'sandy', 'harry'];
 ```
@@ -51,6 +53,8 @@ let myPets = ['max', 'sandy', 'harry'];
 **anatomy** *square bracket / (value / comma / value / comma / ...()... / square brackets / semi-colon*
 
 ##### Indexes
+
+Used to identify a specific place in an array.
 
 ```javascript
 myPets[0]
@@ -64,7 +68,7 @@ myPets[0]
 
 ### Objects
 
-A dictionary of values
+A dictionary of keys and their values.
 
 ```
 let myDog = {
@@ -85,13 +89,13 @@ myDog.name
 
 ## Operators
 
-* **= assigns a value to a variable**
+* **`=` assigns a value to a variable**
 
 ```javascript
 let c = 'value';
 ```
 
-* **+ addition and concatenation** *(be careful of types)* 
+* **`+` addition and concatenation** *(be careful of types)* 
 
 ```javascript
 let c = a + b;
@@ -101,59 +105,57 @@ let result = greeting + name; // 'Hello, george'
 let sum = '5'+ 5; // '55'
 ```
 
-* **- subtractions**
+* **`-` subtractions**
 
 ```javascript
 let c = a - b;
 ```
 
-* __* multiplication__
+* __`*` multiplication__
 
 ```javascript
 let c = a * b;
 ```
 
-* **/ division**
+* **`/` division**
 
 ```javascript
 let c = a / b;
 ```
 
-* **% modulo** *(the remainder of division)*
+* **`%` modulo** *(the remainder of division)*
 
 ```javascript
 let c = a % b;
 ```
 
-* **! not**
+* **`!` not**
 
 ```javascript
 var c = !oldEnough;
 ```
 
-* **== is equal to** *(results in boolean)*
+* **`==` is equal to** *(results in boolean)*
 
 ```javascript
 var c = a == b;
 ```
 
-*results in boolean*
-
-* **!= is not equal to** *(results in boolean)*
+* **`!=` is not equal to** *(results in boolean)*
 
 ```javascript
 let c = a!= b;
 ```
 
-* **=== *strict* is equal to**
+* **`===` *strict* is equal to**
 
-* **!== *strict* is not equal to**
+* **`!==` *strict* is not equal to**
 
 ## Functions
 
 Takes (an) input(s), performs the function's actions, outputs the result.
 
-*Naming a function:* start with an action word, e.g. `function doSomething`
+*Naming a function:* start with an action word, e.g. `function doSomething()`
 
 ```javascipt
 function myFunction (...) {
@@ -169,4 +171,19 @@ Calling a function:
 let dog1 = myFunction();
 console.log(dog1.name);
 ```
+
+## If Statements
+Checks conditions to determine what code to run next.
+`if` `else if` `else`
+
+```javascript
+if ( ... ) {
+	console.log('Do this');
+}
+```
+**anatomy** *keyword / `{` / conditional / close patenthesis / curly bracket / code / curly bracket*
+
+
+
+
 
