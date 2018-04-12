@@ -1,3 +1,5 @@
+
+
 ## Variables
 
 Create a variable using the keywords `let` or `const`.
@@ -6,7 +8,8 @@ Create a variable using the keywords `let` or `const`.
 let myNumber = 40;
 ```
 
-**anatomy** *keyword / identifier / equal sign / value / semi-colon*
+**anatomy** *keyword identifier `=` value `;`*
+
 
 
 ## Primitive Values
@@ -40,6 +43,8 @@ true, false
 undefined
 ```
 
+
+
 ## Non-primitive Values
 
 ### Arrays
@@ -50,7 +55,7 @@ Stores a dictionary of values.
 let myPets = ['max', 'sandy', 'harry'];
 ```
 
-**anatomy** *square bracket / (value / comma / value / comma / ...()... / square brackets / semi-colon*
+**anatomy** *`[`(value`,`value`,`)(...)`]``;`*
 
 ##### Indexes
 
@@ -60,11 +65,13 @@ Used to identify a specific place in an array.
 myPets[0]
 ```
 
-**anatomy** *variable name / square bracket / index / square bracket / semi-colon*
+**anatomy** *variableName`[`index`]`*
 
 * index 0 = max
 * index 1 = sandy
 * index 2 = harry
+
+
 
 ### Objects
 
@@ -77,7 +84,7 @@ name: 'buzzie',
 age: 3
 };
 ```
-**anatomy** *curly bracket / (key / colon / value) / comma / ...()... / curly bracket / semi-colon*
+**anatomy** *`{`(key / colon / value)`.`(...)`}``;`*
 
 Calling a value of a key within an object:
 
@@ -85,7 +92,7 @@ Calling a value of a key within an object:
 myDog.name
 ```
 
-**anatomy** *variable name / period / key*
+**anatomy** *variableName`.`key*
 
 ## Operators
 
@@ -163,7 +170,7 @@ function myFunction (...) {
 };
 ```
 
-**anatomy** *identifier / open parenthesis / parameter(s) / close parenthesis / curly bracket / code / curly bracket/ semi-colon*
+**anatomy** *identifier `(`parameter(s)`)` `{`code`}``;`*
 
 Calling a function:
 
@@ -178,12 +185,23 @@ Checks conditions to determine what code to run next.
 
 ```javascript
 if ( ... ) {
-	console.log('Do this');
+	console.log('do this');
 }
 ```
-**anatomy** *keyword / `{` / conditional / close patenthesis / curly bracket / code / curly bracket*
+**anatomy** *keyword `(`conditional`)` `{`code`}`*
 
+### Logical Operators:
+`===` `==` `=` `>=` `<=` `>` `<` `!=` `!==`
 
+```javasctipt
+if (...) {
+	console.log('do this');
+} else if {
+	console.log('do that');
+} else {
+	console.log('do something else');
+}
+```
 
-
-
+### Boolean Operators:
+`&&` `||`
