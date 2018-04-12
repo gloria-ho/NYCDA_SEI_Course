@@ -16,7 +16,7 @@ let myNumber = 40;
 10, 45, -100, 5000, 0
 ```
 
-* float - any number with a decimal
+* **float** - any number with a decimal
 
 ```javascript
 5.2, -100.8, 5000.0
@@ -85,7 +85,7 @@ myDog.name
 
 ## Operators
 
-* **= asigns a value to a variable**
+* **= assigns a value to a variable**
 
 ```javascript
 let c = 'value';
