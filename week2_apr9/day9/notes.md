@@ -227,7 +227,7 @@ if (...) {
 
 ```javascript
 while ( ... ) {
-	console.log('do things');
+	console.log('do this while this is true');
 }
 ```
 
@@ -236,9 +236,16 @@ while ( ... ) {
 
 
 
+## For Loops
 
+```javascript
 
+for (i = 0; i > something.length ; i++) {
+	console.log('do this for each');
+}
+```
 
+**anatomy:** *keyword `(` initialization `;` condition `;` increment `)` `{` code `}`*
 
 
 
