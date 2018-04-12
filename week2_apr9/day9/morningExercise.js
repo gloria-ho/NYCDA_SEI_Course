@@ -79,7 +79,7 @@ function searchForX(arr, x) {
 
 function searchForArr(obj, arr) {
 	for (i = 0; i < obj.length; i++) {
-		if ( (arr[0] === obj[i]) && (arr[1] === obj.i) ) {
+		if ( (arr[0] === obj[i]) && (arr[1] === obj.) ) {
 			return true;
 		}
 		return false;
