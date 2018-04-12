@@ -77,7 +77,7 @@ myPets[0]
 
 A dictionary of keys and their values.
 
-```
+```javascript
 let myDog = {
 color: 'white',
 name: 'buzzie',
@@ -164,7 +164,7 @@ Takes (an) input(s), performs the function's actions, outputs the result.
 
 *Naming a function:* start with an action word, e.g. `function doSomething()`
 
-```javascipt
+```javascript
 function myFunction (...) {
 	... ...
 };
@@ -193,7 +193,7 @@ if ( ... ) {
 ### Logical Operators:
 `===` `==` `=` `>=` `<=` `>` `<` `!=` `!==`
 
-```javasctipt
+```javascript
 if (...) {
 	console.log('do this');
 } else if {
