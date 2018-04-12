@@ -10,7 +10,7 @@ let myNumber = 40;
 
 
 ## Primitive Values
-* integer - any whole number
+* **integer** - any whole number
 
 ```javascript
 10, 45, -100, 5000, 0
@@ -22,19 +22,19 @@ let myNumber = 40;
 5.2, -100.8, 5000.0
 ```
 
-* string - anything within single or double quotes
+* **string** - anything within single or double quotes
 
 ```javascript
 "george", 'george', '5'
 ```
 
-* boolean - true or false
+* **boolean** - true or false
 
 ```javascript
 true, false
 ```
 
-* undefined - unkown value
+* **undefined** - unkown value
 
 ```javascript
 undefined
@@ -119,7 +119,7 @@ let c = a * b;
 let c = a / b;
 ```
 
-* **% modulo (the remainder of division)**
+* **% modulo** *(the remainder of division)*
 
 ```javascript
 let c = a % b;
@@ -144,8 +144,6 @@ var c = a == b;
 ```javascript
 let c = a!= b;
 ```
-
-*results in boolean*
 
 * **=== *strict* is equal to**
 
