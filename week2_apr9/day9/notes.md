@@ -8,7 +8,7 @@ Create a variable using the keywords `let` or `const`.
 let myNumber = 40;
 ```
 
-**anatomy** *keyword identifier `=` value `;`*
+**anatomy:** *keyword identifier `=` value `;`*
 
 
 
@@ -55,7 +55,7 @@ Stores a dictionary of values.
 let myPets = ['max', 'sandy', 'harry'];
 ```
 
-**anatomy** *`[`(value`,`value`,`)(...)`]``;`*
+**anatomy:** *`[`(value`,`value`,`)(...)`]``;`*
 
 ##### Indexes
 
@@ -65,7 +65,7 @@ Used to identify a specific place in an array.
 myPets[0]
 ```
 
-**anatomy** *variableName`[`index`]`*
+**anatomy:** *variableName`[`index`]`*
 
 * index 0 = max
 * index 1 = sandy
@@ -84,7 +84,7 @@ name: 'buzzie',
 age: 3
 };
 ```
-**anatomy** *`{`(key / colon / value)`.`(...)`}``;`*
+**anatomy:** *`{`(key / colon / value)`.`(...)`}``;`*
 
 Calling a value of a key within an object:
 
@@ -92,7 +92,7 @@ Calling a value of a key within an object:
 myDog.name
 ```
 
-**anatomy** *variableName`.`key*
+**anatomy:** *variableName`.`key*
 
 ## Operators
 
@@ -170,7 +170,7 @@ function myFunction (...) {
 };
 ```
 
-**anatomy** *identifier `(`parameter(s)`)` `{`code`}``;`*
+**anatomy:** *identifier `(`parameter(s)`)` `{`code`}``;`*
 
 Calling a function:
 
@@ -188,7 +188,7 @@ if ( ... ) {
 	console.log('do this');
 }
 ```
-**anatomy** *keyword `(`conditional`)` `{`code`}`*
+**anatomy:** *keyword `(`conditional`)` `{`code`}`*
 
 ### Logical Operators:
 `===` `==` `=` `>=` `<=` `>` `<` `!=` `!==`
