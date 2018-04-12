@@ -16,7 +16,7 @@ let myNumber = 40;
 
 
 ## Primitive Values
-#### **integer** - any whole number
+* **integer** - any whole number
 
 ```javascript
 10, 45, -100, 5000, 0
