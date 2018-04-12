@@ -72,9 +72,9 @@ myPets[0]
 
 **anatomy:** *variableName`[`index`]`*
 
-* index 0 = max
-* index 1 = sandy
-* index 2 = harry
+`index[0]` = max
+`index[1]` = sandy
+`index[2]` = harry
 
 ### Objects
 
@@ -201,7 +201,7 @@ if ( ... ) {
 	console.log('do this');
 }
 ```
-**anatomy:** *keyword `(`conditional`)` `{`code`}`*
+**anatomy:** *keyword `(`condition`)` `{`code`}`*
 
 ### Logical Operators:
 `===` `==` `=` `>=` `<=` `>` `<` `!=` `!==`
@@ -218,6 +218,32 @@ if (...) {
 
 ### Boolean Operators:
 `&&` `||`
+
+
+
+
+## While Loops
+
+```javascript
+while ( ... ) {
+	console.log('do things');
+}
+```
+
+**anatomy:** *keyword`(`condition`)``{`loopBody`}`*
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
