@@ -50,7 +50,7 @@ let myPets = ['max', 'sandy', 'harry'];
 
 **anatomy** *square bracket / (value / comma / value / comma / ...()... / square brackets / semi-colon*
 
-###### Indexes
+##### Indexes
 
 ```javascript
 myPets[0]
