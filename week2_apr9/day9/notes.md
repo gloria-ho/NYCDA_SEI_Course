@@ -151,7 +151,9 @@ let c = a!= b;
 
 ## Functions
 
-Takes an input and performs the 
+Takes (an) input(s), performs the function's actions, outputs the result.
+
+*Naming a function:* start with an action word, e.g. `function doSomething`
 
 ```javascipt
 function myFunction (...) {
