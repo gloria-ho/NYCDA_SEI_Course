@@ -89,7 +89,7 @@ age: 3
 ```
 **anatomy:** *`{`(key / colon / value)`.`(...)`}` `;`*
 
-Calling a value of a key within an object:
+Calling a value of a key within an object with a *dot operator*:
 
 ```javascript
 myDog.name
