@@ -175,11 +175,11 @@ Takes (an) input(s), performs the function's actions, outputs the result.
 
 ```javascript
 function myFunction (...) {
-	... ...
+	console.log('do this code');
 };
 ```
 
-**anatomy:** *identifier `(`parameter(s)`)` `{`code`}`*
+**anatomy:** *identifier `(`parameter(s)`)` `{`body/block`}`*
 
 Calling a function:
 
@@ -199,21 +199,41 @@ Checks conditions to determine what code to run next.
 
 ```javascript
 if ( ... ) {
-	console.log('do this');
+	console.log('do this code');
 }
 ```
-**anatomy:** *keyword `(`condition`)` `{`code`}`*
+**anatomy:** *keyword `(`condition`)` `{`body/block`}`*
+
+```javascript
+if ( ... ) {
+	console.log('do this code');
+} else if {
+	console.log('do this other code');
+}
+```
+**anatomy:** *keyword `(`condition`)` `{`body/block`}`*
+
+```javascript
+if ( ... ) {
+	console.log('do this code');
+} else if {
+	console.log('do this other code');
+} else {
+	console.log('do this last code');
+}
+```
+**anatomy:** *keyword `(`condition`)` `{`body/block`}`*
 
 ### Logical Operators:
 `===` `==` `=` `>=` `<=` `>` `<` `!=` `!==`
 
 ```javascript
 if (...) {
-	console.log('do this');
+	console.log('do this code');
 } else if {
-	console.log('do that');
+	console.log('do that code');
 } else {
-	console.log('do something else');
+	console.log('do this other cold');
 }
 ```
 
@@ -227,7 +247,7 @@ if (...) {
 
 ```javascript
 while ( ... ) {
-	console.log('do this while this is true');
+	console.log('do this code while this is true');
 }
 ```
 
@@ -241,7 +261,7 @@ while ( ... ) {
 ```javascript
 
 for (i = 0; i > something.length ; i++) {
-	console.log('do this for each');
+	console.log('do this code for each');
 }
 ```
 
