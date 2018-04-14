@@ -1,0 +1,220 @@
+<!-- Goal:
+	To create a one page website for a fictional paper company that is exciting for the end user.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- bootstap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- css stylesheet -->
+	<link rel="stylesheet" type="text/css" href="munderDifflinPaperStyle.css">
+	<!-- font awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Poiret+One" rel="stylesheet">
+	<title>Munder Difflin Paper</title>
+</head>
+
+<body>
+
+	<!-- logo image & text -->
+	<div class="logo">
+		<img src="img/layersPaper.jpg" alt="Munder Difflin Paper logo">
+	</div>
+
+	<div id="logoText">
+		Munder Difflin Paper
+	</div>
+	<!-- /logo image & text -->
+
+	<!-- bootstap hamburger -->
+	<div class="hamburger">
+
+		<!-- .navbar -->		
+		<nav class="navbar navbar-light indigo lighten-2">
+
+
+		    <!-- hamburger -->		    
+		    <a class="navbar-brand" href="#">Menu</a>
+
+		    
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsableNavBar" aria-controls="collapsableNavBar"
+		        aria-expanded="false" aria-label="Toggle navigation">
+		        <div class="animated-icon">
+		        	<span></span><span></span><span></span>
+		        </div>
+		    </button>
+
+		    <!-- collapse menu -->
+		    <div class="collapse navbar-collapse" id="collapsableNavBar">
+
+		        <!-- links -->
+		        <ul class="navbar-nav mr-auto">
+
+		            <li class="active">
+		                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		            </li>
+
+		            <li class="nav-item">
+		                <a class="nav-link" href="#shop">Shop</a>
+		            </li>
+
+		            <li class="nav-item">
+		                <a class="nav-link" href="#about">About</a>
+		            </li>
+
+		            <li class="nav-item">
+		                <a class="nav-link" href="#">Contact</a>
+		            </li>
+
+		        </ul>
+		        <!-- /links -->
+		    </div>
+		    <!-- /collapsible menu -->
+		</nav>
+		<!-- /.navbar -->
+	</div>
+	 <!-- /bootstap hamburger -->
+
+
+	<!-- hamburger animation jS -->
+	<script>
+		$(document).ready(function(){
+		    $('.animated-icon').click(function(){
+		        $(this).toggleClass('open');
+		        $('#collapsableNavBar').toggleClass('collapse');
+		    });
+		}); 
+	</script>
+	<!-- /hamburger animation jS -->
+
+
+	<!-- clear float properties -->
+	<div class="clear"></div>
+
+
+	<!-- hero image -->
+	<div id="hero">
+		<img src="img/paperColor.jpg" alt="image of cardstock paper">
+		<div id="heroText">
+			Paper for every occassion!
+		</div>
+	</div>
+	<!-- /hero image -->
+
+	<!-- page content -->
+	<div class="container" id="shop">
+		<div class="row">
+
+				<div class="col shopItem">
+
+					<div class="animateImage">
+						<p>New Products</p>
+						<img src="img/paperLily.jpg">
+					</div>
+					
+					<p>Cupcake ipsum dolor sit amet pie cake jelly. Croissant fruitcake liquorice tart liquorice pie danish gummies apple pie. Sweet roll candy jelly jelly-o biscuit. Jelly dessert cake tiramisu.</p>
+
+			</div>
+
+			<div class="col shopItem">
+
+					<div class="animateImage">
+						<p>Bestsellers</p>
+						<img src="img/paperBoat.jpg">
+					</div>
+
+					<p>Topping macaroon bear claw gummi bears liquorice chupa chups. Sweet chocolate halvah sweet roll apple pie soufflé biscuit cotton candy. Croissant toffee chupa chups. Chocolate bar chocolate tootsie roll danish carrot cake jelly topping marzipan.</p>
+
+			</div>
+
+			<div class="col shopItem">
+
+					<div class="animateImage">
+						<p>Coming Soon</p>
+						<img src="img/paperBoats.jpg">
+					</div>
+
+					<p>Tootsie roll tiramisu powder sugar plum topping. Dessert apple pie gummi bears pudding bear claw. Liquorice jelly beans jelly fruitcake brownie. Bonbon apple pie apple pie chocolate.</p>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- /page content -->
+
+	<div id="about">
+		<img src="img/paperFlat.jpg">
+	</div>
+
+	<!-- page footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-6">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#shop">Shop</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6">
+					<form id="emailForm">
+						<div class="input-group mb-3">
+
+							<!-- subsribe to emails -->
+							<input type="email" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2" id="emailInput" required/>
+							
+							<div class="input-group-append">
+					    		<button class="btn btn-outline-secondary" id="subscribeButton" type="submit">Subscribe To Emails</button>
+					  		</div>
+
+						</div>
+					</form>
+				
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="copyright">
+					&copy;2018 Munder Difflin Paper Inc.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- /page footer -->
+
+
+
+	<!-- subscribe me button jQuery script -->
+	<script type="text/javascript">
+		'use strict';
+		$(document).ready(function() {
+
+			$('#emailForm').submit(function(e) {
+				$('#subscribeButton').removeClass('btn-outline-secondary')
+					.addClass('btn-success')
+					.html('<i class="far fa-check-square"></i>');
+				var userEmail = $('#emailInput').val();
+				alert(`${userEmail} has been subscribed, thank you!`);
+				return false;
+			});
+		})
+	</script>
+	<!-- /subscribe me button jQuery -->
+
+
+
+</body>
+</html>
