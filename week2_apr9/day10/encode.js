@@ -34,6 +34,7 @@ Javascript features and functions in use:
 
 // encode function
 function encode(word) {
+
   //somewhere to store the converted characters
   let result = [];
 
@@ -54,7 +55,6 @@ function decode(hash) {
 
   //split the code by semi colons!
   let arr = hash.split(':');
-  
   // again somewhere to put our codes
   let result = [];
 
@@ -74,9 +74,6 @@ let encodedMessage = encode(message);
 let decodedMessage = decode(encodedMessage);
 
 
-// console.log(message);
-// console.log(encodedMessage);
-// console.log(decodedMessage);
-debug(message);
-debug(encodedMessage);
-debug(decodedMessage);
+console.log(message);
+console.log(encodedMessage);
+console.log(decodedMessage);
