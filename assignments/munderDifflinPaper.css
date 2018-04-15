@@ -27,18 +27,18 @@ a {
  *	logo
  */
 
-.logo, .logo img {
+#logo, #logo img {
 	width: 450px;
 	height: 125px;
 }
 
-.logo {
+#logo {
 	display: inline-block;
 	margin: 10px;
 	opacity: .6;
 }
 
-.logo img {
+#logo img {
 	border-radius: 10px;
 	margin: 5px;
 }
@@ -87,7 +87,7 @@ nav a:last {
 	padding-right: 0;
 }
 
-.hamburger {
+#hamburger {
 	float: right;
 	width: auto;
 }
@@ -211,12 +211,12 @@ footer ul {
 	padding-top: 10px;
 }
 
-.copyright, footer ul {
+#copyright, footer ul {
 	padding-left: 20px;
 	margin: 0;
 }
 
-.copyright {
+#copyright {
 	padding-bottom: 15px;
 }
 
