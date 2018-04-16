@@ -2,7 +2,7 @@
 
 * Get a handle on the element
 
-*(save it in a varialbe)*
+*(save it in a variable)*
 
 `.getElementById`
 `.getElementsByClassName`
@@ -13,7 +13,6 @@ Change some attribute
 
 Add eventListener
 
-## Dom
 
 ### Foundations of a website:
 
@@ -23,6 +22,8 @@ Add eventListener
 
 * **JavaScript** - Electricity
 
+
+## Dom
 
 ### Document Object Model
 
@@ -58,15 +59,12 @@ Add eventListener
 ### Syntax Translations:
 
 `css: font-size;`
-
 translates into javaScript as:
-
 `javaScript: fontSize;`
 
 ### Selecting Elements:
 
 `.document.getElementById('...');`
-
 *returns one item*
 
 `document.getElementsByClass('...');`
