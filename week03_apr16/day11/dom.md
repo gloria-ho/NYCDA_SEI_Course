@@ -9,15 +9,19 @@
 
 * Make the needed changes
 
+Change some attribute
+
+Add eventListener
+
 ## Dom
 
 ### Foundations of a website:
 
-**HTML** - Foundation / Skeleton
+* **HTML** - Foundation / Skeleton
 
-**CSS** - Design / Decoration
+* **CSS** - Design / Decoration
 
-**JavaScript** - Electricity
+* **JavaScript** - Electricity
 
 
 ### Document Object Model
@@ -29,7 +33,7 @@
 }
 ```
 
-**Global Variable:** document
+**Global Variable:** `document`
 
 **Document:** gateway to the HTML page
 
