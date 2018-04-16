@@ -25,17 +25,17 @@ DOM Tree
 
 HTML *node/element*
 
-	head *child of html element*
-		title
-		meta
+head *child of html element*
+	title
+	meta
 
 
-	body
+body *child of html element*
+	div
 		div
-			div
-		p
-			span
-			strong
-		script
-		h1,h2
+	p
+		span
+		strong
+	script
+	h1,h2
 
