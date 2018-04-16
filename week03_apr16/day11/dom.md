@@ -16,9 +16,7 @@ Add event listener
 ### Foundations of a website:
 
 * **HTML** - Foundation / Skeleton
-
 * **CSS** - Design / Decoration
-
 * **JavaScript** - Electricity
 
 
@@ -82,6 +80,8 @@ translates into javaScript as:
 
 *Asynchronous events*
 
+[MDN Web Docs Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events "MDN Web Docs Event Reference")
+
 * **Element:** Which element?
 
 * **Event:** Which event?
@@ -109,6 +109,8 @@ myDiv.addEventListener('click', function() {
 })
 ```
 
+
+
 ## HTML Elements
 
 * style attribute
@@ -116,4 +118,53 @@ myDiv.addEventListener('click', function() {
 * change innerHTML
 * add eventListener
 * add/remove classes
+
+
+
+## HTML Form Fields
+
+**Input types:**
+```html
+<input type="test">
+
+<input type="email">
+
+<input type="date">
+
+<input tupe="number">
+
+```
+
+**Dropdown menues:**
+```html
+<select>
+	<option>NY</option>
+	<option>FL</option>
+	<option>CA</option>
+</select>
+```
+
+**Radio button:** *user can only select one at a time*
+```html
+<input type="radio" name="color" value="blue">Blue
+<input type="radio" name="color" value="green">Green
+<input type="radio" name="color" value="yellow">Yellow
+```
+
+**Checkbox**
+```html
+<input type="checkbox">Newsletter
+```
+
+**Text Area**
+```html
+<textarea>
+</textarea>
+```
+
+
+
+
+
+
 
