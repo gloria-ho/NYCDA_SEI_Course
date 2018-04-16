@@ -39,8 +39,8 @@ body, #subscribeButton {
 	color: #4c4c4c;
 }
 
-#logoText, #heroText {
-	font-family: "Dancing Script", sans-serif;
+#logoText {
+	font-family: "Anton", sans-serif;
 }
 
 nav a, footer a, .nav-link a {
@@ -55,6 +55,21 @@ a {
 	clear: both;
 }
 
+.italics {
+	font-style: italic;
+}
+
+input:focus {
+    background-color: #fff3f3;
+    border: 1px solid black;
+    color: #c60084;
+}
+
+input, #messageSubject, #messageButton, #subscribeButton {
+	padding: 10px;
+	border: 1px solid #c60084;
+	border-radius: 5px;
+}
 
 
 /*
@@ -254,10 +269,13 @@ footer ul {
 	padding-bottom: 15px;
 }
 
-#emailForm, #subscribeButton {
+#emailForm {
 	margin-top: 5px;
 }
 
+#subscribeButton {
+	margin-left: 10px;
+}
 
 
 
@@ -299,7 +317,7 @@ footer ul {
 
 
 /*
- *	content
+ *	shop
  */
 
 #shop {
@@ -377,3 +395,33 @@ footer ul {
 	opacity: 0;
 }
 
+
+
+/*
+ * contact
+ */
+
+ #contact {
+	margin: 100px 20%;
+	background: rgba(255,255,255,0.8);
+	padding: 10px;
+}
+
+#contact input {
+	margin: 10px;
+	width: 80%;
+	padding: 7px;
+}
+
+#contact input.message {
+	width: 400px;
+}
+
+#messageSubject {
+	width: 60%;
+	margin: 10px;
+}
+
+#sendMessage {
+	float: right;
+}

@@ -16,7 +16,7 @@
 	<!-- font awesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Anton|Pacifico" rel="stylesheet">
 	<title>Munder Difflin Paper</title>
 </head>
 
@@ -108,7 +108,7 @@
 	<!-- /hero image -->
 
 
-	<!-- content -->
+	<!-- content/shop -->
 	<div class="container" id="shop">
 		<div class="row">
 
@@ -147,7 +147,7 @@
 
 		</div>
 	</div>
-	<!-- /content -->
+	<!-- /content/shop -->
 
 
 	<!-- about -->
@@ -159,7 +159,33 @@
 
 	<!-- contact form -->
 	<div id="contact">
+		<h4>Contact us!</h3>
+		<form id="contactForm">
+		
+			Name:*<input type="text" name="fullName" placeholder="John Doe" id="userName" required=""><br>
+			
+			Email:*<input type="email" name="email" placeholder="JohnDoe@JohnDoe.com" required=""><br>
+			
+			Phone:<input type="phone" name="phone" placeholder="(555) 555-5555"><br>
 
+		    <label for="messageSubject">Message Subject:</label>
+    		<select id="messageSubject" name="messageSubject">
+	      		<option value="general">General Inquiry</option>
+	      		<option value="wholesale">Wholesale Inquiry</option>
+	      		<option value="distributor">Become a Distributor</option>
+      		</select><br>
+
+			Message:*<input type="text" name="message" placeholder="Type your message here" class="message"><br>
+		  	
+		  	<span class="italics">* required field</span>
+
+	  		<div class="input-group-append" id="sendMessage">
+				<button class="btn btn-outline-secondary" id="messageButton" type="submit">Send message</button>
+			</div>
+
+			<div class="clear"></div>
+  		
+  		</form>
 	</div>
 	<!-- /contact form -->
 
@@ -169,6 +195,7 @@
 		<div class="container">
 			<div class="row">
 				
+				<!-- footer nav -->
 				<div class="col-md-6">
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -177,17 +204,21 @@
 						<li><a href="#">Contact</a></li>
 					</ul>
 				</div>
+				<!-- /footer nav -->
 
 				<div class="col-md-6">
 					<form id="emailForm">
 						<div class="input-group mb-3">
 
-							<!-- subsribe to emails -->
-							<input type="email" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2" id="emailInput" required/>
-							
+							<!-- email input -->
+							<input type="email"  placeholder="Email Address" id="emailInput" required/>
+							<!-- /email input -->
+
+							<!-- email submit button -->
 							<div class="input-group-append">
 					    		<button class="btn btn-outline-secondary" id="subscribeButton" type="submit">Subscribe To Emails</button>
 					  		</div>
+					  		<!-- /email submit button -->
 
 						</div>
 					</form>
@@ -213,6 +244,15 @@
 	<script type="text/javascript">
 		'use strict';
 		$(document).ready(function() {
+
+			$('#contactForm').submit(function(e) {
+				$('#messageButton').removeClass('btn-outline-secondary')
+					.addClass('btn-success')
+					.html('<i class="far fa-check-square"></i>');
+				var userName = $('#userName').val();
+				alert(`Thank you for your message, ${userName}. We will get back to you in 1-2 business days. `);
+				return false;
+			});
 
 			$('#emailForm').submit(function(e) {
 				$('#subscribeButton').removeClass('btn-outline-secondary')
