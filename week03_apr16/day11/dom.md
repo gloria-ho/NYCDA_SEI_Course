@@ -11,8 +11,7 @@
 
 Change some attribute
 
-Add eventListener
-
+Add event listener
 
 ### Foundations of a website:
 
@@ -21,6 +20,7 @@ Add eventListener
 * **CSS** - Design / Decoration
 
 * **JavaScript** - Electricity
+
 
 
 ## Dom
@@ -38,7 +38,6 @@ Add eventListener
 
 **Document:** gateway to the HTML page
 
-
 ### DOM Tree
 
 	HTML *node/element*
@@ -54,7 +53,6 @@ Add eventListener
 			strong
 		script
 		h1,h2
-
 
 ### Syntax Translations:
 
@@ -77,3 +75,45 @@ translates into javaScript as:
 
 `document.querySelectorAll('...');`
 *returns a node list (like an array) of items*
+
+
+
+## Event Listeners
+
+*Asynchronous events*
+
+* **Element:** Which element?
+
+* **Event:** Which event?
+
+* **Callback:** What to do when the event happens? *(this is called a **callback** - passing a function into another function)*
+
+```javascript
+let myDiv = document.getElementById('intro');
+
+myDiv.addEventListener('click', function() {
+	alert('you clicked on the intro div');
+})
+
+```
+
+```javascript
+myDiv.addEventListener('click', function() {
+	myDiv.style.display = 'none';
+})
+```
+
+```javascript
+myDiv.addEventListener('click', function() {
+	myDiv.classList.add('hidden')
+})
+```
+
+## HTML Elements
+
+* style attribute
+* change innerText
+* change innerHTML
+* add eventListener
+* add/remove classes
+
