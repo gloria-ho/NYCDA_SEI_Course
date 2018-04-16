@@ -23,17 +23,17 @@ Document: gateway to the HTML page
 
 DOM Tree
 
-HTML *node/element*
-	head *child of html element*
-		title
-		meta
+	HTML *node/element*
+		head *child of html element*
+			title
+			meta
 
-body *child of html element*
-	div
+	body *child of html element*
 		div
-	p
-		span
-		strong
-	script
-	h1,h2
+			div
+		p
+			span
+			strong
+		script
+		h1,h2
 
