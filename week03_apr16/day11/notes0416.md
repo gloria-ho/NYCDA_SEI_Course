@@ -116,7 +116,8 @@ console.log(myArray);
 
 The `.splice` method will add or remove values at any spedicifed position.
 
-`myArray.splice(`position`,` value`)`
+
+**anatomy:** `myArray.splice(`position`,` value`)`
 
 ```javascript
 let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot'];
