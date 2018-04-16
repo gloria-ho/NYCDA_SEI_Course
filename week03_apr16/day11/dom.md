@@ -56,11 +56,12 @@ translates into javaScript as:
 *returns one item*
 
 `document.getElementsByClass('...');`
-*returns an array of items*
+*returns a node list (like an array) of items*
 
 **New syntax**
+
 `document.querySelector('...');`
 *returns one item*
 
 `document.querySelectorAll('...');`
-*returns an array of items*
+*returns a node list (like an array) of items*
