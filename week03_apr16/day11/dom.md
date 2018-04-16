@@ -1,10 +1,13 @@
 
 ## Dom
 
-Foundations:
-HTML - Foundation / Skeleton
-CSS - Design / Decoration
-JavaScript - Electricity
+### Foundations of a website:
+
+**HTML** - Foundation / Skeleton
+
+**CSS** - Design / Decoration
+
+**JavaScript** - Electricity
 
 
 ### Document Object Model
@@ -16,9 +19,9 @@ JavaScript - Electricity
 }
 ```
 
-Global Variable: document
+**Global Variable:** document
 
-Document: gateway to the HTML page
+**Document:** gateway to the HTML page
 
 
 DOM Tree
