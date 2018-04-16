@@ -11,8 +11,8 @@ JavaScript - Electricity
 
 ```javascript
 {
-		key: value;
-		key: value;
+	key: value;
+	key: value;
 }
 ```
 
@@ -24,20 +24,16 @@ Document: gateway to the HTML page
 DOM Tree
 
 HTML *node/element*
-
-head *child of html element*
-
-   title
-
-   meta
-
+	head *child of html element*
+		title
+		meta
 
 body *child of html element*
-   div
-      div
-   p
-      span
-      strong
-   script
-   h1,h2
+	div
+		div
+	p
+		span
+		strong
+	script
+	h1,h2
 
