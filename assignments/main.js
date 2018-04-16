@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
 }); 
 
-// subscribe me button jQuery script
+// subscribe me button jQuery
 'use strict';
 $(document).ready(function() {
 

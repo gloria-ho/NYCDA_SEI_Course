@@ -1,3 +1,13 @@
+# Dom Manipulations
+
+* Get a handle on the element
+
+*(save it in a varialbe)*
+
+`.getElementById`
+`.getElementsByClassName`
+
+* Make the needed changes
 
 ## Dom
 
