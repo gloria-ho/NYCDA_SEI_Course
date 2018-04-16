@@ -40,3 +40,7 @@ DOM Tree
 		script
 		h1,h2
 
+
+
+css: font-size
+javaScript: fontSize
