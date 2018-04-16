@@ -24,7 +24,7 @@
 **Document:** gateway to the HTML page
 
 
-DOM Tree
+### DOM Tree
 
 	HTML *node/element*
 		head *child of html element*
@@ -41,6 +41,26 @@ DOM Tree
 		h1,h2
 
 
+### Syntax Translations:
 
-css: font-size
-javaScript: fontSize
+`css: font-size;`
+
+translates into javaScript as:
+
+`javaScript: fontSize;`
+
+### Selecting Elements:
+
+`.document.getElementById('...');`
+
+*returns one item*
+
+`document.getElementsByClass('...');`
+*returns an array of items*
+
+**New syntax**
+`document.querySelector('...');`
+*returns one item*
+
+`document.querySelectorAll('...');`
+*returns an array of items*
