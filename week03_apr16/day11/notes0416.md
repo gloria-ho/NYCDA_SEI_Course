@@ -50,7 +50,7 @@ let myDog = {
 }
 
 console.log(myDog.name);
-// name: 'Buzzie'
+//	name: 'Buzzie'
 
 myDog.age = 3;
 myDog.color = 'brown';
@@ -74,28 +74,37 @@ To modify arrays:
 let myArray = [100, 150, 200];
 
 console.log(myArray[1]);
-// 200
+//	200
 
 myArray[3] = 500;
 myArray[4] = 600;
 myArray[myArray.length] = 10;
 
 console.log(myArray);
-// [100, 150, 200, 500, 600, 10]
+//	[100, 150, 200, 500, 600, 10]
 
 myArray = undefined
 
 console.log(myArray);
-// [100, 150, 200, 500, undefined, 10]
+//	[100, 150, 200, 500, undefined, 10]
 
 myArray[100] = 9;
 
 console.log(myArray);
-// [100, 150, 200, 500, 600, 10 ,,,, ... ,,,,,, 9]
+//	[100, 150, 200, 500, 600, 10 ,,,, ... ,,,,,, 9]
 
 ```
 
+
+
+
+## Methods
+
+A method is a function that modifies the internal data of something.
+
 The `.push` method will add an value to the end of an array.
+
+The `.pop.` method will remove the last value in an array.
 
 ```javascript
 let myArray = [2, 4, 6];
@@ -103,8 +112,34 @@ let myArray = [2, 4, 6];
 myArray.push(8);
 
 console.log(myArray);
-// [2, 4, 6, 8]
+//	[2, 4, 6, 8]
+
+myArray.pop();
+
+console.log(myArray);
+//	[2, 4, 6]
 ```
 
+The `.splice` method will add or remove values at any spedicifed position.
 
+`myArray.splice(`position`,` value`)`
+
+```javascript
+let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot'];
+
+console.log(vegetables); 
+//	["Cabbage", "Turnip", "Radish", "Carrot"]
+
+let pos = 1, n = 2;
+
+let removedItems = vegetables.splice(pos, n); 
+// this is how to remove items, n defines the number of items to be removed,
+// from that position(pos) onward to the end of array.
+
+console.log(vegetables); 
+// ["Cabbage", "Carrot"] (the original array is changed)
+
+console.log(removedItems); 
+// ["Turnip", "Radish"]
+```
 
