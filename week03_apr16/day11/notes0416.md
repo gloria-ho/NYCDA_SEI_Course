@@ -7,7 +7,7 @@
 
 The region (lines of code) that you have access to a variable.
 
-Anything declared inside a function is only alive is that function/
+Anything declared inside a function is only alive is that function.
 
 ```javascript
 let sum = 10;
@@ -25,13 +25,14 @@ function calculateSUm(someArray) {
 let result = calcuateSum(myArray);
 
 console.log(sum);
+// 10
 ```
 
 Creating a variable with the same name inside a function will create a local variable inside that function, which will not change the original variable outside. Once the fucntion is complete, the new varaiable within will be obsolete.
 
 **Global Variable**
 
-A variable not defined within a function. *(usable anytwhere in the code)*
+A variable not defined within a function. *(usable anywhere in the code)*
 
 **Local Variable**
 
@@ -41,16 +42,69 @@ A variable defined within a function. *(only usable within that function)*
 
 ## Modifying Objects
 
-
+To modify objects:
 
 ```javascript
 let myDog = {
-	name: 'Buzzie';	
+	name: 'Buzzie'
 }
 
 console.log(myDog.name);
+// name: 'Buzzie'
 
+myDog.age = 3;
+myDog.color = 'brown';
+myDog.friends = ['Max', 'Simone']
+
+console.log(myDog);
+//	name: 'Buzzie'
+//	age: 3
+//	color: 'brown'
+//	friends: ['Max', 'Simon']
 
 ```
+
+
+
+## Modifying Arrays
+
+To modify arrays:
+
+```javascript
+let myArray = [100, 150, 200];
+
+console.log(myArray[1]);
+// 200
+
+myArray[3] = 500;
+myArray[4] = 600;
+myArray[myArray.length] = 10;
+
+console.log(myArray);
+// [100, 150, 200, 500, 600, 10]
+
+myArray = undefined
+
+console.log(myArray);
+// [100, 150, 200, 500, undefined, 10]
+
+myArray[100] = 9;
+
+console.log(myArray);
+// [100, 150, 200, 500, 600, 10 ,,,, ... ,,,,,, 9]
+
+```
+
+The `.push` method will add an value to the end of an array.
+
+```javascript
+let myArray = [2, 4, 6];
+
+myArray.push(8);
+
+console.log(myArray);
+// [2, 4, 6, 8]
+```
+
 
 
