@@ -34,7 +34,7 @@ The completed assignment should:
 
 
 body, #subscribeButton {
-	background-color: #fff3f3;
+	background-color: #f9fff7;
 	font-family: "Poiret One", sans-serif;
 	color: #4c4c4c;
 }
@@ -44,7 +44,7 @@ body, #subscribeButton {
 }
 
 nav a, footer a, .nav-link a {
-	color: #c60084;
+	color: #407231;
 }
 
 a {
@@ -62,12 +62,12 @@ a {
 input:focus {
     background-color: #fff3f3;
     border: 1px solid black;
-    color: #c60084;
+    color: #407231;
 }
 
 input, #messageSubject, #messageButton, #subscribeButton {
 	padding: 10px;
-	border: 1px solid #c60084;
+	border: 1px solid #407231;
 	border-radius: 5px;
 }
 
@@ -84,7 +84,7 @@ input, #messageSubject, #messageButton, #subscribeButton {
 #logo {
 	display: inline-block;
 	margin: 10px;
-	opacity: .6;
+	opacity: .5;
 }
 
 #logo img {
@@ -147,12 +147,12 @@ nav a:last {
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
 	color: #fff;
-	background-color: #c60084;
+	background-color: #407231;
 	text-align: center;
 }
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
-	color: #c60084;
+	color: #407231;
 	text-align: center;
 }
 
@@ -199,7 +199,7 @@ nav a:last {
 
 
 .animated-icon span {
-	background: #c60084;
+	background: #407231;
 }
 
 
@@ -253,7 +253,7 @@ nav a:last {
 
 footer {
 	padding-top: 10px;
-	background-color: #ffcece;
+	background-color: #e9ffe2;
 }
 
 footer ul {
@@ -271,6 +271,8 @@ footer ul {
 
 #emailForm {
 	margin-top: 5px;
+	float: right;
+	display: inline-block;
 }
 
 #subscribeButton {
@@ -290,7 +292,7 @@ footer ul {
 	background-position: center center;
 	position: relative;
 	padding: 0;
-	margin: 10px 0;
+	margin: 20px 0;
 }
 
 #hero img {
@@ -313,6 +315,18 @@ footer ul {
 	border-radius: 5px;
 	font-size: 50px;
 }
+
+
+
+/*
+ *	content
+ */
+.col {
+	width: 33.3%;
+	float: left;
+	display: inline-block;
+}
+
 
 
 
@@ -381,7 +395,7 @@ footer ul {
 	background-position: center center;
 	position: relative;
 	padding: 0;
-	margin: 10px 0 0;
+	margin: 20px 0 0;
 }
 
 #about img {
