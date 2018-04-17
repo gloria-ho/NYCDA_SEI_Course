@@ -8,17 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- bootstap -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
 	<!-- css stylesheet -->
 	<link rel="stylesheet" type="text/css" href="main.css">
-
-	<!-- jS -->
-	<script type="text/javascript" src="main.js"></script>
 
 	<!-- font awesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
@@ -29,7 +20,7 @@
 </head>
 
 <body>
-`
+
 	<!-- logo image & text -->
 	<div id="logo">
 		<img src="../img/layersPaper.jpg" alt="Munder Difflin Paper logo">
@@ -44,10 +35,10 @@
 	<div id="hamburger">
 
 		<!-- .navbar -->		
-		<nav class="navbar navbar-light indigo lighten-2">
+		<nav class="navbar">
 
-		    <!-- hamburger -->		    
-		    <a class="navbar-brand" href="#">Menu</a>
+			<!-- links -->	    
+		    <a id="menu" href="#">Menu</a>
     
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsableNavBar" aria-controls="collapsableNavBar"
 		        aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +46,7 @@
 		        	<span></span><span></span><span></span>
 		        </div>
 		    </button>
-		    <!-- hamburger -->
+		    <!-- links -->
 
 		    <!-- collapse menu -->
 		    <div class="collapse navbar-collapse" id="collapsableNavBar">
@@ -73,6 +64,10 @@
 
 		            <li class="nav-item">
 		                <a class="nav-link" href="#about">About</a>
+		            </li>
+
+		            <li class="nav-item">
+		                <a class="nav-link" href="#joinOurTeam">Join Our Team</a>
 		            </li>
 
 		            <li class="nav-item">
@@ -113,7 +108,7 @@
 					<div class="animateImage">
 						<p>New Products</p>
 						<img src="../img/paperLily.jpg">
-					</div>
+					</div><br>
 					
 					<p>Cupcake ipsum dolor sit amet pie cake jelly. Croissant fruitcake liquorice tart liquorice pie danish gummies apple pie. Sweet roll candy jelly jelly-o biscuit. Jelly dessert cake tiramisu.</p>
 
@@ -124,7 +119,7 @@
 					<div class="animateImage">
 						<p>Bestsellers</p>
 						<img src="../img/paperBoat.jpg">
-					</div>
+					</div><br>
 
 					<p>Topping macaroon bear claw gummi bears liquorice chupa chups. Sweet chocolate halvah sweet roll apple pie soufflé biscuit cotton candy. Croissant toffee chupa chups. Chocolate bar chocolate tootsie roll danish carrot cake jelly topping marzipan.</p>
 
@@ -135,7 +130,7 @@
 					<div class="animateImage">
 						<p>Coming Soon</p>
 						<img src="../img/paperBoats.jpg">
-					</div>
+					</div><br>
 
 					<p>Tootsie roll tiramisu powder sugar plum topping. Dessert apple pie gummi bears pudding bear claw. Liquorice jelly beans jelly fruitcake brownie. Bonbon apple pie apple pie chocolate.</p>
 
@@ -151,14 +146,41 @@
 
 	<!-- about -->
 	<div id="about">
-		<img src="../img/paperFlat.jpg">
+		<div>
+			<img src="../img/paperFlat.jpg">
+		</div>
+
+		<div id="aboutText">
+			<h2>About us</h2>
+			<h4>We are sustainable!</h4>
+			<p>Cupcake ipsum dolor. Sit amet brownie donut chocolate bar pastry dragée carrot cake pudding. Tiramisu gummies candy canes icing caramels marzipan chupa chups halvah. Muffin apple pie chocolate fruitcake chocolate cake. Macaroon macaroon tootsie roll gummies dessert cupcake topping. Chocolate bar lollipop gummies sugar plum gummi bears chupa chups sweet dragée croissant.</p>
+		</div>
+
 	</div>
 	<!-- /about -->
 
 
+	<!-- video background -->
+	<div id="joinOurTeam">
+
+		<div>
+			<video autoplay muted loop id="officeVideo">
+			<source src="../media/blurryOffice.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+		<div id="joinOurTeamText">
+			<h2>Join Our Team!</h2>
+			<p>Cupcake ipsum dolor sit amet. Pudding gummi bears sugar plum. Gummies fruitcake sugar plum jujubes halvah icing. Sweet donut pastry jujubes marshmallow. Jelly-o jujubes chocolate bar donut caramels jelly. Candy biscuit oat cake tart. Dragée fruitcake soufflé wafer. Muffin pastry donut icing pudding.</p>
+		</div>
+
+	</div>
+	<!-- /video background -->
+
+
 	<!-- contact form -->
 	<div id="contact">
-		<h4>Contact us</h3>
+		<h2>Contact us</h2>
 		<form id="contactForm">
 		
 			Name:*<input type="text" name="fullName" placeholder="John Doe" id="userName" required=""><br>
@@ -185,8 +207,14 @@
 			<div class="clear"></div>
   		
   		</form>
+		<!-- /contact form -->
+	
+		<!-- hidden confirmation -->
+		<div class="hidden" id="messageConfirmation">
+			<p>Thank you for your message!</p>
+		</div>
 	</div>
-	<!-- /contact form -->
+
 
 
 	<!-- page footer -->
@@ -195,27 +223,24 @@
 			<div class="row">
 				
 				<form id="emailForm">
-					<div class="input-group mb-3">
 
-						<!-- email input -->
-						<input type="email"  placeholder="Email Address" id="emailInput" required/>
-						<!-- /email input -->
+					<!-- email input -->
+					<input type="email"  placeholder="Email Address" id="emailInput" required/>
+					<!-- /email input -->
 
-						<!-- email submit button -->
-						<div class="input-group-append">
-				    		<button class="btn btn-outline-secondary" id="subscribeButton" type="submit">Subscribe To Emails</button>
-				  		</div>
-				  		<!-- /email submit button -->
+					<!-- email submit button -->
+			    		<button class="btn btn-outline-secondary" id="subscribeButton" type="submit">Subscribe Me</button>
+			  		<!-- /email submit button -->
 
-					</div>
 				</form>
 
 				<!-- footer nav -->
-				<div class="col-md-6">
+				<div class="footernav">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#shop">Shop</a></li>
 						<li><a href="#about">About</a></li>
+						<li><a href="#joinOurTeam">Join Our Team</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -224,16 +249,21 @@
 			</div>
 
 			<div class="row">
-				<div class="col-12">
-					<div id="copyright">
+				<div id="copyright">
 					&copy;2018 Munder Difflin Paper Inc.
-					</div>
 				</div>
 			</div>
 
 		</div>
 	</footer>
 	<!-- /page footer -->
+
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<!-- jS -->
+	<script type="text/javascript" src="main.js"></script>
 
 
 </body>

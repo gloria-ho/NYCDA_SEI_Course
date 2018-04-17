@@ -1,4 +1,6 @@
-// hamburger animation jS
+'use strict';
+
+//hamburger menu animation jS
 $(document).ready(function(){
     $('.animated-icon').click(function(){
         $(this).toggleClass('open');
@@ -6,8 +8,7 @@ $(document).ready(function(){
     });
 }); 
 
-// subscribe me button jQuery
-'use strict';
+// subscribe me button
 $(document).ready(function() {
 
 	$('#contactForm').submit(function(e) {
@@ -16,6 +17,8 @@ $(document).ready(function() {
 			.html('<i class="far fa-check-square"></i>');
 		var userName = $('#userName').val();
 		alert(`Thank you for your message, ${userName}. Someone will get back to you within 1-2 business days. `);
+		$('#contactForm').hide();
+		$('#messageConfirmation').show();
 		return false;
 	});
 
@@ -27,4 +30,8 @@ $(document).ready(function() {
 		alert(`${userEmail} has been subscribed, thank you!`);
 		return false;
 	});
-})
+});
+
+
+
+

@@ -43,10 +43,6 @@ body, #subscribeButton {
 	font-family: "Anton", sans-serif;
 }
 
-nav a, footer a, .nav-link a {
-	color: #407231;
-}
-
 a {
 	text-transform: uppercase;
 }
@@ -71,6 +67,10 @@ input, #messageSubject, #messageButton, #subscribeButton {
 	border-radius: 5px;
 }
 
+.hidden {
+	display: none;
+}
+
 
 /*
  *	logo
@@ -83,19 +83,19 @@ input, #messageSubject, #messageButton, #subscribeButton {
 
 #logo {
 	display: inline-block;
-	margin: 10px;
+	margin: 10px 0;
 	opacity: .5;
 }
 
 #logo img {
 	border-radius: 10px;
-	margin: 5px;
+	margin: 5px 0;
 }
 
 #logoText {
 	font-size: 50px;
 	text-shadow: 2px 2px 5px white;	top: 10px;
-	left: 50px;
+	left: 40px;
 	position: absolute;
 	color: #4c4c4c;
 }
@@ -136,31 +136,49 @@ nav a:last {
 	padding-right: 0;
 }
 
+.nav-link a {
+	color: #fff;
+}
+
+nav a, footer a {
+	color: #407231;
+}
+
+nav a, .nav-link a {
+	font-size: 25px;
+	color: white;
+}
+
+footer a {
+	font-size: 20px;
+}
+
+#menu {
+	color: #407231;
+}
+
 #hamburger {
 	float: right;
 	width: auto;
 }
 
 .navbar-toggler {
-  border: none;
-}
-
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-	color: #fff;
-	background-color: #407231;
-	text-align: center;
-}
-
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
-	color: #407231;
-	text-align: center;
+ 	border: none;
 }
 
 .navbar-nav {
 	position: absolute;
 	z-index: 5;
-	background-color: rgb(255, 255, 255, 0.75);
+	background: rgba(64, 114, 49,0.7);
 	height: auto;
+}
+
+.open {
+	visibility: none;
+}
+
+.collapse {
+	visibility: hidden;
 }
 
 .animated-icon {
@@ -168,13 +186,7 @@ nav a:last {
 	height: 20px;
 	position: relative;
 	margin: 0px;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
 }
@@ -187,13 +199,7 @@ nav a:last {
 	border-radius: 9px;
 	opacity: 1;
 	left: 0;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
-	-webkit-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
 }
 
@@ -205,33 +211,21 @@ nav a:last {
 
 .animated-icon span:nth-child(1) {
 	top: 0px;
-	-webkit-transform-origin: left center;
-	-moz-transform-origin: left center;
-	-o-transform-origin: left center;
 	transform-origin: left center;
 	}
 
 .animated-icon span:nth-child(2) {
 	top: 10px;
-	-webkit-transform-origin: left center;
-	-moz-transform-origin: left center;
-	-o-transform-origin: left center;
 	transform-origin: left center;
 }
 
 .animated-icon span:nth-child(3) {
 	top: 20px;
-	-webkit-transform-origin: left center;
-	-moz-transform-origin: left center;
-	-o-transform-origin: left center;
 	transform-origin: left center;
 }
 
 
 .animated-icon.open span:nth-child(1) {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 	top: 0px;
 	left: 8px;
@@ -243,9 +237,7 @@ nav a:last {
 }
 
 .animated-icon.open span:nth-child(3) {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
+
 	transform: rotate(-45deg);
 	top: 21px;
 	left: 8px;
@@ -262,7 +254,7 @@ footer ul {
 
 #copyright, footer ul {
 	padding-left: 20px;
-	margin: 0;
+	margin: 15px 0;
 }
 
 #copyright {
@@ -293,22 +285,23 @@ footer ul {
 	position: relative;
 	padding: 0;
 	margin: 20px 0;
+	overflow: hidden;
 }
 
 #hero img {
 	vertical-align: top;
 	width: 100%;
 	height: auto;
-	max-height: 450px;
+	max-height: 500px;
 	overflow: hidden
 	padding: 0;
-	margin: 20px 0;
+	margin: 15px 0;
 	opacity: 0;
 }
 
 #heroText {
 	position: absolute;
-	top: 25%;
+	top: 50%;
 	right: 5%;
 	background-color: rgba(255,255,255,.7);
 	padding: 10px 30px;
@@ -322,11 +315,12 @@ footer ul {
  *	content
  */
 .col {
-	width: 33.3%;
+	width: 32%;
+	padding: 0 5px;
 	float: left;
 	display: inline-block;
+	margin: auto;
 }
-
 
 
 
@@ -335,36 +329,43 @@ footer ul {
  */
 
 #shop {
-	margin-top: 10px;
+	padding-top: 20%;
+	height: 500px;
  }
 
 
 .animateImage, .animateImage img{
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	opacity: 1;
 }
 
 .animateImage {
-	background-color: white;
-	margin: 20px auto;
+	background-color: rgb(64, 114, 49,0.7);;
+	margin: auto;
+	align-content: middle;
+	top: 18%;
 
 }
 
 .animateImage img {
 	animation: fadeInOut 10s infinite;
+	align-content: middle;
+	top: 18%;
 }
 
 .animateImage p {
 	font-family: "Pacifico";
 	font-size: 24px;
+	color: #f9fff7;
 	position: absolute;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0;
 }
 
 @keyframes fadeInOut {
@@ -402,11 +403,45 @@ footer ul {
 	vertical-align: top;
 	width: 100%;
 	height: auto;
-	max-height: 450px;
+	max-height: 500px;
 	overflow: hidden
 	padding: 0;
 	margin: 20px 0;
 	opacity: 0;
+}
+
+#aboutText {
+	background-color: rgba(255, 255, 255, .8);
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 40%;
+	padding: 10px 25px;
+}
+
+
+
+/*
+ *	video background
+ */
+
+#joinOurTeam {
+	height: 500px;
+}
+
+#joinOurTeamText {
+	background-color: rgba(255, 255, 255, .8);
+	width: 40%;
+	top: 50px;
+	left: 10%;
+	position: relative;
+	display: block;
+}
+
+#officeVideo {
+	position: absolute;
+	height: 500px;
+	width: 100%;
 }
 
 
@@ -416,9 +451,11 @@ footer ul {
  */
 
  #contact {
+ 	position: relative;
 	margin: 100px 20%;
-	background: rgba(255,255,255,0.8);
+	background: rgba(64, 114, 49,0.7);
 	padding: 10px;
+	color: #f9fff7;
 }
 
 #contact input {
@@ -427,7 +464,8 @@ footer ul {
 	padding: 7px;
 }
 
-#contact input.message {
+#contact, input.message {
+
 }
 
 #messageSubject {
@@ -437,4 +475,8 @@ footer ul {
 
 #sendMessage {
 	float: right;
+}
+
+#messageConfirmation {
+	color: #f9fff7;
 }
