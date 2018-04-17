@@ -55,7 +55,7 @@ a {
 	clear: both;
 }
 
-.italics {
+.italics {ˇ
 	font-style: italic;
 }
 
@@ -284,7 +284,7 @@ footer ul {
  */
 
 #hero {
-	background: url("img/paperColor.jpg") no-repeat 50%/100%;
+	background: url("../img/paperColor.jpg") no-repeat 50%/100%;
 	background-size: cover;
 	background-size: 100% auto;
 	background-position: center center;
@@ -375,7 +375,7 @@ footer ul {
  */
 
 #about {
-	background: url("img/paperFlat.jpg") no-repeat 50%/100%;
+	background: url("../img/paperFlat.jpg") no-repeat 50%/100%;
 	background-size: cover;
 	background-size: 100% auto;
 	background-position: center center;

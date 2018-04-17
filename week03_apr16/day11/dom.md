@@ -118,6 +118,7 @@ myDiv.addEventListener('click', function() {
 * change innerHTML
 * add eventListener
 * add/remove classes
+* value of a form field
 
 
 
