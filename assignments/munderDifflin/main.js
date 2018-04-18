@@ -1,5 +1,6 @@
 'use strict';
 
+
 //hamburger menu animation jS
 $(document).ready(function(){
     $('.animated-icon').click(function(){
@@ -9,14 +10,7 @@ $(document).ready(function(){
 }); 
 
 
-
-// video background
-let video = document.querySelector('#officeVideo');
-let videoButton = document.querySelector('#videoButton');
-
-
-
-// subscribe me button
+// message & subscribe button
 $(document).ready(function() {
 
 	$('#contactForm').submit(function(e) {
@@ -32,10 +26,20 @@ $(document).ready(function() {
 
 	$('#emailForm').submit(function(e) {
 		$('#subscribeButton').removeClass('btn-outline-secondary')
-			.addClass('btn-success')
-			.html('<i class="far fa-check-square"></i>');
+		.addClass('btn-success')
+		.html('<i class="far fa-check-square"></i>');
 		var userEmail = $('#emailInput').val();
 		alert(`${userEmail} has been subscribed, thank you!`);
 		return false;
 	});
 });
+
+// email button with javascript * TO DO: change #subscribeButton type = "button"
+
+// let emailButton = document.querySelector('#subscribeButton');
+
+// emailButton.addEventListener('click', function() {
+// 	let userEmail = document.querySelector('#emailInput').value;
+// 	alert(`${userEmail} has been subscribed, thank you!`);
+// 	return false;
+// })
