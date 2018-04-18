@@ -8,6 +8,14 @@ $(document).ready(function(){
     });
 }); 
 
+
+
+// video background
+let video = document.querySelector('#officeVideo');
+let videoButton = document.querySelector('#videoButton');
+
+
+
 // subscribe me button
 $(document).ready(function() {
 
@@ -31,7 +39,3 @@ $(document).ready(function() {
 		return false;
 	});
 });
-
-
-
-

@@ -37,6 +37,11 @@ body, #subscribeButton {
 	background-color: #f9fff7;
 	font-family: "Poiret One", sans-serif;
 	color: #4c4c4c;
+	margin: 0;
+}
+
+div {
+	margin: 0;
 }
 
 #logoText {
@@ -72,6 +77,7 @@ input, #messageSubject, #messageButton, #subscribeButton {
 }
 
 
+
 /*
  *	logo
  */
@@ -79,17 +85,16 @@ input, #messageSubject, #messageButton, #subscribeButton {
 #logo, #logo img {
 	width: 450px;
 	height: 125px;
+	margin: 10px;
 }
 
 #logo {
 	display: inline-block;
-	margin: 10px 0;
 	opacity: .5;
 }
 
 #logo img {
 	border-radius: 10px;
-	margin: 5px 0;
 }
 
 #logoText {
@@ -203,11 +208,9 @@ footer a {
 	transition: .25s ease-in-out;
 }
 
-
 .animated-icon span {
 	background: #407231;
 }
-
 
 .animated-icon span:nth-child(1) {
 	top: 0px;
@@ -285,6 +288,7 @@ footer ul {
 	position: relative;
 	padding: 0;
 	margin: 20px 0;
+	padding: 0;
 	overflow: hidden;
 }
 
@@ -403,8 +407,6 @@ footer ul {
 	vertical-align: top;
 	width: 100%;
 	height: auto;
-	max-height: 500px;
-	overflow: hidden
 	padding: 0;
 	margin: 20px 0;
 	opacity: 0;
@@ -427,6 +429,7 @@ footer ul {
 
 #joinOurTeam {
 	height: 500px;
+	margin-top: 20px;
 }
 
 #joinOurTeamText {
@@ -436,6 +439,8 @@ footer ul {
 	left: 10%;
 	position: relative;
 	display: block;
+	padding: 5px 15px;
+	margin: 0;
 }
 
 #officeVideo {
@@ -479,4 +484,73 @@ footer ul {
 
 #messageConfirmation {
 	color: #f9fff7;
+}
+
+
+@media only screen and (max-width: 768px) {
+	#logo, #logo img, #logoText, .navbar, nav, footer {
+		width: 100%;
+	}
+	#logo, #logo img, #logoText, #menu, navbar-toggler, footer {
+		display: block;
+	}
+	.navbar {
+		top: 10px;
+	}
+	.navbar, #menu, nav{
+		position: relative;
+		display: inline-block;
+		margin: 10px 0;
+	}
+	#logo, #logo img {
+		margin: 0;
+	}
+	#logoText {
+		font-size: 40px;
+	}
+	#heroText {
+		font-size: 25px;
+	}
+	body {
+		display: block;
+		position: absolute;
+	}
+	div {
+		max-width: 100%;
+	}
+	.shopItem {
+		width: 100%;
+	}
+	.animateImage, .animateImage img, .col {
+		max-width: 100%;
+		max-height: 100%;
+		position: relative;
+		top: 0;
+	}
+	.animateImage p {
+		font-size: 15px;
+		position: absolute;
+		max-width: 100%;
+		max-height: 100%
+	}
+	#about {
+		height: 500px;
+	}
+	#aboutText {
+		width: 65%;
+	}
+	#joinOurTeam {
+		height: 500px;
+	}
+	#joinOurTeamText {
+		width: 65%;
+	}
+	#emailInput {
+		margin-left: 20px;
+	}
+	footer li, #emailForm, #copyright {
+		display: block;
+		width: 100%;
+		padding: 5px;
+	}
 }
