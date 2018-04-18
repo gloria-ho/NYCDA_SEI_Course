@@ -316,7 +316,7 @@ footer li div a:hover {
 	vertical-align: top;
 	width: 100%;
 	height: auto;
-	max-height: 500px;
+	max-height: 600px;
 	overflow: hidden
 	padding: 0;
 	margin: 15px 0;
@@ -327,7 +327,7 @@ footer li div a:hover {
 	position: absolute;
 	top: 50%;
 	right: 5%;
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255, .8);
 	padding: 10px 30px;
 	border-radius: 5px;
 	font-size: 50px;
@@ -383,7 +383,7 @@ footer li div a:hover {
 
 #shop {
 	padding-top: 20%;
-	height: 500px;
+	height: 600px;
  }
 
 
@@ -478,7 +478,7 @@ footer li div a:hover {
  */
 
 #joinUs {
-	height: 500px;
+	height: 600px;
 	margin-top: 20px;
 }
 
@@ -495,7 +495,7 @@ footer li div a:hover {
 
 #officeVideo {
 	position: absolute;
-	height: 500px;
+	height: 600px;
 	width: 100%;
 }
 
