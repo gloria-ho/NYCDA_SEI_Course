@@ -35,7 +35,7 @@ input:focus {
     color: #407231;
 }
 
-input, #messageSubject, #messageButton, #subscribeButton {
+input, #messageSubject, #messageButton, #subscribeButton, #joinButton {
 	padding: 10px;
 	border: 1px solid #407231;
 	border-radius: 5px;
@@ -225,19 +225,16 @@ footer ul {
 	padding-top: 10px;
 }
 
-footer li div {
+footer li div a {
 	padding: 5px 10px;
-}
-
-footer li div:hover {
-	background-color: #407231;
-	padding: 5px 10px;
-	text-decoration: underline;
-	opacity: .6;
 }
 
 footer li div a:hover {
+	padding: 5px 10px;
 	color: #f9fff7;
+	background-color: #407231;
+	text-decoration: underline;
+	opacity: .6;
 }
 
 #copyright, footer ul {
@@ -304,6 +301,7 @@ footer li div a:hover {
 
 #hero {
 	background: url("../img/paperColor.jpg") no-repeat 50%/100%;
+	opacity: .8;
 	background-size: cover;
 	background-size: 100% auto;
 	background-position: center center;
@@ -446,6 +444,7 @@ footer li div a:hover {
 
 #about {
 	background: url("../img/paperFlat.jpg") no-repeat 50%/100%;
+	opacity: .8;
 	background-size: cover;
 	background-size: 100% auto;
 	background-position: center center;
@@ -498,6 +497,11 @@ footer li div a:hover {
 	position: absolute;
 	height: 500px;
 	width: 100%;
+}
+
+#joinButton {
+	width: 100%;
+	margin: 10px auto;
 }
 
 
