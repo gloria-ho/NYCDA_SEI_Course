@@ -38,7 +38,8 @@ $(document).ready(function() {
 
 // let emailButton = document.querySelector('#subscribeButton');
 
-// emailButton.addEventListener('click', function() {
+// emailButton.addEventListener('submit', function() {
+//	event.preventDefault();
 // 	let userEmail = document.querySelector('#emailInput').value;
 // 	alert(`${userEmail} has been subscribed, thank you!`);
 // 	return false;
