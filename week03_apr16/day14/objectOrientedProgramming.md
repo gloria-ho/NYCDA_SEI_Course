@@ -7,14 +7,14 @@
 let myDog = {
 	name: 'buzzie',
 	age: 3,
-	color: 'brown'
+	color: 'white'
 };
 ```
 #### Variable:
 ```javascript
 let myDogName = 'buzzie';
 let myDogAge = 3;
-let myDogColor = 'brown';
+let myDogColor = 'white';
 ```
 
 ## Dot Operator & Method
@@ -37,15 +37,20 @@ We want custom objects that contain some data and a set of custom methods that m
 `document.querySelector('`...`');`
 
 ### *Reserved keywords in JavaScript:*
-* **_class_**
-* **_constructor_**
+* `class`
+* `constructor`
+* `this`
 
 **anatomy:** 
 
 ```javascript
 class Dog {
 	constructor() {
-
+		this.name = 'buzzie';
+		this.age = 3;
+		this.color = 'white';
 	}
 }
 ```
+
+In the `contructor` we define what **data** atributes we want our object to have.
