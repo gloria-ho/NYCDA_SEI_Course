@@ -30,7 +30,7 @@ myArray.pop();
 ### *Goal:*
 We want custom objects that contain some data and a set of custom methods that manipulate the data.
 
-### Methods:
+### Methods
 * `console.log(`...`);`
 * `console.error(`...`);`
 * `console.table(`...`);`
@@ -41,6 +41,8 @@ We want custom objects that contain some data and a set of custom methods that m
 * `constructor`
 * `this`
 * `new`
+
+## Constructor
 
 `Constructor` **anatomy:** 
 
