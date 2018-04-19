@@ -78,7 +78,7 @@ console.log(myDog.name);
 
 ```javascript
 class Dog {
-	constructor(myName, myAge,myColor) {
+	constructor(myName, myAge, myColor) {
 		this.name = myName;
 		this.age = myAge;
 		this.color = myColor;
