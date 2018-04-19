@@ -27,7 +27,7 @@ myArray.push(10);
 myArray.pop();
 ```
 
-# *Goal:*
+### *Goal:*
 We want custom objects that contain some data and a set of custom methods that manipulate the data.
 
 #### Methods
