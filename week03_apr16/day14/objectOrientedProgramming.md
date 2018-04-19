@@ -2,7 +2,7 @@
 
 ## Object v. Variable
 
-####Object:
+#### Object:
 ```javascript
 let myDog = {
 	name: 'buzzie',
@@ -10,7 +10,7 @@ let myDog = {
 	color: 'brown'
 };
 ```
-####Variable:
+#### Variable:
 ```javascript
 let myDogName = 'buzzie';
 let myDogAge = 3;
@@ -27,7 +27,8 @@ myArray.push(10);
 myArray.pop();
 ```
 
-**Goals:** we want custom objects that contain some data and a set of custom methods that manipulate the data.
+## *Goals:*
+We want custom objects that contain some data and a set of custom methods that manipulate the data.
 
 ### Methods:
 `console.log(`...`);`
@@ -36,15 +37,15 @@ myArray.pop();
 `document.querySelector('`...`');`
 
 ### *Reserved keywords in JavaScript:*
-* **class**
-* **constructor**
+* **_class_**
+* **_constructor_**
 
 **anatomy:** 
 
 ```javascript
 class Dog {
 	constructor() {
-		
+
 	}
 }
 ```
