@@ -27,7 +27,7 @@ myArray.push(10);
 myArray.pop();
 ```
 
-### *Goal:*
+# *Goal:*
 We want custom objects that contain some data and a set of custom methods that manipulate the data.
 
 #### Methods
@@ -68,7 +68,7 @@ console.log(myDog.name);
 // buzzie
 ```
 
-## Class Instance / Class Oject:
+## Class Instance / Class Object:
 
 `Class` produces one or more instances
 
@@ -85,7 +85,7 @@ console.log(myDog.name);
 // buzzie
 ```
 
-Each instance will produce a `new` `Dog`
+Each *instance* will produce a `new` `Dog`
 
 ```javascript
 let myDog2 = new Dog('doggo', 4, 'blue');
