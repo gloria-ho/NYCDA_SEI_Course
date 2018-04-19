@@ -3,6 +3,7 @@ imageToggler();
 function imageToggler() {
 	let button = document.querySelector('#button');
 	let img = document.querySelector('img');
+	// ** Program State : all the variables and their values
 	let isHidden = false;
 
 	button.addEventListener('click', function() {
