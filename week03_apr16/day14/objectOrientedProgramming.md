@@ -44,7 +44,15 @@ We want custom objects that contain some data and a set of custom methods that m
 
 ## Constructor
 
+**Classes** are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
+
+The `constructor` method is a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A `SyntaxError` will be thrown if the class contains more than one occurrence of a constructor method.
+
 `Constructor` **anatomy:** 
+
+In the `contructor`, we define what **data** atributes we want our object to have.
+
+`let` variableName `= new` className`();`
 
 ```javascript
 class Dog {
@@ -54,14 +62,28 @@ class Dog {
 		this.color = 'white';
 	}
 }
+
+let myDog = new Dog();
+console.log(myDog.name);
+// buzzie
 ```
 
-In the `contructor`, we define what **data** atributes we want our object to have.
-
-`let` variableName `= new` className`();`
 
 ```javascript
-	let myDog = new Dog();
-	console.log(myDogName);
-
+class Dog {
+	constructor(myName, myAge,myColor) {
+		this.name = myName;
+		this.age = myAge;
+		this.color = myColor;
+	}
+}
+let myDog = new Dog('buzzie', 3, 'white');
+console.log(myDog.name);
+// buzzie
 ```
+
+
+
+
+
+
