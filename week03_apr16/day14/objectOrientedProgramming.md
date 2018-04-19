@@ -34,12 +34,14 @@ Useful methods that manipulate the internal data of the array.
 `console.table(`...`);`
 `document.querySelector('`...`');`
 
-**class** *a reserved keyword in JavaScript*
+*reserved keywords in JavaScript*
+* **class**
+* **constructor**
 
 **anatomy:** 
 
 ```javascript
 class Dog {
-	
+	constructor
 }
 ```
