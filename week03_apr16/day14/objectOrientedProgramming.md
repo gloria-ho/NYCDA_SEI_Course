@@ -34,7 +34,7 @@ Useful methods that manipulate the internal data of the array.
 `console.table(`...`);`
 `document.querySelector('`...`');`
 
-*reserved keywords in JavaScript*
+### *Reserved keywords in JavaScript:*
 * **class**
 * **constructor**
 
