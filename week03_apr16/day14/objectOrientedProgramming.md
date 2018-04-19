@@ -30,19 +30,19 @@ myArray.pop();
 ### *Goal:*
 We want custom objects that contain some data and a set of custom methods that manipulate the data.
 
-### Methods
+#### Methods
 * `console.log(`...`);`
 * `console.error(`...`);`
 * `console.table(`...`);`
 * `document.querySelector('`...`');`
 
-### *Reserved keywords in JavaScript:*
+#### *Reserved keywords in JavaScript:*
 * `class`
 * `constructor`
 * `this`
 * `new`
 
-## Constructor
+## Class & Constructor
 
 **Classes** are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
 
@@ -68,7 +68,7 @@ console.log(myDog.name);
 // buzzie
 ```
 
-
+#### Object Blueprint:
 ```javascript
 class Dog {
 	constructor(myName, myAge,myColor) {
