@@ -313,7 +313,7 @@ footer li div a:hover {
  */
 
 #hero {
-	background: url("../img/paperColor.jpg") no-repeat 50%/100%;
+	background: url("../../img/paperColor.jpg") no-repeat 50%/100%;
 	opacity: .8;
 	background-size: cover;
 	background-size: 100% auto;
@@ -456,7 +456,7 @@ footer li div a:hover {
  */
 
 #about {
-	background: url("../img/paperFlat.jpg") no-repeat 50%/100%;
+	background: url("../../img/paperFlat.jpg") no-repeat 50%/100%;
 	opacity: .8;
 	background-size: cover;
 	background-size: 100% auto;
