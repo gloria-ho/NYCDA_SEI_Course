@@ -250,6 +250,7 @@ footer li div a:hover {
 	margin-top: 5px;
 	float: right;
 	display: inline-block;
+	padding-right: 10px;
 }
 
 #subscribeButton {
@@ -485,7 +486,7 @@ footer li div a:hover {
 #joinUsText {
 	background-color: rgba(255, 255, 255, .8);
 	width: 40%;
-	top: 50px;
+	top: 25%;
 	left: 10%;
 	position: relative;
 	display: block;
