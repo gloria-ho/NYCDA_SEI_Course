@@ -19,7 +19,7 @@ let myDogColor = 'white';
 
 ## Dot Operator & Method
 
-### *Useful methods that manipulate the internal data of the array.*
+#### *Useful methods that manipulate the internal data of the array:*
 ```javascript
 let myArray = [2, 4, 6];
 myArray.push(8);
@@ -27,7 +27,7 @@ myArray.push(10);
 myArray.pop();
 ```
 
-## *Goals:*
+### *Goal:*
 We want custom objects that contain some data and a set of custom methods that manipulate the data.
 
 ### Methods:
@@ -41,7 +41,7 @@ We want custom objects that contain some data and a set of custom methods that m
 * `constructor`
 * `this`
 
-**anatomy:** 
+### `Constructor` **anatomy:** 
 
 ```javascript
 class Dog {
@@ -53,4 +53,4 @@ class Dog {
 }
 ```
 
-In the `contructor` we define what **data** atributes we want our object to have.
+In the `contructor`, we define what **data** atributes we want our object to have.
