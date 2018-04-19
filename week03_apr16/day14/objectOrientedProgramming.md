@@ -31,10 +31,10 @@ myArray.pop();
 We want custom objects that contain some data and a set of custom methods that manipulate the data.
 
 ### Methods:
-`console.log(`...`);`
-`console.error(`...`);`
-`console.table(`...`);`
-`document.querySelector('`...`');`
+* `console.log(`...`);`
+* `console.error(`...`);`
+* `console.table(`...`);`
+* `document.querySelector('`...`');`
 
 ### *Reserved keywords in JavaScript:*
 * `class`
