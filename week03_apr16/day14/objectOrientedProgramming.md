@@ -61,8 +61,9 @@ class Dog {
 		this.age = 3;
 		this.color = 'white';
 	}
+
 	sayHello() {
-  	console.log('Hello, my name is ' + this.name)
+  		console.log('Hello, my name is ' + this.name)
   }
 }
 
@@ -86,6 +87,7 @@ class Dog {
 		console.log('Hello, my name is' + this.name);
 	}
 }
+
 let myDog = new Dog('buzzie', 3, 'white');
 
 console.log(myDog.name);
