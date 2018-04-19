@@ -2,6 +2,7 @@
 
 ## Object v. Variable
 
+####Object:
 ```javascript
 let myDog = {
 	name: 'buzzie',
@@ -9,7 +10,7 @@ let myDog = {
 	color: 'brown'
 };
 ```
-
+####Variable:
 ```javascript
 let myDogName = 'buzzie';
 let myDogAge = 3;
@@ -18,6 +19,7 @@ let myDogColor = 'brown';
 
 ## Dot Operator & Method
 
+### *Useful methods that manipulate the internal data of the array.*
 ```javascript
 let myArray = [2, 4, 6];
 myArray.push(8);
@@ -25,10 +27,9 @@ myArray.push(10);
 myArray.pop();
 ```
 
-Useful methods that manipulate the internal data of the array.
-
 **Goals:** we want custom objects that contain some data and a set of custom methods that manipulate the data.
 
+### Methods:
 `console.log(`...`);`
 `console.error(`...`);`
 `console.table(`...`);`
@@ -42,6 +43,8 @@ Useful methods that manipulate the internal data of the array.
 
 ```javascript
 class Dog {
-	constructor
+	constructor() {
+		
+	}
 }
 ```
