@@ -1,8 +1,8 @@
 # Object Oriented Programming
 
-## Object v. Variable
+## Object Literal & Variable
 
-#### Object:
+#### Object Literal:
 ```javascript
 let myDog = {
 	name: 'buzzie',
@@ -50,9 +50,9 @@ The `constructor` method is a special method for creating and initializing an ob
 
 `Constructor` **anatomy:** 
 
-In the `contructor`, we define what **data** atributes we want our object to have.
-
 `let` variableName `= new` className`();`
+
+In the `contructor`, we define what **data** atributes we want our object to have.
 
 ```javascript
 class Dog {
@@ -68,7 +68,10 @@ console.log(myDog.name);
 // buzzie
 ```
 
-#### Object Blueprint:
+#### Class Instance / Class Oject:
+
+Class produces one or more instances
+
 ```javascript
 class Dog {
 	constructor(myName, myAge,myColor) {
@@ -82,7 +85,16 @@ console.log(myDog.name);
 // buzzie
 ```
 
+Each instance will produce a new `Dog`
 
+```javascript
+let myDog2 = new Dog('doggo', 4, 'blue');
+console.log(myDog2.name);
+// doggo
+let myDog3 = new Dog('bagel', 1, 'sesame');
+console.log(myDog3.name);
+// bagel
+```
 
 
 
