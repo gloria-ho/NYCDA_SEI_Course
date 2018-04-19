@@ -33,4 +33,4 @@ emailButton.addEventListener('click', function() {
 	let userEmail = document.querySelector('#emailInput').value;
 	alert(`${userEmail} has been subscribed, thank you!`);
 	return false;
-})
+})`

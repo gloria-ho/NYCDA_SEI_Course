@@ -1,11 +1,10 @@
 'use strict';
 
 $(document).ready(function(){
-	
 	// toggles classes on menu icon 
 	animateIcon();
-
 })
+
 
 //hamburger menu animation
 function animateIcon() {

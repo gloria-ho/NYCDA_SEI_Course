@@ -88,9 +88,10 @@ nav ul, footer ul {
 
 nav li, footer li {
 	list-style: none;
-	display: inline-block;
 	padding: 0;
 	padding-right: 10px;
+	text-align: center;
+	padding-bottom: 10px
 }
 
 nav li:last , footer li:last {
@@ -101,6 +102,10 @@ nav {
 	position: absolute;
 	right: 10px;
 	top: 50px;
+}
+
+nav li {
+	display: block;
 }
 
 nav a {
@@ -129,6 +134,10 @@ footer a {
 	font-size: 20px;
 }
 
+footer li {
+	display: inline-block;
+}
+
 #menu {
 	color: #407231;
 }
@@ -147,6 +156,9 @@ footer a {
 	z-index: 5;
 	background: rgba(64, 114, 49,0.7);
 	height: auto;
+	width: 300px;
+	padding: 20px 0;
+	right: 0;
 }
 
 .open {
@@ -457,8 +469,8 @@ footer li div a:hover {
 #about img {
 	vertical-align: top;
 	width: 100%;
-	height: auto;
-	padding: 0;
+	height: 600px;
+	padding: 10% 0;
 	margin: 20px 0;
 	opacity: 0;
 }
@@ -481,6 +493,7 @@ footer li div a:hover {
 #joinUs {
 	height: 600px;
 	margin-top: 20px;
+	padding: 10% 0;
 }
 
 #joinUsText {
