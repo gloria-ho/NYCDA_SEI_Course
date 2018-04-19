@@ -37,10 +37,14 @@ We want custom objects that contain some data and a set of custom methods that m
 * `document.querySelector('`...`');`
 
 ## *Reserved keywords in JavaScript:*
-* `class` *: a special function, and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.*
-* `constructor` *: a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A `SyntaxError` will be thrown if the class contains more than one occurrence of a constructor method.*
-* `this` *: a keyword that can be used inside of functions/methods that represents the contxt(calling of the owning object)*
-* `new` *: creates a new instance*
+
+`class` *: a special function, and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.*
+
+`constructor` *: a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A `SyntaxError` will be thrown if the class contains more than one occurrence of a constructor method.*
+
+`this` *: a keyword that can be used inside of functions/methods that represents the contxt(calling of the owning object)*
+
+`new` *: creates a new instance*
 
 ## Class & Constructor
 
