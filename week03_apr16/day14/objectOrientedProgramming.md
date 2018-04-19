@@ -40,6 +40,7 @@ We want custom objects that contain some data and a set of custom methods that m
 * `class`
 * `constructor`
 * `this`
+* `new`
 
 `Constructor` **anatomy:** 
 
@@ -54,3 +55,11 @@ class Dog {
 ```
 
 In the `contructor`, we define what **data** atributes we want our object to have.
+
+`let` variableName `= new` className`();`
+
+```javascript
+	let myDog = new Dog();
+	console.log(myDogName);
+
+```
