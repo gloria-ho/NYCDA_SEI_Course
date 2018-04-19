@@ -36,17 +36,13 @@ We want custom objects that contain some data and a set of custom methods that m
 * `console.table(`...`);`
 * `document.querySelector('`...`');`
 
-#### *Reserved keywords in JavaScript:*
-* `class`
-* `constructor`
-* `this`
-* `new`
+## *Reserved keywords in JavaScript:*
+* `class` *: a special function, and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.*
+* `constructor` *: a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A `SyntaxError` will be thrown if the class contains more than one occurrence of a constructor method.*
+* `this` *: a keyword that can be used inside of functions/methods that represents the contxt(calling of the owning object)*
+* `new` *: creates a new instance*
 
 ## Class & Constructor
-
-**Classes** are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
-
-The `constructor` method is a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A `SyntaxError` will be thrown if the class contains more than one occurrence of a constructor method.
 
 `Constructor` **anatomy:** 
 
@@ -68,9 +64,9 @@ console.log(myDog.name);
 // buzzie
 ```
 
-#### Class Instance / Class Oject:
+## Class Instance / Class Oject:
 
-Class produces one or more instances
+`Class` produces one or more instances
 
 ```javascript
 class Dog {
@@ -85,7 +81,7 @@ console.log(myDog.name);
 // buzzie
 ```
 
-Each instance will produce a new `Dog`
+Each instance will produce a `new` `Dog`
 
 ```javascript
 let myDog2 = new Dog('doggo', 4, 'blue');
