@@ -41,7 +41,7 @@ We want custom objects that contain some data and a set of custom methods that m
 * `constructor`
 * `this`
 
-### `Constructor` **anatomy:** 
+`Constructor` **anatomy:** 
 
 ```javascript
 class Dog {
