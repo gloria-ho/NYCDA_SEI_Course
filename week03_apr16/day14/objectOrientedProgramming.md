@@ -61,6 +61,9 @@ class Dog {
 		this.age = 3;
 		this.color = 'white';
 	}
+	sayHello() {
+  	console.log('Hello, my name is ' + this.name)
+  }
 }
 
 let myDog = new Dog();
@@ -79,22 +82,31 @@ class Dog {
 		this.age = myAge;
 		this.color = myColor;
 	}
+	sayHello() {
+		console.log('Hello, my name is' + this.name);
+	}
 }
 let myDog = new Dog('buzzie', 3, 'white');
+
 console.log(myDog.name);
 // buzzie
+
+console.log(myDog.sayHello());
+// Hello, my name is buzzie
 ```
 
-Each *instance* will produce a `new` `Dog`
+Each *instance* will produce a `new` Dog:
 
 ```javascript
 let myDog2 = new Dog('doggo', 4, 'blue');
 console.log(myDog2.name);
 // doggo
+
 let myDog3 = new Dog('bagel', 1, 'sesame');
 console.log(myDog3.name);
 // bagel
 ```
+
 
 
 
