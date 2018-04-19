@@ -1,0 +1,15 @@
+#button {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+img {
+	position: absolute;
+	left: 150px;
+	display: block;
+}
