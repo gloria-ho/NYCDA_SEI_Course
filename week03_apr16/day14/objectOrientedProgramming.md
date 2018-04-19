@@ -25,3 +25,21 @@ myArray.push(10);
 myArray.pop();
 ```
 
+Useful methods that manipulate the internal data of the array.
+
+**Goals:** we want custom objects that contain some data and a set of custom methods that manipulate the data.
+
+`console.log(`...`);`
+`console.error(`...`);`
+`console.table(`...`);`
+`document.querySelector('`...`');`
+
+**class** *a reserved keyword in JavaScript*
+
+**anatomy:** 
+
+```javascript
+class Dog {
+	
+}
+```
