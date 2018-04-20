@@ -14,15 +14,15 @@
 // console.log(myCircle1.getPerimeter);
 
 class circle {
-  constructor(radius) {
-    this.radius = radius;
-  }
-  getArea() {
-    return 3.14 * this.radius ** 2;
-  }
-  getPerimeter() {
-    return 3.14 * this.radius * 2;
-  }
+	constructor(radius) {
+		this.radius = radius;
+	}
+	getArea() {
+		return 3.14 * this.radius ** 2;
+	}
+	getPerimeter() {
+		return 3.14 * this.radius * 2;
+	}
 }
 
 let myCircle = new circle(4);
@@ -47,8 +47,8 @@ console.log(myCircle.getPerimeter());
 
 class rectangle {
 	constructor(width, height) {
-    this.width = width;
-    this.height = height;
+		this.width = width;
+		this.height = height;
 	}
 	getArea() {
 	  return this.width * this.height;
@@ -68,55 +68,55 @@ console.log(myRectangle1.getPerimeter());
 // methods: getFullName(), addScore(score), removeScore(score)
 
 let avgOf = function avgOf(arrOfScores){
-  let total = 0;
-  for (let i = 0; i < arrOfScores.length; i++) {
-    total += arrOfScores[i];
-  }
-  let avg = total / arrOfScores.length;
-  return(`The average score is ${avg}`);
+	let total = 0;
+	for (let i = 0; i < arrOfScores.length; i++) {
+		total += arrOfScores[i];
+	}
+	let avg = total / arrOfScores.length;
+	return(`The average score is ${avg}`);
 }
-  
+
 let topOf = function topOf(arrOfScores){
-  topScore = 0
-  for (i = 0; i < arrOfScores.length; i++) {
-    if (arrOfScores[i] > topScore) {
-      topScore = arrOfScores[i];
-    }
-  }
-  return(`The top score is ${topScore}`);
+	topScore = 0
+	for (i = 0; i < arrOfScores.length; i++) {
+		if (arrOfScores[i] > topScore) {
+			topScore = arrOfScores[i];
+		}
+	}
+	return(`The top score is ${topScore}`);
 }
 
 
 class student {
-  constructor(firstName, lastName, arrayOfScores) {
-    this.fName = firstName;
-    this.lName = lastName;
-    this.assignmentScores = arrayOfScores;
-    this.averageScore = avgOf(this.assignmentScores);
-    this.topScore = topOf(this.assignmentScores);
-  }
-  getFullName() {
-    return 'Full name is ' + this.fName + ' ' + this.lName;
-  }
-  getAssignmentScores() {
-    return 'Assignment scores are: ' + this.assignmentScores;
-  }
-  getAverageScore() {
-    return this.averageScore;
-  }
-  getTopScore() {
-    return this.topScore;
-  }
-  addScore(score) {
-    this.assignmentScores.push(score);
-    this.averageScore = avgOf(this.assignmentScores);
-    return this.getAverageScore();
-  }
-  removeScore(score) {
-    this.assignmentScores.splice(this.assignmentScores.indexOf(score), 1);
-    this.averageScore = avgOf(this.assignmentScores)
-    return this.getAverageScore();
-  }
+	constructor(firstName, lastName, arrayOfScores) {
+		this.fName = firstName;
+		this.lName = lastName;
+		this.assignmentScores = arrayOfScores;
+		this.averageScore = avgOf(this.assignmentScores);
+		this.topScore = topOf(this.assignmentScores);
+	}
+	getFullName() {
+		return 'Full name is ' + this.fName + ' ' + this.lName;
+	}
+	getAssignmentScores() {
+		return 'Assignment scores are: ' + this.assignmentScores;
+	}
+	getAverageScore() {
+		return this.averageScore;
+	}
+	getTopScore() {
+		return this.topScore;
+	}
+	addScore(score) {
+		this.assignmentScores.push(score);
+		this.averageScore = avgOf(this.assignmentScores);
+		return this.getAverageScore();
+	}
+	removeScore(score) {
+		this.assignmentScores.splice(this.assignmentScores.indexOf(score), 1);
+		this.averageScore = avgOf(this.assignmentScores)
+		return this.getAverageScore();
+	}
 }
 
 

@@ -7,6 +7,14 @@ body {
 	width: 100%;
 }
 
+h2 {
+	margin: 0;
+}
+
+label {
+	font-weight: bold;
+}
+
 #userData {
 	display: flex;
 }
@@ -32,7 +40,6 @@ button {
 	margin-top: 20px;
 }
 
-
 .inputField {
 	padding: 0 10px 10px;
 }
@@ -40,3 +47,8 @@ button {
 #data, #display {
 	padding: 20px;
 }
+
+#display div {
+	padding-top: 10px;
+}
+
