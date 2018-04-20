@@ -96,10 +96,10 @@ class student {
 		this.topScore = topOf(this.assignmentScores);
 	}
 	getFullName() {
-		return 'Full name is ' + this.fName + ' ' + this.lName;
+		return `Full name is ${this.fName} ${this.lName}`;
 	}
 	getAssignmentScores() {
-		return 'Assignment scores are: ' + this.assignmentScores;
+		return `Assignment scores are: ${this.assignmentScores}`;
 	}
 	getAverageScore() {
 		return this.averageScore;

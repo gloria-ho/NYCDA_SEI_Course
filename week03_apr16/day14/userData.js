@@ -7,13 +7,13 @@ let NameDisplay = document.querySelector('#nameDisplay');
 fName.addEventListener('keyup', function() {
 	NameDisplay.innerText = !fName.value && !lName.value
 		? '__________'
-		: fName.value + ' ' + lName.value;
+		: `${fName.value} ${lName.value}`;
 })
 
 lName.addEventListener('keyup', function() {
 	NameDisplay.innerText = !fName.value && !lName.value
 		? '__________'
-		: fName.value + ' ' + lName.value;
+		: `${fName.value} ${lName.value}`;
 })
 
 
@@ -73,6 +73,6 @@ addScoreButton.addEventListener('click', function() {
 	let newUser = new play(result)
 	avgScoreDisplay.innerText = newUser.getAverageScore().toFixed(2);
 	topScoreDisplay.innerText = newUser.getTopScore();
-	scoresDisplay.innerHTML += scoreInput.value + '<br>' ;
-
+	scoresDisplay.innerHTML += scoreInput.value + '<br>';
+	scoreInput.value = '';
 })
