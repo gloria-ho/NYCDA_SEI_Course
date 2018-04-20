@@ -7,7 +7,7 @@ let NameDisplay = document.querySelector('#nameDisplay');
 fName.addEventListener('keyup', function() {
 	NameDisplay.innerText = !fName.value && !lName.value
 		? '__________'
-		: `${fNnname.value} ${lName.value}`;
+		: `${fName.value} ${lName.value}`;
 });
 
 lName.addEventListener('keyup', function() {
