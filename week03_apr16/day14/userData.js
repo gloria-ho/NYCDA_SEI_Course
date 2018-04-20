@@ -7,14 +7,14 @@ let NameDisplay = document.querySelector('#nameDisplay');
 fName.addEventListener('keyup', function() {
 	NameDisplay.innerText = !fName.value && !lName.value
 		? '__________'
-		: `${fName.value} ${lName.value}`;
-})
+		: `${fNnname.value} ${lName.value}`;
+});
 
 lName.addEventListener('keyup', function() {
 	NameDisplay.innerText = !fName.value && !lName.value
 		? '__________'
 		: `${fName.value} ${lName.value}`;
-})
+});
 
 
 let avgOf = function avgOf(arrOfScores){
