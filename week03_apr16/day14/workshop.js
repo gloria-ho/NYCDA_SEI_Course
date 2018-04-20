@@ -1,3 +1,7 @@
+// repl.it link:
+// https://repl.it/@silverdragonia/2018-04-19
+
+
 // create a class: circle
 // one data attribute: radius
 // two methods: getArea, getCircumfrence
