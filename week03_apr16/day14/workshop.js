@@ -86,6 +86,7 @@ let topOf = function topOf(arrOfScores){
   return(`The top score is ${topScore}`);
 }
 
+
 class student {
   constructor(firstName, lastName, arrayOfScores) {
     this.fName = firstName;
@@ -108,10 +109,12 @@ class student {
   }
   addScore(score) {
     this.assignmentScores.push(score);
+    this.averageScore = avgOf(this.assignmentScores);
     return this.getAverageScore();
   }
   removeScore(score) {
     this.assignmentScores.splice(this.assignmentScores.indexOf(score), 1);
+    this.averageScore = avgOf(this.assignmentScores)
     return this.getAverageScore();
   }
 }
@@ -121,16 +124,11 @@ let scores1 = [10, 20, 30, 40, 50, 60];
 let student1 = new student('Gloria', 'Ho', scores1);
 
 
-// console.log(student1.getFullName());
-// console.log(student1.getAssignmentScores());
-// console.log(student1.getAverageScore());
-// console.log(student1.getTopScore());
-
-console.log('Adding 1000 ::: ' + student1.addScore(1000));
+console.log(student1.getFullName());
+console.log(student1.getAssignmentScores());
+console.log(student1.getAverageScore());
+console.log(student1.getTopScore());
+console.log(student1.addScore(1000));
 // 172...
-console.log(scores1);
-// console.log('Removing 50 ' + student1.removeScore(50));
+console.log(student1.removeScore(50));
 // 193...
-// console.log(scores1);
-
-
