@@ -1,18 +1,21 @@
+'use strict';
+
 let fName = document.querySelector('#fNameInput');
 let lName = document.querySelector('#lNameInput');
 let NameDisplay = document.querySelector('#nameDisplay');
 
 fName.addEventListener('keyup', function() {
 	NameDisplay.innerText = !fName.value && !lName.value
-	? '__________'
-	: fName.value + ' ' + lName.value;
+		? '__________'
+		: fName.value + ' ' + lName.value;
 })
 
 lName.addEventListener('keyup', function() {
 	NameDisplay.innerText = !fName.value && !lName.value
-	? '__________'
-	: fName.value + ' ' + lName.value;
+		? '__________'
+		: fName.value + ' ' + lName.value;
 })
+
 
 let avgOf = function avgOf(arrOfScores){
   let total = 0;
@@ -24,10 +27,10 @@ let avgOf = function avgOf(arrOfScores){
 }
   
 let topOf = function topOf(arrOfScores){
-  topScore = 0
-  for (i = 0; i < arrOfScores.length; i++) {
+  let topScore = 0
+  for (let i = 0; i < arrOfScores.length; i++) {
     if (arrOfScores[i] > topScore) {
-      topScore = arrOfScores[i];
+      topScore = parseInt(arrOfScores[i]);
     }
   }
   return topScore;
@@ -56,21 +59,17 @@ class play {
   }
 }
 
+
 let scoreInput = document.querySelector('#scoreInput');
 let addScoreButton = document.querySelector('#addScoreButton');
-let avgScore = document.querySelector('#avgScore');
-let topScore = document.querySelector('#topScore');
+let avgScoreDisplay = document.querySelector('#avgScore');
+let topScoreDisplay = document.querySelector('#topScore');
 let result = [];
 
 addScoreButton.addEventListener('click', function() {
 	event.preventDefault();
 	result.push(scoreInput.value);
 	let newUser = new play(result)
-	avgScore.innerText = newUser.getAverageScore().toFixed(2);
+	avgScoreDisplay.innerText = newUser.getAverageScore().toFixed(2);
+	topScoreDisplay.innerText = newUser.getTopScore();
 })
-
-
-
-
-
-
