@@ -6,51 +6,48 @@
 </head>
 <body>
 
-<!-- input fields -->
-<form>
+<div id="userData" class="column">
 
-	<div id="fName">
-		First Name
-		<input id="fNameInput" type="text" placeholder="John">
-	</div>
-	
-	<div id="lName">
-		Last Name
-		<input id="lNameInput" type="text" placeholder="Doe">
-	</div>
-	
-	<div id="score">
-		<input id="scoreInput" type="text" placeholder="score">
-		<button id="addScoreButton">Add Score Button</button>
-	</div>
+	<div id="data">
+		<!-- input fields -->
+		<div>
+		<form>
 
-</form>
-<!-- /input fields -->
+			<div id="fName" class="inputField">
+				<label for="fNameInput">First Name</label>
+				<input id="fNameInput" type="text" placeholder="John">
+			</div>
+			
+			<div id="lName" class="inputField">
+				<label for="lNameInput">Last Name</label>
+				<input id="lNameInput" type="text" placeholder="Doe">
+			</div>
+			
+			<div id="score" class="inputField">
+				<label for="scoreInput">Score</label>
+				<input id="scoreInput" type="number" placeholder="Score">
+				<br>
+				<button id="addScoreButton">Add Score</button>
+			</div>
 
-
-<!-- sanityCheck -->
-<button id="sanity">SANITY CHECK</button>
-
-
-<!-- display -->
-<div>
-
-	<h2>Stats</h2>
-
-	<div id="nameDisplay">
-		Full Name updates wil typing (keyup)
+		</form>
+		</div>
+		<!-- /input fields -->
 	</div>
 
-	<div id="avgScore">
-		Average Score
-	</div>
+	<!-- display -->
+	<div id="display" class="column">
 
-	<div id="topScore">
-	Top Score
+		<h2>Stats</h2>
+
+		<div>Full name: <span id="nameDisplay">__________</span></div>
+		<div>The average score is <span id="avgScore">___</span></div>
+		<div>The top score is <span id="topScore">___</span></div>
+
 	</div>
+	<!-- /display -->
 
 </div>
-<!-- /display -->
 
 <script type="text/javascript" src="userData.js"></script>
 </body>

@@ -1,17 +1,76 @@
-let sanity = document.querySelector('#sanity');
-
-sanity.addEventListener('click', function() {
-	console.log('hello');
-})
-
 let fName = document.querySelector('#fNameInput');
 let lName = document.querySelector('#lNameInput');
 let NameDisplay = document.querySelector('#nameDisplay');
 
 fName.addEventListener('keyup', function() {
-	NameDisplay.innerHTML = fName.value + ' ' + lName.value;
+	NameDisplay.innerText = !fName.value && !lName.value
+	? '__________'
+	: fName.value + ' ' + lName.value;
 })
 
 lName.addEventListener('keyup', function() {
-	NameDisplay.innerHTML = fName.value + ' ' + lName.value;
+	NameDisplay.innerText = !fName.value && !lName.value
+	? '__________'
+	: fName.value + ' ' + lName.value;
 })
+
+let avgOf = function avgOf(arrOfScores){
+  let total = 0;
+  for (let i = 0; i < arrOfScores.length; i++) {
+    total += parseInt(arrOfScores[i]);
+  }
+  let avg = total / arrOfScores.length;
+  return avg;
+}
+  
+let topOf = function topOf(arrOfScores){
+  topScore = 0
+  for (i = 0; i < arrOfScores.length; i++) {
+    if (arrOfScores[i] > topScore) {
+      topScore = arrOfScores[i];
+    }
+  }
+  return topScore;
+}
+
+
+class play {
+  constructor(arrayOfScores) {
+    this.scoreList = arrayOfScores;
+    this.averageScore = avgOf(this.scoreList);
+    this.topScore = topOf(this.scoreList);
+  }
+  getScoresList() {
+    return this.scoreList;
+  }
+  getAverageScore() {
+    return this.averageScore;
+  }
+  getTopScore() {
+    return this.topScore;
+  }
+  addScore(score) {
+    this.scoreList.push(score);
+    this.scoreList = avgOf(this.scoreList);
+    return this.getAverageScore();
+  }
+}
+
+let scoreInput = document.querySelector('#scoreInput');
+let addScoreButton = document.querySelector('#addScoreButton');
+let avgScore = document.querySelector('#avgScore');
+let topScore = document.querySelector('#topScore');
+let result = [];
+
+addScoreButton.addEventListener('click', function() {
+	event.preventDefault();
+	result.push(scoreInput.value);
+	let newUser = new play(result)
+	avgScore.innerText = newUser.getAverageScore().toFixed(2);
+})
+
+
+
+
+
+

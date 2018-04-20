@@ -1,0 +1,42 @@
+body {
+	font-family: sans-serif;
+	color: dimgray;
+	background-color: silver;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#userData {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+}
+
+#userData:after {
+	clear: both;
+}
+
+input {
+	height: 30px;
+	width: 200px;
+	margin: 10px 0 0 10px;
+	padding: 0 5px;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+
+.inputField {
+	padding: 0 10px 10px;
+}
+
+#data, #display {
+	padding: 20px;
+}
