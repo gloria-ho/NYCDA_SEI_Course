@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Data</title>
+	<link rel="stylesheet" type="text/css" href="userData.css">
+</head>
+<body>
+
+<!-- input fields -->
+<form>
+
+	<div id="fName">
+		First Name
+		<input id="fNameInput" type="text" placeholder="John">
+	</div>
+	
+	<div id="lName">
+		Last Name
+		<input id="lNameInput" type="text" placeholder="Doe">
+	</div>
+	
+	<div id="score">
+		<input id="scoreInput" type="text" placeholder="score">
+		<button id="addScoreButton">Add Score Button</button>
+	</div>
+
+</form>
+<!-- /input fields -->
+
+
+<!-- sanityCheck -->
+<button id="sanity">SANITY CHECK</button>
+
+
+<!-- display -->
+<div>
+
+	<h2>Stats</h2>
+
+	<div id="nameDisplay">
+		Full Name updates wil typing (keyup)
+	</div>
+
+	<div id="avgScore">
+		Average Score
+	</div>
+
+	<div id="topScore">
+	Top Score
+	</div>
+
+</div>
+<!-- /display -->
+
+<script type="text/javascript" src="userData.js"></script>
+</body>
+</html>
