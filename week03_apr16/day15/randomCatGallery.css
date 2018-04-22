@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: rgba(170, 233, 255, .27);
+	text-align: center;
+}
+
+.box, #gifBox, #randomButton {
+	border-radius: 5px;
+}
+
+.box {
+	background-color: rgba(188, 188, 188, .6);
+	margin: 30px auto;
+	width: 700px;
+	position: relative;
+}
+
+#titleElement {
+	height: auto;
+	margin-top: 50px;
+	padding: 10px 0;
+}
+
+#frame {
+	min-height: 500px;
+}
+
+#randomButton {
+	height: 50px;
+	width: 150;
+	margin: 20px auto;
+	padding: 0 10px;
+	font-size: 20px;
+	bottom: 10px;
+}
+
+#gifBox {
+	height: auto;
+	width: auto;
+	margin: auto;
+}
+
+#gifImg {
+	margin-bottom: 25px;
+
+}
