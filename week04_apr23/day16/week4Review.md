@@ -4,7 +4,7 @@
 
 *__Document Object Model__ Manipulate our HTML pages using `document`*
 
-1. Met a handle on the element(s) which returns an element or an array using:
+1. Get a handle on the element(s) which returns an element or an array using:
 
 * `.getElementById`
 * `.getElementsByClassName`
@@ -45,6 +45,7 @@
 ## Form Fields
 
 `form`
+
 	* `input`
 		* `type = "text"`
 		* `type = "email`
@@ -56,6 +57,7 @@
 		* `option`
 	* `input type = "radio" name = "..." value = "..."`
 	* `input type ="checkbox"`
+
 `form`
 
 ## Agile v. Watefall Development
@@ -68,9 +70,50 @@
 
 *Allows us to have many properties on a single object.*
 
+*We like having __methods__*
+
+*__Encapsulation__ - What are the properties that I want*
+
+## Object Listeral
+
+*The basic way of creating an object*
+
+```javascript
+let myDog = {
+	name: 'Fido';
+	age: 3;
+}
+
+```
+
+## Class
+
+```javascript
+class Student {
+	constructor(param1, param2) {
+		this.keyName = param1;
+		this.keyName2 = param2;
+	}
+	methodName() {
+		console.log(`do this with ${this.keyName} and ${this.keyname2});
+	}
+}
+```
+
+## Instance
+
+```javascript
+
+let myStudent = new Student(...)
+```
 
 
+## Method
 
+```javascript
+`myStudent.keyName1;`
+`myStudent.keyName2;`
+```
 
 
 
