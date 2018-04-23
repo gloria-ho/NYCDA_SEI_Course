@@ -2,9 +2,7 @@
 
 ## DOM
 
-*Document Object Model*
-
-Manipulate our HTML pages using `document`
+*__Document Object Model__ Manipulate our HTML pages using `document`*
 
 1. Met a handle on the element(s) which returns an element or an array using:
 
@@ -44,16 +42,36 @@ Manipulate our HTML pages using `document`
 * which event?
 * callback(function)
 
-## Fields
+## Form Fields
 
-* `input`
-1. `type = "text"`
-2. `type = "email`
-3. `type = "number"`
-4. `type = "password"`
-5. `type = "date"`
-* `textarea`
-* `select`
-1. `option`
-* `input`
-1. `type = "radio" name = "..." value = "..."`
+`form`
+	* `input`
+		* `type = "text"`
+		* `type = "email`
+		* `type = "number"`
+		* `type = "password"`
+		* `type = "date"`
+	* `textarea`
+	* `select`
+		* `option`
+	* `input type = "radio" name = "..." value = "..."`
+	* `input type ="checkbox"`
+`form`
+
+## Agile v. Watefall Development
+
+*__Agile Development__ - A more iterative way of develooping code. Follows the same phases as waterfall but completed in smaller 'sprints'ß.*
+
+*__Waterfall Development__ - The less iterative and flexible approach, as progress flows in largely one direction ("downwards" like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, deployment and maintenance.*
+
+## Object Oriented Programming
+
+*Allows us to have many properties on a single object.*
+
+
+
+
+
+
+
+
