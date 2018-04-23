@@ -2,16 +2,67 @@
 <html>
 <head>
 	<title>Personal Pokedex</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+
 	<link rel="stylesheet" type="text/css" href="main.css" />
+
 </head>
 <body>
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-12">
+				<h1>Personal Pokedex</h1>
+				
+			</div>
+			
+		</div>
+		<!-- /row -->
 
-	<div>
-		<h1>Personal Pokedex</h1>
-	</div>
+		<!-- row -->
+		<div class="row">
+			<!-- col-6 -->
+			<div class="col-6">
+				
+				<div class="card pokeimg">
+					<img class="card-img-top" src="" alt"">
+					<div class="card-body">
+						<h4 class="card-title">Title</h4>
+						<p class="card-text">Text</p>
+						<a ref="#" class="btn">Previous</a>
+						<a ref="#" class="btn">Next</a>
+					</div>
+				</div>
 
-	<div>
+				<div class="card pokeName">
+					<div class=card-body>
+						<p> Name: <span id="pokemonName"></span></p>
+						<p> Trainer: <span id="trainerName"></span></p>
+					</div>
+				</div>
+
+			</div>
+			<!-- /col-6 -->
+			<!-- col-6 -->
+			<div class="col-6">
+				<div class="card pokeStats">
+					<div class="card-body">
+						<h4 class="card-title">Pokemon Stats</h4>
+						<p class="card-text">HP: <span id="hp"> </span></p>
+						<p class="card-text">Attack: <span id="attack"> </span></p>
+						<p class="card-text">Defense: <span id="defense"> </span></p>
+						<p class="card-text">Abilities <span id="abilities"> </span></p>
+					</div>
+				</div>
+			</div>
+			<!-- /col-6 -->
+		</div>
+		<!-- /row -->
+
 	</div>
+	<!-- /container -->
 
 
 	<script type="text/javascript" src="main.js"></script>

@@ -187,7 +187,7 @@ class Person{
 ```
 
 
-## Vocabulay
+## Vocabulary
 Base Class
 Sub Class
 
@@ -221,4 +221,24 @@ console.log(b);
 ```
 
 
+## ++a v. a++
 
+**Prefix v. Postfix Operator**
+
+Prefix
+```javascript
+let a = 10;
+let b = ++a;
+// first increment a, then assign that result to b
+console.log(a, b);
+// 11,, 11
+```
+
+Postfix
+```javascript
+let a = 10;
+let b = a++;
+// first assign result to b, then increment, then increment a
+console.log(a, b);
+// 11, 10
+```
