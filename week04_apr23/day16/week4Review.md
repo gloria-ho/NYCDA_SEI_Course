@@ -46,17 +46,17 @@
 
 `form`
 
-	* `input`
-		* `type = "text"`
-		* `type = "email`
-		* `type = "number"`
-		* `type = "password"`
-		* `type = "date"`
-	* `textarea`
-	* `select`
-		* `option`
-	* `input type = "radio" name = "..." value = "..."`
-	* `input type ="checkbox"`
+* `input`
+	* `type = "text"`
+	* `type = "email`
+	* `type = "number"`
+	* `type = "password"`
+	* `type = "date"`
+* `textarea`
+* `select`
+	* `option`
+* `input type = "radio" name = "..." value = "..."`
+* `input type ="checkbox"`
 
 `form`
 
