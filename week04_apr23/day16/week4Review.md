@@ -118,6 +118,37 @@ let myStudent = new Student(...)
 *A keyword that refers to the current instance of the class. In JavaScript the value of this is determined mostly by the invocation context of function ( context.function() ) and where it is called.*
 
 
+## ES6 v. Pre ES6
 
+
+ES6:
+
+```javascript
+class Incrementor{
+	constroctor(value) {
+		this.value = value;
+	}
+	increment() {
+		this.value++;
+	}
+	decrement() {
+		this.value--;
+	}
+}
+```
+
+Pre ES6:
+
+```javascript
+function Incrementor(value){
+	this.value = value
+}
+Incrementor.protype.increment = function() {
+	this.value++;
+}
+Incrementor.prototype.decrement = function() {
+	this.value--;
+}
+```
 
 
