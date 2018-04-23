@@ -4,7 +4,7 @@ let minusButton = document.querySelector('#minus');
 let plusButton = document.querySelector('#plus');
 let number = document.querySelector('#number');
 
-class Incrementor {
+class Incrementer {
 	constructor(value) {
 		this.value = value;
 	}
@@ -16,21 +16,21 @@ class Incrementor {
 	}
 }
 
-let myIncrementor = new Incrementor(0);
+let myIncrementer = new Incrementer(0);
 
 plusButton.addEventListener('click', function() {
-	myIncrementor.increment();
-	number.innerText = myIncrementor.value;
+	myIncrementer.increment();
+	number.innerText = myIncrementer.value;
 });
 
 minusButton.addEventListener('click', function() {
-	myIncrementor.decrement();
-	number.innerText = myIncrementor.value;
+	myIncrementer.decrement();
+	number.innerText = myIncrementer.value;
 });
 
 
 /*
-class Incrementor {
+class Incrementer {
     constructor(value) {
         this.value = value;
     }
@@ -48,15 +48,15 @@ let incrButton = document.querySelector('#incr-button');
 let decrButton = document.querySelector('#decr-button');
 let valueElem = document.querySelector('#value');
 
-let myIncrementor = new Incrementor(0);
+let myIncrementer = new Incrementer(0);
 
 incrButton.addEventListener('click', function() {
-    myIncrementor.increment();
-    valueElem.innerText = myIncrementor.value;
+    myIncrementer.increment();
+    valueElem.innerText = myIncrementer.value;
 });
 
 decrButton.addEventListener('click', function() {
-    myIncrementor.decrement();
-    valueElem.innerText = myIncrementor.value;
+    myIncrementer.decrement();
+    valueElem.innerText = myIncrementer.value;
 })
 */
