@@ -72,7 +72,7 @@
 
 *We like having __methods__*
 
-*__Encapsulation__ - What are the properties that I want*
+*__Encapsulation__ - The ability of an object to be a container (or capsule) for its member properties, including variables and methods. A fundamental principle of object oriented programming. What are the properties that I want in my object?*
 
 ## Object Listeral
 
@@ -95,7 +95,7 @@ class Student {
 		this.keyName2 = param2;
 	}
 	methodName() {
-		console.log(`do this with ${this.keyName} and ${this.keyname2});
+		return `do this with ${this.keyName} and ${this.keyname2}`;
 	}
 }
 ```
@@ -110,10 +110,13 @@ let myStudent = new Student(...)
 
 ## Method
 
-```javascript
 `myStudent.keyName1;`
 `myStudent.keyName2;`
-```
+
+## this
+
+*A keyword that refers to the current instance of the class. In JavaScript the value of this is determined mostly by the invocation context of function ( context.function() ) and where it is called.*
+
 
 
 
