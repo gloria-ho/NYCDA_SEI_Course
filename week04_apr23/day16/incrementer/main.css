@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.numberDiv, .number, .button {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+.number, .button {
+	margin: 10px;
+}
