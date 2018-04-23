@@ -20,7 +20,6 @@ body {
 	font-family: $font;
 	color: $mainTextColor;
 	background-color: $backgroundColor;
-	border: $buttonBorder;
 }
 
 h1, h4 {
@@ -42,4 +41,8 @@ h1, h4 {
 
 .card {
 	margin: 10px 0;
+}
+
+.controls {
+	text-align: center;
 }
