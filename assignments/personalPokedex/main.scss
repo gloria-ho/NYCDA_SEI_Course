@@ -1,8 +1,11 @@
 $font: sans-serif;
-$mainTextColor: red;
-$highlightTextColor: yellow;
+$mainTextColor: dimgray;
+$highlightTextColor: blue;
+$backgroundColor: #e8f0ff;
 
 body {
 	font-family: $font;
 	color: $mainTextColor;
+	background-color: $backgroundColor;
 }
+
