@@ -20,17 +20,17 @@ body {
 	position: relative;
 }
 
-#titleElement {
+.titleElement {
 	height: auto;
 	margin-top: 50px;
 	padding: 10px 0;
 }
 
-#frame {
+.frame {
 	min-height: 500px;
 }
 
-#randomButton {
+.randomButton {
 	height: 50px;
 	width: 150;
 	margin: 20px auto;
@@ -39,13 +39,13 @@ body {
 	bottom: 10px;
 }
 
-#gifBox {
+.gifBox {
 	height: auto;
 	width: auto;
 	margin: auto;
 }
 
-#gifImg {
+.gifImg {
 	margin-bottom: 25px;
 
 }
