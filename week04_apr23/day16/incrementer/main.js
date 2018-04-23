@@ -8,25 +8,28 @@ class Incrementor {
 	constructor(num) {
 		this.num = num;
 	}
-	plusOne() {
-		number.innerText = number.value++;
-	}
 	minusOne() {
-		number.innerText = number.value--;
+		// number.innerText = number.value--
+		this.num--;
+	}
+	plusOne() {
+		// number.innerText = number.value
+		this.num++;
 	}
 }
 
-let myValue = new Incrementor(number);
+let myValue = new Incrementor(10);
 
+console.log(myValue.value);
 
 minusButton.addEventListener('click', function() {
 	myValue.minusOne();
-	number.innerText = myValue;
+	number.innerText = myValue.value;
 });
 
 plusButton.addEventListener('click',function() {
 	myValue.plusOne();
-	number.innerText = myValue;
+	number.innerText = myValue.value;
 });
 
 

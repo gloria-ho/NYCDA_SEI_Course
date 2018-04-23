@@ -152,3 +152,73 @@ Incrementor.prototype.decrement = function() {
 ```
 
 
+## Extends
+
+```javascript
+class Person{
+	constructor(firstName, lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+}
+
+let george = new Person('george', 'dagher')
+
+class Student extends Person {
+	constructor(firstName, lastName, grade) {
+		super(firstName, lastName)
+		this.grade = grade;
+	}
+}
+
+let george = new Student('george', 'dagher', 12);
+```
+
+
+
+
+```javascript
+class Person{
+	constructor(data) {
+		this.firstName = data.firstName;
+		this.lastName = data.lastName;
+	}
+}
+```
+
+
+## Vocabulay
+Base Class
+Sub Class
+
+
+## Primitive v. Non Primitive Data Types
+
+```javascript
+let a = 10;
+let b = a;
+b = 5;
+console.log(a);
+// 10
+console.log(b);
+// 5
+```
+
+```javascript
+let a = {
+	name:'buzzie';
+	age: 3;
+}
+
+let b = a;
+b.age = 10;
+
+console.log(a);
+// {name:'buzzie', age: 10}
+
+console.log(b);
+// {name:'buzzie', age: 10}
+```
+
+
+
