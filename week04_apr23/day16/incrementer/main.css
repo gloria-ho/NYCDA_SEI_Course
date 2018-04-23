@@ -4,11 +4,12 @@ body {
 }
 
 .numberDiv, .number, .button {
-	width: 30px;
-	height: 30px;
 	display: inline-block;
+	text-align: center;
 }
 
 .number, .button {
+	width: 30px;
+	height: 30px;
 	margin: 10px;
 }
