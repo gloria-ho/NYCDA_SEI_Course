@@ -7,4 +7,4 @@ randomButton.addEventListener('click', function() {
 	let index = Math.floor(Math.random() * gifs.length);
 	gifImg.src = gifs[index].images.original.url;
 	gifs.splice(index, 1);
-})
+});
