@@ -10,25 +10,25 @@ How servers communicate responses to a client
 
 **CRUD**
 *(actions)*
-* Create
-* Read
-* Update
-* Delete
+* create
+* read
+* update
+* delete
 
 URL: `https://www.facebook.com/friends/george`
 
-	`https://`
+`https://`
 	protocol
 
-	`www.facebook.com`
+`www.facebook.com`
 	domain - where is this info coming from
 
-	`/friends/george`
+`/friends/george`
 	path - identifies the resource we are looking for
 
 **Method:**
 *What type of action we want to take*
-* put (create)
-* get (read)
-* post (update)
-* delete (delete)
+* PUT *(create)*
+* GET *(read)*
+* POST *(update)*
+* DELETE *(delete)*
