@@ -1,0 +1,3 @@
+let products = 
+
+console.log

@@ -31,7 +31,7 @@ class Pokemon {
 		// 	this.abilities.push(data.abilities[i].ability.name);
 		// }
 
-		console.log('test1 ' + this.hp);
+		console.log('this should print too ' + this.hp);
 		// console.log(this.hp, this.attack);
 	}
 
@@ -60,5 +60,6 @@ let bulbasaur = new Pokemon('baulbasaur', 1);
 // let charmander = new Pokemon('charmander');
 // let squirtle = new Pokemon('squirtle');
 
+// PROBLEM : below console.log runs BEFORE loadData!! HP still = 0
 
 console.log(bulbasaur);
