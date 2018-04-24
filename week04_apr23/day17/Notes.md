@@ -30,9 +30,9 @@ path - identifies the resource we are looking for
 
 ## Method
 *What type of action we want to take*
-* `PUT` *(create)*
+* `PUT` *(create / update)*
 * `GET` *(read)*
-* `POST` *(update)*
+* `POST` *(update / create)*
 * `DELETE` *(delete)*
 
 ## Query Parameters
