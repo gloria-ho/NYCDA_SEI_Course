@@ -9,66 +9,69 @@
 
 </head>
 <body>
-	<!-- container -->
-	<div class="container">
-		<!-- row -->
-		<div class="row">
-			<div class="col-12">
-				<h1>Personal Pokedex</h1>
-			</div>
-			
-		</div>
-		<!-- /row -->
 
-		<!-- row -->
-		<div class="row">
-			<!-- col-6 -->
-			<div class="col-6">
+	<div class="pokedex">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<div class="col-12">
+					<h1>Personal Pokedex</h1>
+				</div>
 				
-				<div class="card pokeimg">
-					<img class="card-img-top" src="http://via.placeholder.com/500x500" alt"">
-					<div class="card-body">
-						<h4 class="card-title">Pokemon Name</h4>
-						<p class="card-text">Pokemon description</p>
-						<div class="controls">
-							<a ref="#" class="btn" id="previousButton">Previous</a>
-							<!-- 
-							DROPDOWN MENU FOR POKEMON OPTIONS
-							-->
-							<a ref="#" class="btn" id="nextButton">Next</a>
+			</div>
+			<!-- /row -->
+
+			<!-- row -->
+			<div class="row">
+				<!-- col-6 -->
+				<div class="col-6">
+					
+					<div class="card pokeimg">
+						<img class="card-img-top" src="http://via.placeholder.com/300x300" alt"">
+						<div class="card-body">
+							<h4 class="card-title">Pokemon Name</h4>
+							<p class="card-text">Pokemon description</p>
+							<div class="controls">
+								<a ref="#" class="btn" id="previousButton">Previous</a>
+								<!-- 
+								DROPDOWN MENU FOR POKEMON OPTIONS
+								-->
+								<a ref="#" class="btn" id="nextButton">Next</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card tainerInfo">
+						<div class=card-body>
+							<p> Trainer: <span id="trainerName"></span></p>
+							<p> Trainer Level: <span id="trainerLevel"></span></p>
+							<p> Trainer Experience: <span id="trainerExperience"></span></p>
+						</div>
+					</div>
+
+				</div>
+				<!-- /col-6 -->
+				<!-- col-6 -->
+				<div class="col-6">
+					<div class="card pokeStats">
+						<div class="card-body">
+							<h4 class="card-title">Pokemon Stats</h4>
+							<p class="card-text">HP: <span id="hp"> </span></p>
+							<p class="card-text">Attack: <span id="attack"> </span></p>
+							<p class="card-text">Defense: <span id="defense"> </span></p>
+							<p class="card-text">Abilities <span id="abilities"> </span></p>
 						</div>
 					</div>
 				</div>
-
-				<div class="card tainerInfo">
-					<div class=card-body>
-						<p> Trainer: <span id="trainerName"></span></p>
-						<p> Trainer Level: <span id="trainerLevel"></span></p>
-						<p> Trainer Experience: <span id="trainerExperience"></span></p>
-					</div>
-				</div>
-
+				<!-- /col-6 -->
 			</div>
-			<!-- /col-6 -->
-			<!-- col-6 -->
-			<div class="col-6">
-				<div class="card pokeStats">
-					<div class="card-body">
-						<h4 class="card-title">Pokemon Stats</h4>
-						<p class="card-text">HP: <span id="hp"> </span></p>
-						<p class="card-text">Attack: <span id="attack"> </span></p>
-						<p class="card-text">Defense: <span id="defense"> </span></p>
-						<p class="card-text">Abilities <span id="abilities"> </span></p>
-					</div>
-				</div>
-			</div>
-			<!-- /col-6 -->
+			<!-- /row -->
+
 		</div>
-		<!-- /row -->
+		<!-- /container -->
 
 	</div>
-	<!-- /container -->
-
 
 	<script type="text/javascript" src="main.js"></script>
 </body>

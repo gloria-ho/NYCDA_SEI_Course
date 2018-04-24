@@ -10,6 +10,13 @@ h1, h4 {
   text-align: center;
 }
 
+.pokedex {
+  background-color: #b20000;
+  border: 1px solid white;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .container {
   width: 100%;
 }
