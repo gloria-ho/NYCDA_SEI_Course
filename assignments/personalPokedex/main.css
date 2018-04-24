@@ -10,9 +10,13 @@ h1, h4 {
   text-align: center;
 }
 
+h1 {
+  color: #fff;
+}
+
 .pokedex {
-  background-color: #b20000;
-  border: 1px solid white;
+  border: 1px solid dimgray;
+  border-radius: 5px;
   width: 90%;
   margin: 0 auto;
 }

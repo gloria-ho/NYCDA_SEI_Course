@@ -1,7 +1,7 @@
 $font: sans-serif;
 
 $mainTextColor: dimgray;
-$highlightTextColor: blue;
+$highlightTextColor: #fff;
 $buttonTextColor: #fff;
 
 $backgroundColor: #e8f0ff;
@@ -21,9 +21,14 @@ h1, h4 {
 	text-align: center;
 }
 
+h1 {
+	color: $highlightTextColor;
+}
+
 .pokedex {
-	background-color: $pokedexColor;
-	border: 1px solid white;
+	// background-color: $pokedexColor;
+	border: 1px solid $mainTextColor;
+	border-radius: 5px;
 	width: 90%;
 	margin: 0 auto;
 }
