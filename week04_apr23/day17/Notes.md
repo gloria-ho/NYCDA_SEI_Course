@@ -94,4 +94,4 @@ JSON.parse(myJsonString)
 200's - Request was successful
 300's - Redirect
 400's - Client error
-500's - 
+500's - Server error

@@ -1,3 +1,2 @@
-let products = 
 
-console.log
+console.log(productObject);
