@@ -86,7 +86,6 @@ JSON.parse(myJsonString)
 // color: "white"
 // name: "buzzie"
 
-
 ```
 
 ## Status Code
@@ -95,3 +94,41 @@ JSON.parse(myJsonString)
 300's - Redirect
 400's - Client error
 500's - Server error
+
+
+## .aXios
+*An ajax library that helps make the HTTP request and process the response/*
+
+**AJAX**
+*Asynchronous JavaScript and XML*
+
+)
+
+## Promise
+
+An object that has a method called `then`.
+
+`then` accepts another function that will be called when the response is ready.
+
+```javascript
+let myPromise = ... ;
+
+myPromise.then(function(response) {
+	
+})
+
+console.log(response);
+
+```
+
+
+```javascipt
+let myPromise = axios.get('https://www.redbullshopus.com/products.json');
+
+myPromise.then(function(myResponse) {
+
+console.log('recieved the response');
+
+console.log(myResponse);
+})
+```
