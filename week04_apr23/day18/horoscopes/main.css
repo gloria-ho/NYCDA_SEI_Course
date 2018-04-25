@@ -1,67 +1,71 @@
 body {
-    max-width: 95%;
-    margin: 5px auto;
-}
-
-.pageTitle, .sectionTitle {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.sections {
-    border: 1px solid dimgray;
-    background-color: #e5e5e5;
-    border-radius: 5px;
-    margin: 15px auto;
-    padding: 10px 15px;
-}
-
-.info {
-    margin: 15px 0;
+	max-width: 95%;
+	margin: 5px auto;
 }
 
 h6 {
-    margin: 0;
-    font-weight: bold;
+	margin: 0;
+	font-weight: bold;
 }
 
 select {
-    margin: 5px auto;
-    padding: 0 5px;
+	margin: 5px auto;
+	padding: 0 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+.pageTitle, .sectionTitle {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.sections {
+	border: 1px solid dimgray;
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	margin: 15px auto;
+	padding: 10px 15px;
+}
+
+.info {
+	margin: 15px 0;
 }
 
 .capitalize {
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 .selection, .horoscopeElement, .compatibilityElement, .celebrityElement{
-    border: 1px solid dimgray;
-    border-radius: 5px;
-    background-color: silver;
-    padding: 10px;
-    margin: 15px 0;
-    text-align: center;
+	border: 1px solid dimgray;
+	border-radius: 5px;
+	background-color: silver;
+	padding: 10px;
+	margin: 15px 0;
+	text-align: center;
 }
 
 img {
-    width: 100%;;
+	width: 100%;;
 }
 
 .userSignImg, .celebrityImg {
-    border-radius: 5px;
+	border-radius: 5px;
 
 }
 
 .userSignImg {
-    max-width: 150px;
+	max-width: 150px;
 }
 
 .compatibilityImg {
-    max-width: 200px;
-    margin: 5px auto;
-    display: block;
+	max-width: 200px;
+	margin: 5px auto;
+	display: block;
 }
 
 .celebrityImg {
-    max-width: 300px;
+	max-width: 300px;
 }
