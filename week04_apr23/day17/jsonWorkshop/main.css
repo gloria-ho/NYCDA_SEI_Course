@@ -3,6 +3,6 @@ img {
 }
 
 div {
-	border: 1px solid red;
 	display: block;
+	max-width: 80%;
 }
