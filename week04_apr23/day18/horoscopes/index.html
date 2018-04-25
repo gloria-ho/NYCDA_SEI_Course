@@ -1,0 +1,261 @@
+<!-- build a daily horoscope page
+
+user sleects sign
+see horosope for that day
+
+node-horoscopes.herokuapp.com
+
+3 API urls to use to update page
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daily Horoscopes</title>
+	<!-- bootstap for grid -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+	<!-- my css stylesheet -->
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="pageTitle">
+					<h1>Daily Horoscopes</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- personal horoscope container -->
+	<div class="container sections">
+		<!-- section title -->
+		<div class="row">
+			<div class="col-12">
+				<div class="sectionTitle">
+					<h2>Personal Horoscope</h2>
+				</div>
+			</div>
+		</div>
+		<!-- /section title -->
+
+		<!-- personal sign dropdown -->
+		<div class="row">
+			<div class="col-12">
+				<div class="selection">
+					Please select your zodiac sign:
+					<select id="personalSign">
+						<option disabled selected value>select one</option>
+						<option value="Aries">Aries</option>
+						<option value="Taurus">Taurus</option>
+						<option value="Gemini">Gemini</option>
+						<option value="Cancer">Cancer</option>
+						<option value="Leo">Leo</option>
+						<option value="Virgo">Virgo</option>
+						<option value="Libra">Libra</option>
+						<option value="Scorpio">Scorpio</option>
+						<option value="Sagittarius">Sagittarius</option>
+						<option value="Capricorn">Capricorn</option>
+						<option value="Aquarius">Aquarius</option>
+						<option value="Pisces">Pisces</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- /personal sign dropdown -->
+
+		<!-- horoscope display  -->
+		<div class="row">
+			<div class="col-12">
+				<div id="horoscopeElement" class="horoscopeElement">
+					<!-- horoscope -->
+					<div class="row">
+						<div class="col-6">
+							<div class="info">
+								<h6>Date:</h6> <p id="date"></p>
+							</div>
+							<div class="info">
+								<h6>Sign:</h6> <p id="sign" class="capitalize"></p>
+							</div>
+						</div>
+						<div class="col-6">
+							<img src="" id="userSignImg" class="userSignImg" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="info">
+								<h6>Horoscope:</h6> <p id="horoscope"></p>
+							</div>
+						</div>
+					</div>
+					<!-- /horoscope -->
+				</div>
+			</div>
+		</div>
+		<!-- /horoscope display  -->
+
+	</div>
+	<!-- /personal horoscope -->
+
+	<!-- dating compatibility -->
+	<div class="container sections">
+		<!-- section title -->
+		<div class="row">
+			<div class="col-12">
+				<div class="sectionTitle">
+					<h2>Dating Compatibility</h2>
+				</div>
+			</div>
+		</div>
+		<!-- /section title -->
+
+		<div class="row">
+			<!-- compatibility dropdown1 -->
+			<div class="col-6">
+				<div class="selection">
+					Your sign: 
+					<select id="datingSign1">
+						<option disabled selected value></option>
+						<option value="Aries">Aries</option>
+						<option value="Taurus">Taurus</option>
+						<option value="Gemini">Gemini</option>
+						<option value="Cancer">Cancer</option>
+						<option value="Leo">Leo</option>
+						<option value="Virgo">Virgo</option>
+						<option value="Libra">Libra</option>
+						<option value="Scorpio">Scorpio</option>
+						<option value="Sagittarius">Sagittarius</option>
+						<option value="Capricorn">Capricorn</option>
+						<option value="Aquarius">Aquarius</option>
+						<option value="Pisces">Pisces</option>
+					</select>
+					<img src="" id="datingSign1Img" class="compatibilityImg" />
+				</div>
+			</div>
+			<!-- /compatibility dropdown1 -->
+
+			<!-- compatibility dropdown2 -->
+			<div class="col-6">
+				<div class="selection">
+					Your partner: 
+					<select id="datingSign2">
+						<option disabled selected value></option>
+						<option value="Aries">Aries</option>
+						<option value="Taurus">Taurus</option>
+						<option value="Gemini">Gemini</option>
+						<option value="Cancer">Cancer</option>
+						<option value="Leo">Leo</option>
+						<option value="Virgo">Virgo</option>
+						<option value="Libra">Libra</option>
+						<option value="Scorpio">Scorpio</option>
+						<option value="Sagittarius">Sagittarius</option>
+						<option value="Capricorn">Capricorn</option>
+						<option value="Aquarius">Aquarius</option>
+						<option value="Pisces">Pisces</option>
+					</select>
+					<div>
+						<img src="" id="datingSign2Img" class="compatibilityImg" />
+					</div>
+				</div>
+			</div>
+			<!-- /compatibility dropdown2 -->
+		</div>
+
+		<!-- compatibility text -->
+		<div class="row">
+			<div class="col-12">
+				<div id="compatibilityElement" class="compatibilityElement">
+					<div class="row">
+						<div class="col-12">
+							<div class="info">
+								<h6>Dating Compatibility:</h6> <p id="compatibility"></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /compatibility text -->
+
+	</div>
+	<!-- /dating compatibility -->
+
+	<!-- celebrity match compatibility -->
+	<div class="container sections">
+		<!-- section title -->
+		<div class="row">
+			<div class="col-12">
+				<div class="sectionTitle">
+					<h2>Celebrity Match</h2>
+				</div>
+			</div>
+		</div>
+		<!-- /section title -->
+
+		<!-- personal sign dropdown -->
+		<div class="row">
+			<div class="col-12">
+				<div class="selection">
+					Please select your zodiac sign:
+					<select id="celebrityUserSign">
+						<option disabled selected value>select one</option>
+						<option value="Aries">Aries</option>
+						<option value="Taurus">Taurus</option>
+						<option value="Gemini">Gemini</option>
+						<option value="Cancer">Cancer</option>
+						<option value="Leo">Leo</option>
+						<option value="Virgo">Virgo</option>
+						<option value="Libra">Libra</option>
+						<option value="Scorpio">Scorpio</option>
+						<option value="Sagittarius">Sagittarius</option>
+						<option value="Capricorn">Capricorn</option>
+						<option value="Aquarius">Aquarius</option>
+						<option value="Pisces">Pisces</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- /personal sign dropdown -->
+
+		<!-- celebrity match display  -->
+		<div class="row">
+			<div class="col-12">
+				<div id="celebrityElement" class="celebrityElement">
+					<!-- celebrity data -->
+					<div class="row">
+						<div class="col-6">
+							<div class="info">
+								<h6>Sign:</h6> <p id="celebritySign" class="capitalize"></p>
+							</div>
+							<div class="info">
+								<h6>Name:</h6> <p id="celebrityName"></p>
+							</div>
+							<div class="info">
+								<h6>Age:</h6> <p id="celebrityAge"></p>
+							</div>
+						</div>
+						<div class="col-6">
+							<img src="" id="celebrityImg" class="celebrityImg" />
+						</div>
+					</div>
+					<!-- /celebrity date -->
+				</div>
+			</div>
+		</div>
+		<!-- /celebrity match display  -->
+
+	</div>
+	<!-- /celebrity match compatibility -->
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+
