@@ -14,6 +14,10 @@ h1 {
   color: #fff;
 }
 
+p {
+  margin: 5px;
+}
+
 .pokedex {
   border: 1px solid dimgray;
   border-radius: 5px;

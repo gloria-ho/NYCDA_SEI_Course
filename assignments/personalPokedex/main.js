@@ -1,26 +1,28 @@
-// let hp = querySelector('#hp');
-
-
 // $.ajax({url: "https://pokeapi.co/api/v2/pokemon/1/", success: function(result){
 //             console.log(result);
 //             console.log(result.stats[5].base_stat);
 // }});
+
+// All pokemon stored within a container object named after the trainer name
+let silverdragonia = {};
 
 
 class Pokemon {
 	constructor(name, id) {
 		this.name = name;
 		this.id = id;
-		this.hp = 0;
-		this.attack = 0;
-		this.defense = 0;
-		this.abilities = [];
+		this.img = ''; // someURL
+		this.hp = 1;
+		this.attack = 2;
+		this.defense = 3;
+		this.abilities = ['a','b','c'];
 
-		let loadPromise = axios.get('https://pokeapi.co/api/v2/pokemon/' + this.id + '/')
-		.then(function(result) {
+		// let loadPromise = axios.get('https://pokeapi.co/api/v2/pokemon/' + this.id + '/')
+		// .then(function(result) {
 
-			console.log(result.data.stats[5].base_stat);
-		});
+		// 	console.log(result.data.stats[5].base_stat);
+
+		// });
 
 
 		// .then(function(result) {
@@ -61,6 +63,12 @@ class Pokemon {
 
 	}
 
+	getName(){
+		return this.name;
+	}
+	getImg() {
+		return this.imgUrl;
+	}
 	getHp() {
 		return this.hp;
 	}
@@ -72,16 +80,44 @@ class Pokemon {
 	}
 	getAbilities() {
 		// arr of abilities
+		return this.abilities;
 	}
 
 };
 
 
 let bulbasaur = new Pokemon('bulbasaur', 1);
-// let charmander = new Pokemon('charmander');
-// let squirtle = new Pokemon('squirtle');
+let charmander = new Pokemon('charmander, 4');
+let squirtle = new Pokemon('squirtle', 7);
 
 
 
-console.log(bulbasaur.getHp());
+let name = document.querySelector('#pokemonName');
+let hp = document.querySelector('#hp');
+let attack = document.querySelector('#attack');
+let defense = document.querySelector('#defense');
+let abilities = document.querySelector('#abilities');
+let img = document.querySelector('#img');
+
+let previousButton = document.querySelector('#previousButton');
+let nextButton =document.querySelector('#nextButton');
+
+
+previousButton.addEventListener('click', function() {
+	//load previous pokemon info:
+	name.innerText = pokemon.getName();
+	img.src = pokemon.getImg();
+	hp.innerText = pokemon.getHp();
+	attack.innerText = pokemon.getAttack();
+	defense.innerText = pokemon.getDefense();
+	abilities.innerText = pokemon.getAbilities();
+})
+
+
+
+nextButton.addEventListener('click', function() {
+	//load next pokemon
+})
+
+
 
