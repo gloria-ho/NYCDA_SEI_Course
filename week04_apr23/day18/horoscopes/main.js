@@ -22,7 +22,7 @@ dropDown.onchange = function() {
 		sign.innerText = response.data.sign;
 		horoscope.innerText = response.data.horoscope;
 		// update img src with zodiac img
-		img.src = 'http://courtneysgamecoderocks.com/ZodiacProject/img/' + userSign.toLowerCase() + 'Sign.png';
+		img.src = 'http://courtneysgamecoderocks.com/ZodiacProject/img/' + .toLowerCase() + 'Sign.png';
 		// unhide display
 		horoscopeElement.classList.remove('hidden');
 	});
@@ -62,15 +62,9 @@ function loadCompatiblity() {
 	
 };
 // check compatibility dropdown1 for change
-datingSign1.onchange  = function() {
-	// call function to load data
-	loadCompatiblity();
-};
+datingSign1.onchange  = loadCompatiblity;
 // check compatibility dropdown2 for change
-datingSign2.onchange = function() {
-	// call function to load data
-	loadCompatiblity();
-};
+datingSign2.onchange = loadCompatiblity;
 
 
 /*
