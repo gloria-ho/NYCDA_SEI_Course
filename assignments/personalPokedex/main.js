@@ -1,3 +1,5 @@
+$(document).ready(function() {
+}
 
 
 // define the trainer class
@@ -25,7 +27,7 @@ class Pokemon {
 // create a function to call api ajax/axios
 
 function loadPokemon() {
-	
+
 }
 
 
