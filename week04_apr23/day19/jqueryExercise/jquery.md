@@ -2,7 +2,7 @@
 
 
 
-## jQuery on load
+## Page Load
 ```javascript
 $(document).ready(function() {
 	console.log('test');
@@ -40,7 +40,8 @@ let myDiv = $('div');
 
 
 
-## jQuery Object
+## jQuery Objects
+
 Acts like both elements and arrays
 
 ### Elements
@@ -81,7 +82,7 @@ myDiv.text();
 ```
 
 ### Arrays
-* loop throuh them using .length
+* loop through them using .length
 ```javascript
 myDiv.length;
 myElem.length;
@@ -130,7 +131,7 @@ myDiv.mousedown(function() {
 	});
 ```
 
-### Other jQuery Examples
+### Other jQuery examples
 ```javascript
 $(.myClass).click(function(){
 
