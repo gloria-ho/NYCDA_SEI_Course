@@ -48,7 +48,18 @@ $(document).ready(function() {
 	// create a function that takes the pokemon name and id# to call api
 	function loadInfo(name, id) {
 		// get API data
-		axios.get('https://pokeapi.co/api/v2/pokemon/' + id + '/')
+		
+
+
+		// axios.get('https://pokeapi.co/api/v2/pokemon/' + id + '/')
+
+
+		axios.get('https://raw.githubusercontent.com/silverdragonia/nycda_sei_apr_2018/master/assignments/personalPokedex/' + id + '.json')
+
+
+
+
+
 		// once loaded then run function
 		.then(function(result) {
 			//define object of info for pokemon
