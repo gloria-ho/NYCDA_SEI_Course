@@ -1,0 +1,28 @@
+body {
+
+}
+
+
+.logo {
+	max-width: 200px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+nav {
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	right: 5%;
+
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000;
+	padding: 5px;
+}

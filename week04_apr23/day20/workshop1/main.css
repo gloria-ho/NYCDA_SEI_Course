@@ -24,7 +24,7 @@ p {
 
 .card {
 	border: none;
-	margin: 0;
+	margin: 0 auto;
 	height: 310px;
 	max-width: auto;
 }
@@ -41,6 +41,7 @@ p {
 	padding: 10px;
 }
 
-.container {
+.container-fluid {
+	padding: 0 100px;
 	margin: 0 auto;
 }
