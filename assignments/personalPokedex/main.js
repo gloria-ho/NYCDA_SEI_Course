@@ -28,6 +28,8 @@ $(document).ready(function() {
 
 	}
 
+
+
 	// define the pokemon class
 	class Pokemon {
 		constructor(name, id, img, hp, attack, defense, abilities) {
@@ -56,8 +58,7 @@ $(document).ready(function() {
 
 		axios.get('https://raw.githubusercontent.com/silverdragonia/nycda_sei_apr_2018/master/assignments/personalPokedex/' + id + '.json')
 
-
-
+ 
 
 
 		// once loaded then run function
@@ -75,10 +76,7 @@ $(document).ready(function() {
 			}
 			
 			silverdragonia.myPokemon.push(info);
-
-			console.log(silverdragonia.myPokemon);
-
-			
+		
 
 		});
 
