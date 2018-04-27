@@ -5,18 +5,19 @@ $(document).ready(function() {
 
 	myDiv.css({background: 'silver', color: 'lightblue'});
 	myDiv.addClass('myClass');
-	myDiv.html('<h1>Hello World!');
+	myDiv.html('<h1>Hello World!</h1>');
 
 	let myDiv2 = $('.myNewClass')
 
 	myDiv2.css({background: 'lightblue', color: 'silver'});
 	myDiv2.addClass('myClass');
-	myDiv2.html('<h1>Hello World!');
+	myDiv2.html('<h2>Hello World Again!</h2>');
+
+	let allMyDivs = $('div');
+
+	allMyDivs.addClass('col-xs-12');
 
 
-	console.log(myDiv.length);
-	console.log(myDiv[0]);
-	console.log(myDiv);
 
 });
 

@@ -1,6 +1,6 @@
+# jQuery & Bootstrap
+
 # jQuery
-
-
 
 ## Page Load
 ```javascript
@@ -143,3 +143,26 @@ $('img').attr('src','newURL');
 // to read the src
 $('img').attr('src');
 ```
+
+
+
+# Bootstrap
+
+## Grid System
+
+Bootstrap has 12 columns, `.col`
+
+Size of each column is based on percentage, 6 of 12 means 50%.
+
+```html
+<div class="container"
+	<div class="row">
+		<div class="col-lg-6 col-sm-12">
+		</div>
+		<div class="col-lg-6 col-sm-12">
+		</div>
+	</div>
+</div>
+```
+
+
