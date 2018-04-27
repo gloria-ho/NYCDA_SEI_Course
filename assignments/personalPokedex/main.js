@@ -124,10 +124,10 @@ $(document).ready(function() {
 		console.log('YOU SUCK');
 		let myPoke = silverdragonia.get('bulbasaur');
 		console.log(myPoke);
-		name.text(myPoke.name.toUpperCase());
+		name.text(myPoke.name);
 		hp.text(myPoke.hp);
-		attack.text(myPoke.attack.toUpperCase());
-		defense.text(myPoke.defense.toUpperCase());
+		attack.text(myPoke.attack);
+		defense.text(myPoke.defense);
 
 	});
 	charmanderBtn.click(function() {
