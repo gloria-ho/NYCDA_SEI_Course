@@ -18,6 +18,14 @@
 
 ## Frameworks
 
-Entire environments/ecosystems that provide more functionality
+*Entire environments/ecosystems that provide more functionality*
 
-*I'll do these things for you if you play by rules*
+Contract: *I'll do these things for you if you play by rules*
+
+### AngularJS
+*Front-end framwork*
+
+Contract: *I'll do all your DOM manipulations if you play by my rules*
+
+### React
+*Better but more difficult to set up*
