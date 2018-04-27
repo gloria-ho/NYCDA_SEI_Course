@@ -63,6 +63,7 @@ $(document).ready(function() {
 		// once loaded then run function
 		.then(function(result) {
 			//define object of info for pokemon
+			console.log(result);
 			let info = {
 				'name': result.data.name,
 				'id': result.data.id,
