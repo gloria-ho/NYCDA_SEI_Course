@@ -73,8 +73,8 @@ $(document).ready(function() {
 	 	.then(function(result) {
 	 		for (let i = 0; i < result.data.length; i++) {
 	 			if (result[i].data.name == name) {
-	 				let evolvesInto = result[i].data.evolves_into;
-		 			let	bioText = result[i].data.bio;
+	 				let evolvesInto = result[i].data.data.evolves_into;
+		 			let	bioText = result[i].data.data.bio;
 		 			evolution.text(evolvesInto);
 		 			bio.text(bioText);
 		 			console.log(bioText);
