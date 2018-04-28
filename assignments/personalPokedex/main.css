@@ -2,12 +2,25 @@ body {
   margin: 10px 0;
   padding: 0;
   font-family: sans-serif;
-  color: dimgray;
-  background-color: #e8f0ff;
+  color: #000;
+  background: url(img/pokeball.jpg) no-repeat fixed center;
+}
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
 }
 
 h1, h4 {
   text-align: center;
+  font-weight: bold;
 }
 
 h1 {
@@ -19,7 +32,7 @@ p {
 }
 
 .pokedex {
-  border: 1px solid dimgray;
+  border: 1px solid #000;
   border-radius: 5px;
   width: 90%;
   margin: 0 auto;
@@ -33,15 +46,44 @@ p {
   display: inline-block;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 0;
+  color: #000;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
 .btn {
-  border: 1px solid gray;
   margin: 5px 0;
 }
 
 .card {
   margin: 10px 0;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.controls {
+.pokemonSelection {
   text-align: center;
+  margin: 5px auto 15px;
+}
+
+.closeBtn {
+  text-align: center;
+}
+
+.statImg {
+  max-width: 100%;
 }

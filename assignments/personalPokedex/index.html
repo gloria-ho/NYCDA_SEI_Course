@@ -28,51 +28,57 @@
 			<!-- /row -->
 
 			<!-- row -->
-			<div class="row">
+			<div class="row pokemonSelect hidden">
 				<div class="col-4">
-					<button id="bulbasaurBtn">Bulbasaur</button>
+					<button id="bulbasaurBtn">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png" id="bulbasaurImg" class="block"/><br/>
+						<span id="bulbasaurText">Bulbasaur</span>
+					</button>
 				</div>
 				<div class="col-4">
-					<button id="charmanderBtn">Charmander</button>
+					<button id="charmanderBtn">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png" id="charmanderImg" class="block"/><br/>
+						<span id="charmanderText">Charmander</span>
+					</button>
 				</div>
 				<div class="col-4">
-					<button id="squirtleBtn">Squirtle</button>
+					<button id="squirtleBtn">
+						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png" id="squirtleImg" class="block"/><br/>
+						<span id="squirtleText">Squirtle</span>
+					</button>
 				</div>
 			</div>
 			<!-- /row -->
 
 			<!-- row -->
-			<div class="row">
+			<div class="row info hidden">
 				<!-- col-6 -->
 				<div class="col-6">
-
-					<div class="card pokeimg">
-						<img class="card-img-top" id="img" src="http://via.placeholder.com/300x300" alt="" />
+					<div class="card">
+						<div>
+							<button id="closeBtn" class="closeBtn"><img src="
+								img/delete.png"/></button>
+						</div>
+						<img class="card-img-top center" id="img" src="" alt="" />
 						<div class="card-body">
 							<h4 class="card-title"><span id="pokemonName">Pokemon Name</span></h4>
 							<p class="card-text">Pokemon description</p>
-							<div class="controls">
-								<a ref="#" class="btn" id="previousButton">Previous</a>
-								<!-- 
-								DROPDOWN SELECT? MENU FOR POKEMON OPTIONS
-								-->
-								<a ref="#" class="btn" id="nextButton">Next</a>
-							</div>
-						</div>
+													</div>
 					</div>
-
-
 				</div>
 				<!-- /col-6 -->
+
 				<!-- col-6 -->
 				<div class="col-6">
-					<div class="card pokeStats">
+					<div class="card">
 						<div class="card-body">
 							<h4 class="card-title">Pokemon Stats</h4>
-							<p class="card-text">HP: <span id="hp"> </span></p>
-							<p class="card-text">Attack: <span id="attack"> </span></p>
-							<p class="card-text">Defense: <span id="defense"> </span></p>
-							<p class="card-text">Abilities <span id="abilities"> </span></p>
+							<p class="card-text"><span class="bold">HP: </span><span id="hp"> </span></p>
+							<p class="card-text"><span class="bold">Attack: </span><span id="attack"> </span></p>
+							<p class="card-text"><span class="bold">Defense: </span><span id="defense"> </span></p>
+							<p class="card-text"><span class="bold">Abilities: </span><span id="abilities"> </span></p>
+						</div>
+						<div class="card-img-bottom"><img src="" id="statImg" class="statImg"/>
 						</div>
 					</div>
 				</div>
@@ -81,13 +87,13 @@
 			<!-- /row -->
 
 			<!-- row -->
-			<div class="row">
+			<div class="row trainerRow hidden">
 				<div class="col-12">
-					<div class="card tainerInfo">
+					<div class="card">
 						<div class=card-body>
-							<p> Trainer: <span id="trainerName"></span></p>
-							<p> Trainer Level: <span id="trainerLevel"></span></p>
-							<p> Trainer Experience: <span id="trainerExperience"></span></p>
+							<p><span class="bold">Trainer: </span><span id="trainerName"></span></p>
+							<p><span class="bold">Trainer Level: </span><span id="trainerLvl"></span></p>
+							<p><span class="bold">Trainer Experience: </span><span id="trainerExp"></span></p>
 						</div>
 					</div>
 				</div>
