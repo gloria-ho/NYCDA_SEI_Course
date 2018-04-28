@@ -83,14 +83,13 @@ $(document).ready(function() {
 	 	})
 	 };
 
-
 	// define new trainer and pokemon
 	let silverdragonia = new Trainer('silverdragonia', 10, 9000);
 	let bulbasaur = new Pokemon('bulbasaur', 1);
 	let charmander = new Pokemon('charmander', 4);
 	let squirtle = new Pokemon('squirtle', 7);
 	
-	// call function to get data for pokemon and push to trainer object
+	// call function to get pokemon data and push to trainer object
 	loadInfo(bulbasaur,1);
 	loadInfo(charmander,4);
 	loadInfo(squirtle,7);
@@ -119,11 +118,16 @@ $(document).ready(function() {
 	let statImg = $('#statImg');
 	let closeBtn = $('#closeBtn');
 
+	// hide all data display on load
+	display.hide();
+	pokemonSelect.hide();
+	trainerRow.hide();
+
 	// function to return capitalized results for diplay
 	function capitalize(str) {
     	return str.charAt(0).toUpperCase() + str.slice(1);
 	}
-
+	
 	// function that takes pokemon name and updates html display
 	function updateHtml(pokemon){
 		let myPokemon = silverdragonia.get(pokemon);
@@ -134,7 +138,7 @@ $(document).ready(function() {
 			attack.text(myPokemon.attack);
 			defense.text(myPokemon.defense);
 			abilities.text(myPokemon.abilities);
-			display.removeClass('hidden');
+			display.show(1000);
 	}
 
 	// call both functions in one pass
@@ -151,9 +155,9 @@ $(document).ready(function() {
 		trainerExp.text(silverdragonia.exp);
 		trainerImg.attr('src', 'img/trainer.gif');
 		// hide intro and display pokedex
-		intro.addClass('hidden');
-		pokemonSelect.removeClass('hidden');
-		trainerRow.removeClass('hidden');
+		intro.hide(1000);
+		pokemonSelect.show(2000);
+		trainerRow.show(2000);
 	});
 	
 	// listen for pokemon button clicks and run funcations
@@ -169,7 +173,7 @@ $(document).ready(function() {
 
 	// listen for close button click
 	closeBtn.click(function() {
-		display.addClass('hidden');
+		display.hide(1000);
 	});
 
 });

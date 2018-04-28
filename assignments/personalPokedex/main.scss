@@ -26,10 +26,6 @@ body, button:hover, .goBtn, .closeBtn {
 	padding: 0;
 }
 
-.hidden {
-	display: none;
-}
-
 .bold, h1, h4 {
 	font-weight: bold;
 }
@@ -83,12 +79,13 @@ button {
 
 button {
 	background-color: transparent;
-	border: 1px solid transparent;
+	border: 1px solid transparent;    
 }
 
 button:hover {
 	background-color: $cardBackground;
 	cursor: pointer;
+	animation: none;
 }
 
 button:focus {
@@ -104,6 +101,21 @@ button:focus {
 	top: 15%;
 	right: 10%;
 	position: absolute;
+	animation: shake 2.5s infinite; 
+}
+
+.bulbasaurImg {
+	animation: shake 6s infinite;	
+}
+
+.charmanderImg {
+	animation: shake 6s infinite; 
+	animation-delay: .8s;
+}
+
+.squirtleImg {
+	animation: shake 6s infinite; 
+	animation-delay: 1.6s;
 }
 
 .btn {
@@ -120,4 +132,55 @@ button:focus {
 
 .statImg, .trainerImg, .introImg {
 	max-width: 100%;
+}
+
+@keyframes shake {
+    0% {
+    	transform: translate(1px, 1px) 
+    	rotate(0deg);
+    }
+    2% {
+    	transform: translate(-1px, -2px)
+    	rotate(-1deg);
+    }
+    4% {
+    	transform: translate(-3px, 0px)
+    	rotate(1deg);
+    }
+    6% {
+    	transform: translate(3px, 2px)
+    	rotate(0deg);
+    }
+    8% {
+    	transform: translate(1px, -1px)
+    	rotate(1deg);
+    }
+    10% {
+    	transform: translate(-1px, 2px)
+    	rotate(-1deg);
+    }
+    12% {
+    	transform: translate(-3px, 1px)
+    	rotate(0deg);
+    }
+    14% {
+    	transform: translate(3px, 1px)
+    	rotate(-1deg);
+    }
+    16% {
+    	transform: translate(-1px, -1px)
+    	rotate(1deg);
+    }
+    18% {
+    	transform: translate(1px, 2px)
+    	rotate(0deg);
+    }
+    20% {
+    	transform: translate(1px, -2px)
+    	rotate(-1deg);
+    }
+    22% {
+    	transform: translate(1px, 1px)
+    	rotate(0deg);
+    }
 }
