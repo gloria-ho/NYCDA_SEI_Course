@@ -78,11 +78,9 @@ $(document).ready(function() {
 		 			evolution.text(evolvesInto);
 		 			bio.text(bioText);
 	 			}
-	
 	 		}
-	 		
-	 		})
-	 	}
+	 	})
+	 };
 
 
 	// define new trainer and pokemon
