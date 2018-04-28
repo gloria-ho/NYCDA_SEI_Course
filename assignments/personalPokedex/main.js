@@ -65,20 +65,19 @@ $(document).ready(function() {
 			silverdragonia.myPokemon.push(info);
 		});
 	}
-	// function that takes custom api data for the bio
-	// get custom API data
+	// function that takes the pokemon name to call custom api
  	function loadBio(name) {
-		// get api
+		// get custom api
 	 	axios.get('https://raw.githubusercontent.com/silverdragonia/nycda_sei_apr_2018/master/assignments/personalPokedex/api/bio.json')
 	 	.then(function(result) {
+	 		console.log(result);
+	 		// look for pokemon's name and return the data
 	 		for (let i = 0; i < result.data.length; i++) {
-	 			if (result[i].data.name == name) {
-	 				let evolvesInto = result[i].data.data.evolves_into;
-		 			let	bioText = result[i].data.data.bio;
-		 			evolution.text(evolvesInto);
+	 			if (result.data[i].name == name) {
+	 				let evolvesInto = result.data[i].evolves_into;
+		 			let	bioText = result.data[i].bio;
+		 			evolution.text(capitalize(evolvesInto));
 		 			bio.text(bioText);
-		 			console.log(bioText);
-		 			console.log(evolves_into);
 	 			}
 	 		}
 	 	})
@@ -138,6 +137,12 @@ $(document).ready(function() {
 			display.removeClass('hidden');
 	}
 
+	// call both functions in one pass
+	function run(pokemon) {
+		updateHtml(pokemon);
+		loadBio(pokemon);
+	};
+
 	// listen for start button click
 	goBtn.click(function() {
 		// load trainer info
@@ -150,16 +155,15 @@ $(document).ready(function() {
 		trainerRow.removeClass('hidden');
 	});
 	
-	// listen for pokemon button clicks and call function to update html
+	// listen for pokemon button clicks and run funcations
 	bulbasaurBtn.click(function() {
-		updateHtml('bulbasaur');
-		loadBio('bulbasaur');
+		run('bulbasaur');
 	});
 	charmanderBtn.click(function() {
-		updateHtml('charmander');
+		run('charmander');
 	});
 	squirtleBtn.click(function() {
-		updateHtml('squirtle');
+		run('squirtle');
 	});
 
 	// listen for close button click
