@@ -72,15 +72,15 @@ $(document).ready(function() {
 	 	axios.get('https://raw.githubusercontent.com/silverdragonia/nycda_sei_apr_2018/master/assignments/personalPokedex/api/bio.json')
 	 	.then(function(result) {
 	 		for (let i = 0; i < result.data.length; i++) {
-	 			if (result.data.name == name) {
-	 				let evolvesInto = result.data.data.evolves_into;
-		 			let	bioText = result.data.data.bio;
+	 			if (result[i].data.name == name) {
+	 				let evolvesInto = result[i].data.evolves_into;
+		 			let	bioText = result[i].data.bio;
 		 			evolution.text(evolvesInto);
 		 			bio.text(bioText);
-		 			console.log(result);
+		 			console.log(bioText);
 		 			console.log(evolves_into);
 	 			}
-	 		}console.log(result);
+	 		}
 	 	})
 	 };
 

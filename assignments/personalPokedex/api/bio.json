@@ -1,5 +1,5 @@
 {
-"data" : [
+{
 {"name": "bulbasaur",
 "evolves_into": "ivysaur",
 "bio": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
@@ -12,5 +12,5 @@
 "evolves_into": "wartortle",
 "bio": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds."
 }
-]
+}
 }
