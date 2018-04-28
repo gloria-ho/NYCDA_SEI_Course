@@ -103,11 +103,11 @@ $(document).ready(function() {
 	let trainerName = $('#trainerName');
 	let trainerLvl = $('#trainerLvl');
 	let trainerExp = $('#trainerExp');
+	let trainerImg = $('#trainerImg');
 	let bulbasaurBtn = $('#bulbasaurBtn');
 	let charmanderBtn = $('#charmanderBtn');
 	let squirtleBtn = $('#squirtleBtn');
 	let name = $('#pokemonName');
-
 	let bio = $('#bio');
 	let hp = $('#hp');
 	let attack = $('#attack');
@@ -149,6 +149,7 @@ $(document).ready(function() {
 		trainerName.text(capitalize(silverdragonia.name));
 		trainerLvl.text(silverdragonia.lvl);
 		trainerExp.text(silverdragonia.exp);
+		trainerImg.attr('src', 'img/trainer.gif');
 		// hide intro and display pokedex
 		intro.addClass('hidden');
 		pokemonSelect.removeClass('hidden');

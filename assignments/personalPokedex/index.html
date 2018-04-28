@@ -65,7 +65,7 @@
 			<!-- row -->
 			<div id="info" class="row info hidden">
 				<!-- col-6 -->
-				<div class="col-6">
+				<div class="col-md-6">
 					<div class="card">
 						<div>
 							<button id="closeBtn" class="closeBtn"><img src="
@@ -81,7 +81,7 @@
 				<!-- /col-6 -->
 
 				<!-- col-6 -->
-				<div class="col-6">
+				<div class="col-md-6">
 					<div class="card">
 						<div class="card-body">
 							<h4 class="card-title">Pokemon Stats</h4>
@@ -103,10 +103,17 @@
 			<div id="trainerRow" class="row hidden">
 				<div class="col-12">
 					<div class="card">
-						<div class=card-body>
-							<p><span class="bold">Trainer: </span><span id="trainerName"></span></p>
-							<p><span class="bold">Trainer Level: </span><span id="trainerLvl"></span></p>
-							<p><span class="bold">Trainer Experience: </span><span id="trainerExp"></span></p>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6">
+									<p><span class="bold">Trainer: </span><span id="trainerName"></span></p>
+									<p><span class="bold">Trainer Level: </span><span id="trainerLvl"></span></p>
+									<p><span class="bold">Trainer Experience: </span><span id="trainerExp"></span></p>
+								</div>
+								<div class="col-md-6">
+									<img src="" id="trainerImg" class="trainerImg"/>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
