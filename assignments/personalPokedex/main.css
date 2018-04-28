@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   color: #000;
-  background: url(img/pokeball.jpg) no-repeat fixed center;
+  background: url(img/pokeballBg.jpg) no-repeat fixed center;
 }
 
 .hidden {
@@ -40,6 +40,7 @@ p {
 
 .container {
   width: 100%;
+  padding: 10px;
 }
 
 .col-6 {
@@ -48,7 +49,7 @@ p {
 
 button {
   background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
   color: #fff;
 }
 
@@ -65,9 +66,17 @@ button:focus {
   outline: none;
 }
 
-.intro img {
-  width: 100%;
-  hieght: 100%;
+.introImg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.goBtn {
+  top: 15%;
+  right: 10%;
+  position: absolute;
+  color: #000;
 }
 
 .btn {
@@ -80,7 +89,7 @@ button:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.pokemonSelection {
+.pokemonSelect {
   text-align: center;
   margin: 5px auto 15px;
 }

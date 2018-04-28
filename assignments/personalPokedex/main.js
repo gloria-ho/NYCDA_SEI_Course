@@ -79,6 +79,16 @@ $(document).ready(function() {
 	loadInfo(squirtle,7);
 
 	// define html elements
+	let goBtn = $('#goBtn');
+	let intro = $('#intro');
+	let pokemonSelect = $('#pokemonSelect');
+	let trainerRow = $('#trainerRow');
+	let trainerName = $('#trainerName');
+	let trainerLvl = $('#trainerLvl');
+	let trainerExp = $('#trainerExp');
+	let bulbasaurBtn = $('#bulbasaurBtn');
+	let charmanderBtn = $('#charmanderBtn');
+	let squirtleBtn = $('#squirtleBtn');
 	let name = $('#pokemonName');
 	let hp = $('#hp');
 	let attack = $('#attack');
@@ -86,16 +96,8 @@ $(document).ready(function() {
 	let abilities = $('#abilities');
 	let img = $('#img');
 	let display = $('.info');
-	let closeBtn = $('#closeBtn');
 	let statImg = $('#statImg');
-	let pokemonSelect = $('pokemonSelect');
-	let bulbasaurBtn = $('#bulbasaurBtn');
-	let charmanderBtn = $('#charmanderBtn');
-	let squirtleBtn = $('#squirtleBtn');
-	let trainerRow = $('#trainerRow');
-	let trainerName = $('#trainerName');
-	let trainerLvl = $('#trainerLvl');
-	let trainerExp = $('#trainerExp');
+	let closeBtn = $('#closeBtn');
 
 	// function to return capitalized results for diplay
 	function capitalize(str) {
@@ -115,20 +117,18 @@ $(document).ready(function() {
 			display.removeClass('hidden');
 	}
 
+	// listen for start button click
+	goBtn.click(function() {
+		// load trainer info
+		trainerName.text(capitalize(silverdragonia.name));
+		trainerLvl.text(silverdragonia.lvl);
+		trainerExp.text(silverdragonia.exp);
+		// hide intro and display pokedex
+		intro.addClass('hidden');
+		pokemonSelect.removeClass('hidden');
+		trainerRow.removeClass('hidden');
+	});
 	
-	// load trainer info
-	trainerName.text(capitalize(silverdragonia.name));
-	trainerLvl.text(silverdragonia.lvl);
-	trainerExp.text(silverdragonia.exp);
-
-
-
-
-
-
-
-
-
 	// listen for pokemon button click
 	bulbasaurBtn.click(function() {
 		updateHtml('bulbasaur');

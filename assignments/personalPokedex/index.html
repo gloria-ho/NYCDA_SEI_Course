@@ -28,14 +28,19 @@
 			<!-- /row -->
 
 			<!-- row -->
-			<div class="row intro">
-				<img src="img/pikachuBg.jpg" />
-				<h2>Let's Go!</h2>
+			<div class="row intro" id="intro">
+				<div class="col-12">
+					<img src="img/pikachuBg.jpg" class="introImg"/>
+					<button id="goBtn" class="goBtn">
+						<img src="img/pokeball.png" class="goBtnImg"/>
+						<h2>Let's Go!</h2>
+					</button>
+				</div>
 			</div>
 			<!-- /row -->
 
 			<!-- row -->
-			<div class="row pokemonSelect hidden">
+			<div id="pokemonSelect" class="row pokemonSelect hidden">
 				<div class="col-4">
 					<button id="bulbasaurBtn">
 						<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png" id="bulbasaurImg" class="block"/><br/>
@@ -58,7 +63,7 @@
 			<!-- /row -->
 
 			<!-- row -->
-			<div class="row info hidden">
+			<div id="info" class="row info hidden">
 				<!-- col-6 -->
 				<div class="col-6">
 					<div class="card">
@@ -94,7 +99,7 @@
 			<!-- /row -->
 
 			<!-- row -->
-			<div class="row trainerRow hidden">
+			<div id="trainerRow" class="row hidden">
 				<div class="col-12">
 					<div class="card">
 						<div class=card-body>
