@@ -43,7 +43,7 @@ $(document).ready(function() {
 	function loadInfo(name, id) {
 		// get API data - commented out due to broken API - using own github instead
 		// axios.get('https://pokeapi.co/api/v2/pokemon/' + id + '/')
-		axios.get('https://raw.githubusercontent.com/silverdragonia/nycda_sei_apr_2018/master/assignments/personalPokedex/' + id + '.json')
+		axios.get('https://raw.githubusercontent.com/silverdragonia/nycda_sei_apr_2018/master/assignments/personalPokedex/api/' + id + '.json')
 
  		// once loaded then run function
 		.then(function(result) {
