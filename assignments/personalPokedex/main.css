@@ -64,22 +64,22 @@ button {
   padding: 10px;
 }
 
-button {
+button, .closeBtn {
   background-color: transparent;
   border: 1px solid transparent;
 }
 
-button:hover {
+button:hover, .closeBtn {
   background-color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
   animation: none;
+  cursor: pointer;
 }
 
 button:focus {
   outline: none;
 }
 
-.introImg {
+.introImg, .statImg {
   height: auto;
   border-radius: 10px;
 }
@@ -107,6 +107,11 @@ button:focus {
 
 .btn {
   margin: 5px 0;
+}
+
+.closeBtn {
+  position: absolute;
+  background: transparent;
 }
 
 .card {

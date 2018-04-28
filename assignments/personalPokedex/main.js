@@ -138,7 +138,7 @@ $(document).ready(function() {
 			attack.text(myPokemon.attack);
 			defense.text(myPokemon.defense);
 			abilities.text(myPokemon.abilities);
-			display.show(1000);
+			display.show(2000);
 	}
 
 	// call both functions in one pass
