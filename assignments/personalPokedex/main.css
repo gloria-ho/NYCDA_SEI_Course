@@ -65,6 +65,11 @@ button:focus {
   outline: none;
 }
 
+.intro img {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn {
   margin: 5px 0;
 }
