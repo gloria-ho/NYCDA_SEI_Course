@@ -22,7 +22,7 @@ dropDown.onchange = function() {
 		sign.innerText = response.data.sign;
 		horoscope.innerText = response.data.horoscope;
 		// update img src with zodiac img
-		img.src = 'http://courtneysgamecoderocks.com/ZodiacProject/img/' + .toLowerCase() + 'Sign.png';
+		img.src = 'http://courtneysgamecoderocks.com/ZodiacProject/img/' + userSign.toLowerCase() + 'Sign.png';
 		// unhide display
 		horoscopeElement.classList.remove('hidden');
 	});
