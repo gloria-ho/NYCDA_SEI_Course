@@ -1,0 +1,9 @@
+https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhpKKSTjw.woff2
+
+https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2
+
+https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2
+
+https://data.cityofnewyork.us/socrata_site_chrome/stylesheets/open_sans/OpenSans-Italic.woff2
+
+https://data.cityofnewyork.us/webfonts/common/socrata-icons.1521510683.woff2

@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+}
+
+.header, .footer {
+	height: 150px;
+	width: 100%;
+}
+
+.content {
+	height: 300px;
+	width: 100%;
+}
+
+.morning .header {
+	background: #f2cfbc;
+}
+
+.morning .content {
+	background: #857aa1;
+}
+
+.morning .footer {
+	background: #aea68b;
+}
+
+.afternoon .header {
+	background: #24bbf8;
+}
+
+.afternoon .content {
+	background: #61bf4a;
+}
+
+.afternoon .footer {
+	background: #d2e0c2;
+}
+
+.night .header {
+	background: #03226c;
+}
+
+.night .content {
+	background: #61bf4a;
+}
+
+.night .footer {
+	background: #d2e0c2;
+}

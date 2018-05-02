@@ -1,0 +1,11 @@
+https://fonts.google.com/?selection.family=Open+Sans|Roboto 
+
+The background color is #303030.
+The header background color is #EB5757.
+
+
+Instructions:
+	- Before beginning, consider your target devices. What breakpoints have we learned that can help with styling for both desktop and mobile?
+	- You should start implementing the desktop view first, then once you have that down add the media queries or classes to make the app accessible on mobile phones. Start by implementing the outer shell (header and background) of the app to get a feel of your chosen framework. Make sure the header is fixed and doesn’t scroll with the page. 
+	- Next up implement the information cards - you can see these in the screenshots (they consist of a picture, a title and a body). These can be tricky to style. Remember they shouldn’t move around much when resized apart from moving from 4 column to single column. Be mindful of other screen sizes between Desktop and Mobile too!
+	- Now that you have the shell and the cards, you can add the inner content to the cards. At this point the finished product should look like the screenshot. Take the time to add more cards to fill the screen, it’s okay if they repeat. 

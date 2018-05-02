@@ -1,0 +1,17 @@
+#button {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	margin: 10px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+img {
+	position: absolute;
+	left: 150px;
+	display: block;
+	margin-top: 10px;
+}
