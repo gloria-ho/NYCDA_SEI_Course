@@ -196,7 +196,7 @@ if (i < 0) {
 ```
 If statement in ruby:
 ```ruby
-while i < 0
+if i < 0
 	p i
 	i += 1
 end
@@ -237,10 +237,13 @@ end
 ```
 
 ## Functions
+In ruby, **the last thing to be computed is automatically returned**
+
 Functions in javascript:
 ```javascript
 function myFunction(parameter1, parameter2) {
 	doThisThing;
+	return parameter1 + parameter2
 };
 myFunction(7,10)
 ```
@@ -248,6 +251,7 @@ Functions in ruby:
 ```ruby
 def my_function(parameter1, parameter2)
 	do_this_thing
+	parameter1 + parameter2
 end
 myFunction(7,10) #or myFunction 7,10
 ```
