@@ -27,9 +27,13 @@ javascript
 console.log('hello world')
 ```
 ruby
+`print` -  displays everything on one line, will not add a new line
+`puts` - will add the new line, calls the .to_s method and converts to string
+`p` - will add the new line, displays the raw data, will not convert to string
 ```ruby
-puts 'hello world'
-p 'hello world'
+puts "hello world"
+p "hello world"
+print "hellow world"
 ```
 
 
