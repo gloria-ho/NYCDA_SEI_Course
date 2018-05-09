@@ -1,0 +1,6 @@
+source 'http://rubygems.org'
+
+gem 'colorize'
+gem 'chuck_norris'
+gem 'rest-client'
+gem 'pry'

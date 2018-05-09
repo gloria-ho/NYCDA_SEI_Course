@@ -35,8 +35,8 @@ end
 
 str_1 = Emojify.new('Today is a good day')
 
-p str_1.happy
+puts str_1.happy
 
 str_2 = Emojify.new('Today is a crappy day')
 
-p str_2.sad
+puts str_2.sad
