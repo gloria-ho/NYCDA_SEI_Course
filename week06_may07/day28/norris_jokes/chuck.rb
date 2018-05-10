@@ -1,6 +1,6 @@
 class ChuckJokes
   def help
-    "Please enter 'random', joke ID number, or first and last name"
+    "Please enter 'random', joke ID number, or full name"
   end
 
   def get_joke_by_id(id)
@@ -14,8 +14,8 @@ class ChuckJokes
 
   def random
     joke = ChuckNorris::JokeFinder.get_joke
-    p "Joke ID\#: #{joke.id}"
-    p joke.joke
-    p "Joke Catagory: \#{joke.categories}"
+    puts "Joke ID\#: #{joke.id}".blue.on_white
+    puts joke.joke.blue.on_white
+    puts "Joke Catagory: \#{joke.categories}".blue.on_white
   end
 end
