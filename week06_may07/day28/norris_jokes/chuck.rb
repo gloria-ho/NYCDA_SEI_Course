@@ -14,8 +14,8 @@ class ChuckJokes
 
   def random
     joke = ChuckNorris::JokeFinder.get_joke
-    p joke.id
+    p "Joke ID\#: #{joke.id}"
     p joke.joke
-    p joke.categories
+    p "Joke Catagory: \#{joke.categories}"
   end
 end
