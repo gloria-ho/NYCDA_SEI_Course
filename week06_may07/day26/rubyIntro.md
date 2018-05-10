@@ -107,8 +107,8 @@ p my_arr[-3] #2
 Previous syntax:
 ```ruby
 my_dog = {
-	:name => 'Buzzie',
-	:age => 3
+  :name => 'Buzzie',
+  :age => 3
 }
 
 p my_dog[:name] #'Buzzie'
@@ -117,8 +117,8 @@ my_dog[:color] = 'white'
 New syntax:
 ```ruby
 my_dog = {
-	name: 'Buzzie',
-	age: 3;
+  name: 'Buzzie',
+  age: 3;
 }
 
 p my_dog[:name] #'Buzzie'
@@ -130,23 +130,23 @@ my_dog[:color] = 'white'
 javascript
 ```javascript
 if (condition) {
-	doThisThing;
+  doThisThing;
 };
 ```
 
 ```javascript
 if (condition1) {
-	doThisThing;
+  doThisThing;
 } else if (condition2) {
-	do ThisOtherThing;
+  do ThisOtherThing;
 };
 ```
 
 ```javascript
 if (condition) {
-	doThisThing;
+  doThisThing;
 } else {
-	do ThisOtherThing;
+  do ThisOtherThing;
 };
 
 ```
@@ -154,23 +154,23 @@ if (condition) {
 ruby
 ```ruby
 if condition
-	do_this_thing
+  do_this_thing
 end
 ```
 
 ```ruby
 if condition1
-	do_this_thing
+  do_this_thing
 elsif condition2
-	do_this_other_thing
+  do_this_other_thing
 end
 ```
 
 ```ruby
 if condition
-	do_this_thing
+  do_this_thing
 else
-	do_this_other_thing
+  do_this_other_thing
 end
 ```
 
@@ -182,27 +182,27 @@ end
 While statement in javascript:
 ```javascript
 while (condition) {
-	doThisThing;
+  doThisThing;
 };
 ```
 While statement in ruby:
 ```ruby
 while condition
-	do_this_thing
+  do_this_thing
 end
 ```
 
 If statement in javascript:
 ```javascript
 if (i < 0) {
-	console.log(i);
+  console.log(i);
 };
 ```
 If statement in ruby:
 ```ruby
 if i < 0
-	p i
-	i += 1
+  p i
+  i += 1
 end
 ```
 
@@ -210,14 +210,14 @@ For statment in javascript:
 ```javascript
 a = [2, 4, 6]
 for (let i = 0; i < 0; i++) {
-	console.log(a[i] * 10);
+  console.log(a[i] * 10);
 };
 ```
 For statment in ruby:
 ```ruby
 a = [2, 4, 6]
 for num in a
-	p num * 10
+  p num * 10
 end
 ```
 
@@ -229,14 +229,14 @@ Keywords:
 Starting at 0, stopping once you hit the number:
 ```ruby
 10.times do |i|
-	p i
+  p i
 end
 ```
 
 ```ruby
 dogs = [{name:'buzze'}, {name:'max'},{name:'harry'}]
 dogs.each do |doggy|
-	p doggy[:name]
+  p doggy[:name]
 end
 ```
 
@@ -246,16 +246,16 @@ In ruby, **the last thing to be computed is automatically returned**
 Functions in javascript:
 ```javascript
 function myFunction(parameter1, parameter2) {
-	doThisThing;
-	return parameter1 + parameter2
+  doThisThing;
+  return parameter1 + parameter2
 };
 myFunction(7,10)
 ```
 Functions in ruby:
 ```ruby
 def my_function(parameter1, parameter2)
-	do_this_thing
-	parameter1 + parameter2
+  do_this_thing
+  parameter1 + parameter2
 end
 myFunction(7,10) #or myFunction 7,10
 ```
