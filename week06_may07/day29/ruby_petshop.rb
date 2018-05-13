@@ -34,11 +34,11 @@ class PetshopQueue
   end
 end
 
-petshop = 'Please Select an Action:
+petshop = "Please Select an Action:
   1. Dog Arrived
   2. Cat Arrived
   3. Animal Completed
-  4. Quit'
+  4. Quit"
 
 queue = PetshopQueue.new
 
@@ -59,7 +59,7 @@ while response != 4 do
     puts petshop
     response = gets.strip.to_i
   else
-    p 'Please input a valid selection:'
+    p "Please input a valid selection:"
     puts petshop
     response = gets.strip.to_i
   end
