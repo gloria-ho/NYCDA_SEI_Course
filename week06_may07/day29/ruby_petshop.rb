@@ -1,4 +1,5 @@
 class PetshopQueue
+  attr_reader :queue
   def initialize
     @queue = []
     @tickets = 0
@@ -55,9 +56,15 @@ while response != 4 do
     puts petshop
     response = gets.strip.to_i
   elsif response == 3
+    if queue.queue.length == 0
+      puts "~! Error: Please add some animals to the queue."
+      puts petshop
+      response = gets.strip.to_i
+    else
     queue.completed
     puts petshop
     response = gets.strip.to_i
+    end
   else
     p "Please input a valid selection:"
     puts petshop
