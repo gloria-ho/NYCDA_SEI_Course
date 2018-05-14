@@ -66,7 +66,7 @@ while response != 4 do
     response = gets.strip.to_i
     end
   else
-    p "Please input a valid selection:"
+    p "~! Error: Please input a valid selection:"
     puts petshop
     response = gets.strip.to_i
   end
