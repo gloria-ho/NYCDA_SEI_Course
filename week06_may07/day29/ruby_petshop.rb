@@ -23,7 +23,7 @@ while response != 4 do
     response = gets.strip.to_i
 
   elsif response == 3
-    if queue.queue.length == 0
+    if queue.empty?
       puts "~! Error: Please add some animals to the queue."
       puts petshop
       response = gets.strip.to_i

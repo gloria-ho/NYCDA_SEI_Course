@@ -33,4 +33,8 @@ class PetshopQueue
   def quit
     puts 'Thank you for visiting the Ruby Petshop. Goodbye.'
   end
+
+  def empty?
+    @queue.empty?
+  end
 end
