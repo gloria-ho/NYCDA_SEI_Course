@@ -1,3 +1,4 @@
+require './byebug'
 require './ruby_petshop_queue'
 
 petshop = "Please Select an Action:
