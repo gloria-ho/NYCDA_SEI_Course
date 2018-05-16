@@ -2,11 +2,11 @@ require 'sinatra'
 require 'date'
 
 
-# listen for the path
+### listen for the path
 get('/') do 
   # return with message
   # "Hello World!"
-  # using a symbol (:) call the erb file in the views folder
+  ### using a symbol (:) call the erb file in the views folder
   erb(:index)
 end
 
@@ -26,8 +26,10 @@ post('/place-order') do
   puts params
   f_name = params[:first_name]
   # l_name = params[:last_name]
+  # "Thank you, #{f_name}"
   redirect "/order-success/#{f_name}"
-
+  ### Always redirect the user after a put/post to a safe page
+  ### Otherwise the put/post will resubmit!!
 end
 
 get('/about_us') do
@@ -38,12 +40,12 @@ get('/recommendations') do
   erb(:recommendations)
 end
 
-get('/hello/:name') do
+get('/order-success/:name') do
 
   # "Hello #{params[:name].capitalize}, Welcome"
 
   @name_to_display = params[:name]
-  # anything you wawnt to display in .erb file will be defined with the @ symbol
+  ### anything you wawnt to display in .erb file will be defined with the @ symbol
   # favorite_dog = params[:favorite_dog]
   # "Hello #{name_to_display.capitalize}. Welcome, your favorite dog is #{favorite_dog.capitalize}"
 
@@ -53,10 +55,11 @@ get('/hello/:name') do
 
 end
 
-#
+###
 # HOW TO RUN
 #
 # run in terminal: $ ruby app.rb
 # local server starts
 # check for local port #
 # direct browser to localhost:PORT#
+###
