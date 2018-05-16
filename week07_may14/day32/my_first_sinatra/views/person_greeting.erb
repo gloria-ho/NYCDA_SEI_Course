@@ -4,4 +4,6 @@
   Hello <%= @name_to_display.capitalize %>, thank you for placing an order.`
 </h1>
 
-<h3>The current date and time is: <%= @current_time %></h3>
+<% if @time_stamp != nil %>
+  <h3>The current date and time is: <%= @current_time %></h3>
+  <% end %>

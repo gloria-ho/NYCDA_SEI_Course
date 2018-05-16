@@ -2,6 +2,25 @@
 
 <h1>Contact Us</h1>
 
+<h3>Team Members</h3>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    
+    <li> <%= contact %> </li>
+
+  <% end %>
+</ul>
+
+<!-- END RESULT
+<ul>
+  <li>President - Steve Jobs</li>
+  <li>CEO - Tim Cook</li>
+  <li>Designer - John Ives</li>
+</ul>
+-->
+
+
 <p>Address: Lorem ipsum dolor</p>
 
 <p>Phone: 555-555-5555</p>

@@ -27,10 +27,12 @@
       </nav>
     </section>
 
+    <% if @type_of_joke != nil %>
     <section class="selected">
       <h3 id="message">You've selected <%= @type_of_joke %> jokes!</h3>
     </section>
-
+    <% end %>
+    
     <section class="content">
       <%= yield %>
     </section>

@@ -11,6 +11,11 @@ get('/') do
 end
 
 get('/contact_us') do
+  @contacts = [
+    'President - Steve Jobs',
+    'CEO - Tim Cook',
+    'Designer - John Ives'
+  ]
   erb(:contact)
 end
 

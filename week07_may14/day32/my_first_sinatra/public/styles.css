@@ -6,3 +6,7 @@
 body {
   background-color: lightblue;
 }
+
+li {
+  margin-left: 30px;
+}
