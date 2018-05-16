@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= @title %></title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <h1>Welcome to more Chuck Noris jokes. They will never end.</h1>
+
+  <h2>Please pick a catagory:</h2>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="/home page with no type of">Home</a></li>
+      <li><a href="/surprise">Surprise Me</a></li>
+      <li><a href="/nerdy">Talk Nerdy To Me</a></li>
+      <li><a href="/safe">I'm At Work</a></li>
+      <li><a href="/nsfw">Let's Go Crazy</a></li>
+    </ul>
+  </nav>
+
+  <h3 id="message">You've selected <%= @type_of_joke %> jokes!</h3>
+
+  <%= yield %>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</body>
+</html>
