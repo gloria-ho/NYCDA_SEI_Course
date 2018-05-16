@@ -1,13 +1,13 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  let home = $('#home');
-  let text = $('#text');
+//   let home = $('#home');
+//   let text = $('#text');
 
-  home.click(function() {
+//   home.click(function() {
 
-    text.hide();
-    // text.removeClass('hidden');
+//     text.hide();
+//     // text.removeClass('hidden');
 
- });
+//  });
 
-}
+// }

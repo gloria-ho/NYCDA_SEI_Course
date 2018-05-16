@@ -1,16 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-color: #e2e2e2;
   font-family: sans-serif;
   color: #6f6f6f;
-}
-
-* {
-  padding: 5px;
-  margin: 5px;
-}
-
-.hidden {
-  display: none;
+  padding: 10px;
 }
 
 .nav a {
@@ -21,8 +18,15 @@ body {
 .nav li {
     display: inline-block;
     border: 1px solid #47609b;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px;
 }
 
 ul {
   margin: 5px 0;
+}
+
+.welcome, .pick, .selected, .content {
+  padding: 10px;
 }

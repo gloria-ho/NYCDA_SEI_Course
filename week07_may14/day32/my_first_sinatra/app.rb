@@ -6,7 +6,7 @@ require 'date'
 get('/') do 
   # return with message
   # "Hello World!"
-  # using a symbile (:) call the erb file in the views folder
+  # using a symbol (:) call the erb file in the views folder
   erb(:index)
 end
 
@@ -16,6 +16,10 @@ end
 
 get('/shop') do
   erb(:shop)
+end
+
+get('/order-form') do
+  erb(:order_form)
 end
 
 get('/about_us') do

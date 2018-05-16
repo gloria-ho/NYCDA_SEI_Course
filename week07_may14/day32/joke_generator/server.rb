@@ -5,6 +5,7 @@ require 'rubyjokes'
 joke = RubyJoke.new
 
 get('/') do
+  @type_of_joke = "home page with no type of"
   erb(:index)  
 end
 
