@@ -18,8 +18,16 @@ get('/shop') do
   erb(:shop)
 end
 
-get('/order-form') do
+get('/order_form') do
   erb(:order_form)
+end
+
+post('/place-order') do
+  puts params
+  f_name = params[:first_name]
+  # l_name = params[:last_name]
+  redirect "/order-success/#{f_name}"
+
 end
 
 get('/about_us') do
@@ -29,12 +37,6 @@ end
 get('/recommendations') do
   erb(:recommendations)
 end
-
-# run in terminal: $ ruby app.rb
-# local server starts
-# check for local port
-# direct browser to localhost:PORT
-
 
 get('/hello/:name') do
 
@@ -50,3 +52,11 @@ get('/hello/:name') do
   erb(:person_greeting)
 
 end
+
+#
+# HOW TO RUN
+#
+# run in terminal: $ ruby app.rb
+# local server starts
+# check for local port #
+# direct browser to localhost:PORT#
