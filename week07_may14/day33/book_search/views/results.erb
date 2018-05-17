@@ -1,0 +1,35 @@
+<% @title="Search Results" %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h4>
+        Thank you for using our book search app!
+      </h4>
+    </div>
+    <!-- /.col-12- -->
+    
+    <div class="col-12">
+      <h4>
+        You searched for '<%= @decoded_input %>' and we found:
+      </h4>
+    </div>
+    <!-- /.col-12 -->
+
+    <div class="col-4">
+      <a href="<%= @b_img_link %>">
+        <img src="<%= @b_img_link %>" alt="image of '<%= @b_title %> by <%= @b_author %>">
+        </a>
+    </div>
+    <!-- /.col-4 -->
+    <div class="col-8">
+      <span class="b_title"><%= @b_title %></span>
+      <br>
+      By <%= @b_author %>
+      <br>
+    </div>
+    <!-- /.col-8 -->
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
