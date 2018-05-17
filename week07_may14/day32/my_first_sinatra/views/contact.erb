@@ -7,7 +7,22 @@
 <ul>
   <% @contacts.each do |contact| %>
     
-    <li> <%= contact %> </li>
+    <!-- -->
+    <!-- METHOD ONE -->
+    <!-- -->
+    <!-- <li> <%= contact %> </li> -->
+
+    <!-- -->
+    <!-- METHOD TWO -->
+    <!-- -->
+    <!-- <li> <%= contact[:title] %> - <%= contact[:name] %> </li> -->
+    <!-- -->
+
+    <!-- -->
+    <!-- METHOD THREE -->
+    <!-- -->
+    <li> <%= "#{contact[:title]} - #{contact[:name]}" %> </li>
+    <!-- -->
 
   <% end %>
 </ul>

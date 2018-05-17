@@ -12,9 +12,19 @@ end
 
 get('/contact_us') do
   @contacts = [
-    'President - Steve Jobs',
-    'CEO - Tim Cook',
-    'Designer - John Ives'
+    
+    #
+    ### METHOD ONE
+    #
+    # 'President - Steve Jobs',
+    # 'CEO - Tim Cook',
+    # 'Designer - John Ives'
+    #
+    ### METHOD TWO. & THREE
+    #
+    {title: 'President', name: 'Steve Jobs'},
+    {title: 'CEO', name: 'Tim Cook'},
+    {title: 'Designer', name: 'John Ives'}
   ]
   erb(:contact)
 end
@@ -50,7 +60,7 @@ get('/order-success/:name') do
   # "Hello #{params[:name].capitalize}, Welcome"
 
   @name_to_display = params[:name]
-  ### anything you wawnt to display in .erb file will be defined with the @ symbol
+  ### anything you want to display in .erb file will be defined with the @ symbol
   # favorite_dog = params[:favorite_dog]
   # "Hello #{name_to_display.capitalize}. Welcome, your favorite dog is #{favorite_dog.capitalize}"
 
