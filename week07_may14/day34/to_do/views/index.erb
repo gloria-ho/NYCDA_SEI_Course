@@ -1,0 +1,15 @@
+<% @title="To Do List" %>
+
+<h3>Current To Do:</h3>
+
+<ul>
+  <% if @current_todos != [] %>
+    <% @current_todos.each do |item| %>
+      <li>
+        #<%= item[:id] %>: <%= item[:title] %> - <%= item[:descr] %>   <a href="/edit/<%= item[:id] %>"><button type="submit" class="btn btn-outline-secondary btn-sm current_btn">Edit</button></a>
+      </li>
+    <% end %>
+    <% else %> 
+    <h4>:( You have nothing to do!</h4>
+  <% end %>
+</ul>

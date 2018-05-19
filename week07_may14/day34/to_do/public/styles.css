@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif
+  width: 100%;
+}
+
+.container {
+  margin: 20px 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.current_btn {
+  margin: 20px 0;
+}
+
+h1, h3 {
+  font-weight: lighter;
+}
+
+.app_name {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border: 1px solid gray;
+  text-decoration: none;
+  margin: 2px;
+  padding: 0 10px;
+}
+
+.create_new_btn {
+  margin-top: 20px
+}

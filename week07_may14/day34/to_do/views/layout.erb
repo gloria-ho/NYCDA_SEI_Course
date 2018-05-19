@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= @title %></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <h1 class="app_name">To Do List</h1>
+        </div>
+        <!-- /.col-12 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-12">
+          <a href="/">
+            <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Current To Do List</button>
+          </a>
+        </div>
+        <!-- /.col-12 -->
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <p>This is the to do list</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed rerum officiis sint delectus nobis modi quidem. Reprehenderit quia odit assumenda iure at, iste repudiandae sunt. Provident soluta saepe, doloremque voluptates.</p>
+
+        <% if @current_todos != [] %>
+          <a href="/create_new">
+            <button type="submit" class="btn btn-outline-secondary btn-lg btn-block create_new_btn">Create New Item</button>
+          </a>
+        <% end %>
+
+      </div>
+      <!-- /.col-6 -->
+
+      <div class="col-6">
+         <%= yield %>  
+      </div>
+      <!-- /.col-6 -->
+    </div>
+    <!-- /.row -->
+
+    <% if @current_todos == [] %>
+      <div class="row">
+        <div class="col-12">
+          <a href="/create_new">
+            <button type="button" class="btn btn-outline-secondary btn-lg btn-block create_new_btn">Create New Item</button>
+          </a>
+        </div>
+        <!-- /.col-12 -->
+      </div>
+      <!-- /.row -->
+    <% end %>
+
+  </div>
+  <!-- /.container -->
+
+</body>
+</html>
