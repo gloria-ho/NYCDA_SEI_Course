@@ -29,6 +29,7 @@ ul {
 
 li {
   border: 1px solid gray;
+  border-radius: 5px;
   text-decoration: none;
   margin: 2px;
   padding: 0 10px;
