@@ -1,19 +1,19 @@
 <% @title="Edit" %>
 
-<form action="/update_post/<%= @ind %>" method="POST" class="form_element">
+<form action="/update_post/<%= @target_todo %>" method="POST" class="form_element">
 
   <div class="form-group">
     <label for="item_title">
       Title:
     </label>
-    <input type="text" name="item_title" class="form-control" value="<%= @target_todo[@ind][:title] %>">
+    <input type="text" name="item_title" class="form-control" value="<%= @target_todo[0][:title] %>">
   </div>
 
   <div class="form-group">
-    <label for="to_do_descr">
+    <label for="item_descr">
       Description
     </label>
-    <textarea class="form-control" name="to_do_descr" rows="3"><%= @target_todo[:descr] %></textarea>
+    <textarea class="form-control" name="to_do_descr" rows="3"><%= @target_todo[0][:descr] %></textarea>
   </div>
 
   <button type="submit" class="btn btn-outline-secondary submit-btn">
