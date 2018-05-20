@@ -37,7 +37,7 @@ post ('/update_post/:current_id') do
   # @current_todos[@ind][:title] = params[:item_title]
   # @current_todos[@ind][:descr] = params[:to_do_descr]
 
-  @target_todo = current_todos.select{|item| item[:id] == params[:current_id]}
+  @target_todo = current_todos.select{|item| item[:id] == params[:current_id].to_i}
   @target_todo[0][:title] = params[:item_title]
   @target_todo[0][:descr] = params[:item_descr]
 
