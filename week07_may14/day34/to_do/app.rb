@@ -21,7 +21,7 @@ post ('/post_new') do
   current_id += 1
   current_todos.push(new_post)
   redirect "/"
-end                                                                                                 
+end
 
 get ('/edit/:current_id') do
   @target_todo = current_todos.detect{|item| item[:id] == params[:current_id].to_i}
