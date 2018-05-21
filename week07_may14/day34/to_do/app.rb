@@ -25,7 +25,6 @@ end
 
 get ('/edit/:current_id') do
   @target_todo = current_todos.detect{|item| item[:id] == params[:current_id].to_i}
-
   erb(:edit)
 end
 
