@@ -18,28 +18,20 @@ post ('/post_new') do
     :title => params[:item_title],
     :descr => params[:to_do_descr]
   }
-  
   current_id += 1
   current_todos.push(new_post)
   redirect "/"
-end
+end                                                                                                 
 
 get ('/edit/:current_id') do
-  @target_todo = current_todos.select{|item| item[:id] == params[:current_id].to_i}
+  @target_todo = current_todos.detect{|item| item[:id] == params[:current_id].to_i}
 
   erb(:edit)
 end
 
 post ('/update_post/:current_id') do
-  # @current_todos = current_todos
-  # @ind = (params[:current_id].to_i)
-
-  # @current_todos[@ind][:title] = params[:item_title]
-  # @current_todos[@ind][:descr] = params[:to_do_descr]
-
-  @target_todo = current_todos.select{|item| item[:id] == params[:current_id].to_i}
+  @target_todo = current_todos.detect{|item| item[:id] == params[:current_id].to_i}
   @target_todo[0][:title] = params[:item_title]
   @target_todo[0][:descr] = params[:item_descr]
-
   redirect "/"
 end
