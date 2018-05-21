@@ -25,19 +25,19 @@ post ('/post_new') do
   current_id += 1
   current_todos.push(new_post)
 
-  # First, instantiate the Mailgun Client with your API key
-  mg_client = Mailgun::Client.new (ENV['MAILGUN_API_KEY'])
+  # # First, instantiate the Mailgun Client with your API key
+  # mg_client = Mailgun::Client.new (ENV['MAILGUN_API_KEY'])
     
-  # Define your message parameters
-  message_params =  { from: ENV['WDEMAIL'],
-                      to:   ENV['WDEMAIL'],
-                      subject: 'The Ruby SDK is awesome!',
-                      text:    'It is really easy to send a message!'
-                      # text:    erb(:mail_template)
-                    }
+  # # Define your message parameters
+  # message_params =  { from: ENV['WDEMAIL'],
+  #                     to:   ENV['WDEMAIL'],
+  #                     subject: 'The Ruby SDK is awesome!',
+  #                     text:    'It is really easy to send a message!'
+  #                     # text:    erb(:mail_template)
+  #                   }
 
-  # Send your message through the client
-  mg_client.send_message ENV['MAILGUN_API_DOMAIN'], message_params
+  # # Send your message through the client
+  # mg_client.send_message ENV['MAILGUN_API_DOMAIN'], message_params
 
   redirect '/'
 end
