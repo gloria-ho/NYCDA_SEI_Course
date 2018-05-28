@@ -8,5 +8,5 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: to_dos
+  database: rumblr
  
