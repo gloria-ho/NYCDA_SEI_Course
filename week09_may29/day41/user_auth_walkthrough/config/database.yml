@@ -6,5 +6,5 @@ defaults: &defaults
   
 development:
   <<: *defaults
-  database: rumblr
- 
+  database: user_auth_walkthrough
+  
