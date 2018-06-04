@@ -21,4 +21,4 @@ function getSeatAssignment(names, seatNum){
   return newSeats;
 }
 let results = getSeatAssignment(students, seats);
-console.log(results);
+console.log(resultsß
