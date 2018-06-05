@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  diameter: 1.5
+  price: 1.5
+  available_until: 2018-06-05
+
+two:
+  name: MyString
+  description: MyText
+  diameter: 1.5
+  price: 1.5
+  available_until: 2018-06-05

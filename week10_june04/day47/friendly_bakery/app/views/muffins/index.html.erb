@@ -1,0 +1,32 @@
+<h2>Our Muffins</h2>
+
+<h4><a href="<%= new_muffin_path%>">Add a new muffin</a></h4>
+
+<% @muffins.each do |muffin| %>
+  <div>
+    Name: <%= muffin.name %>
+  </div>
+
+  <div>
+    Description: <%= muffin.description %>
+  </div>
+
+  <div>
+    Category: <%= muffin.category %>
+  </div>
+
+  <div>
+    Price: <%= muffin.price %>
+  </div>
+
+  <div>
+    Available Until: <%= muffin.available_until %>
+  </div>
+
+  <div>
+    <a href="<%= muffin_path(muffin) %>" data-disable-with="Processing...">View</a>
+    <a href="<%= edit_muffin_path(muffin) %>">Edit</a>
+    <a href="<%= muffin_path(muffin) %>">Delete</a>
+  </div>
+  <br>
+<% end %>

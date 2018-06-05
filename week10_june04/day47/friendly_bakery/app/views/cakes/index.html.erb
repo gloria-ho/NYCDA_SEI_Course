@@ -1,0 +1,33 @@
+<h2>Our Cakes</h2>
+
+<h4><a href="<%= new_cake_path %>">Add a new cake</a></h4>
+
+<% @cakes.each do |cake| %>
+  <div>
+    Name: <%= cake.name %>
+  </div>
+
+  <div>
+    Description: <%= cake.description %>
+  </div>
+
+  <div>
+    Diameter: <%= cake.diameter %>
+  </div>
+
+  <div>
+    Price: <%= cake.price %>
+  </div>
+
+  <div>
+    Available Until: <%= cake.available_until %>
+  </div>
+
+  <div>
+    <a href="<%= cake_path(cake) %>" data-disable-with="Processing...">View</a>
+    <a href="<%= edit_cake_path(cake) %>">Edit</a>
+    <a href="<%= cake_path(cake) %>" data-method="DELETE">Delete</a>
+  </div>
+  <br>
+<% end %>
+

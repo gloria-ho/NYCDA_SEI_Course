@@ -1,0 +1,30 @@
+<%= form_for @cake do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div>
+    <%= f.label :diameter %>
+    <%= f.text_field :diameter %>
+  </div>
+  
+  <div>
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div>
+    <%= f.label :available_until %>
+    <%= f.text_field :available_until %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
