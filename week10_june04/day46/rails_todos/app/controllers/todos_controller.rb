@@ -14,6 +14,7 @@ class TodosController < ApplicationController
 
   def create
     Todo.create(todo_params)
+    flash[:success] = "Your todo has been successfully created."
     redirect_to todos_path
   end
 

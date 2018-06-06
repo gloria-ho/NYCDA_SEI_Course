@@ -1,6 +1,14 @@
 <h2>Welcome to Rails To-Dos</h2>
 
-<h4><a href="<%= new_todo_path %>">Create New Todo</a></h4>
+<!-- <h4><a href="<%= new_todo_path %>">Create New Todo</a></h4> -->
+<h4><%= link_to 'Create New Todo', new_todo_path %></h4>
+
+<div>
+  <%= image_tag image_path('img1.jpeg'), alt: 'puppies' %>
+  <%= image_tag image_path('img2.jpeg') %>
+  <%= image_tag image_path('folder1/img3.jpeg') %>
+</div>
+
 
 <% @todos.each do |todo| %>
   <div>
@@ -12,8 +20,18 @@
   </div>
 
   <div>
-    <a href="<%= todo_path(todo) %>" data-disable-with="Processing...">View</a>
-    <a href="<%= edit_todo_path(todo) %>">Edit</a>
-    <a href="<%= todo_path(todo) %>" data-method="DELETE">Delete</a>
+    <!-- <a href="<%= todo_path(todo) %>" data-disable-with="Processing...">View</a> -->
+    <%= link_to 'View', todo_path(todo), 'data-disable-with': 'Processing...' %>
+
+    <!-- <a href="<%= edit_todo_path(todo) %>">Edit</a> -->
+    <%= link_to 'Edit', edit_todo_path(todo) %>
+
+    <!-- <a href="<%= todo_path(todo) %>" data-method="DELETE">Delete</a> -->
+    <!-- <%= link_to 'Delete', todo_path(todo), 'data-method': 'DELETE' %> -->
+    <!-- <%= link_to 'Delete', todo_path(todo), method: :DELETE, data: { confirm: 'Are you sure?' } %> -->
+
+    <%= link_to 'Delete', todo_path(todo), 'data-method': 'DELETE', 'data': { confirm: 'Are you sure?' } %>
+    
   </div>
+  <br>
 <% end %>
