@@ -1,6 +1,7 @@
 class CakesController < ApplicationController
   def index
-    @cakes = Cake.all
+    @cakes = Cake.where(status: 1).order(:created_at)
+    
   end
 
   def show
@@ -31,9 +32,19 @@ class CakesController < ApplicationController
     redirect_to cakes_path
   end
 
+  def toggle_status
+    cake = Cake.find(params[:id])
+    if cake.status == 1
+      cake.update(status: 0)
+    else
+      cake.update(status: 1)
+    end
+    redirect_to cakes_path
+  end
+
   private
   
   def cake_params
-    params.require(:cake).permit(:name, :description, :diameter, :price, :available_until)
+    params.require(:cake).permit(:name, :description, :diameter, :price, :available_until, :status)
   end
 end

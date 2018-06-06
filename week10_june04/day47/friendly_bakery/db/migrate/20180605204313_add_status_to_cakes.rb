@@ -1,0 +1,5 @@
+class AddStatusToCakes < ActiveRecord::Migration[5.2]
+  def change
+    add_column :cakes, :status, :integer
+  end
+end

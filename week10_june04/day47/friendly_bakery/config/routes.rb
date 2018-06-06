@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   # put '/cakes/edit/:id', to: 'cakes#update'
   # delete '/cakes/:id', to: 'cakes#destroy'
 
+  root :to => 'home#index'
+
+  get '/cakes/:id/toggle_status', to: 'cakes#toggle_status'
+  
   resources :cakes
   resources :muffins
   

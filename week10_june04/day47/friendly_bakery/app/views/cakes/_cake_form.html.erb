@@ -21,10 +21,13 @@
 
   <div>
     <%= f.label :available_until %>
-    <%= f.text_field :available_until %>
+    <%= f.date_field :available_until %>
   </div>
+
+  <%= f.hidden_field :status, value: 1 %>
 
   <div>
     <%= f.submit %>
   </div>
+
 <% end %>

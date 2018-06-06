@@ -1,0 +1,25 @@
+<h1>Welcome to our Bakery!</h1>
+
+<% if @cakes != nil %>
+  <h3>Most Recent Cakes</h3>
+  <% @cakes.each do |cake| %>
+    <div>
+      Name: <%= cake.name %><br>
+      Description: <%= cake.description %>
+    </div>
+    <br>
+  <% end %>
+  <a href="<%= cakes_path %>">See More Cakes</a>
+<% end %>
+
+<% if @muffins != nil %>
+  <h3>Most Recent Muffins</h3>
+  <% @muffins.each do |muffin| %>
+    <div>
+      Name: <%= muffin.name %><br>
+      Description: <%= muffin.description %>
+    </div>
+    <br>
+  <% end %>
+  <a href="<%= muffins_path %>">See More Muffins</a>
+<% end %>
