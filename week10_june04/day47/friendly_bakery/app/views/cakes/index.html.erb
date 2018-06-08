@@ -26,12 +26,26 @@
   </div>
 
   <div>
-    <a href="<%= cake_path(cake) %>" data-disable-with="Processing...">View</a>
-    <a href="<%= edit_cake_path(cake) %>">Edit</a>
-    <a href="/cakes/<%= (cake.id) %>/toggle_status">Hide</a>
-    <a href="<%= cake_path(cake) %>" data-method="DELETE">Delete</a>
+  
+    <%= link_to 'View', cake_path(cake), 'data-disable-with': 'Processing...' %>
+    <%= link_to 'Edit', edit_cake_path(cake) %>
+    
+    <% if @status = 'visible' %>
+      <%= link_to 'Hide', cake_toggle_status_path(cake) %>
+      <!-- <a href="/cakes/<%= (cake.id) %>/toggle_status">Hide</a> -->
+    <% else %>
+      <%= link_to 'Show', cake_toggle_status_path(cake) %>
+    <% end  %>
+
+    <%= link_to 'Delete', cake_path(cake), 'data-method': 'DELETE', 'data': {confirm: 'Are you sure?'} %>
+    
   </div>
   <br>
 <% end %>
 
-<a href="/cakes?status=1">View hidden cakes</a>
+<% if @status = 'visible' %>
+  <%= link_to 'View Hidden Cakes', cakes_path(status: 0) %>
+<% else %>
+  <%= link_to 'View Visible Cakes', cakes_path(status: 1) %>
+<% end %>
+

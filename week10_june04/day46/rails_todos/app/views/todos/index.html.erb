@@ -20,11 +20,25 @@
   </div>
 
   <div>
+    <% if todo.todo_comments != [] %>
+      Comments:
+      <%= todo.todo_comments.each do |comment| %>
+        <div>
+          <%= comment.content%>
+          <br>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div>
     <!-- <a href="<%= todo_path(todo) %>" data-disable-with="Processing...">View</a> -->
     <%= link_to 'View', todo_path(todo), 'data-disable-with': 'Processing...' %>
 
     <!-- <a href="<%= edit_todo_path(todo) %>">Edit</a> -->
     <%= link_to 'Edit', edit_todo_path(todo) %>
+
+    <%= link_to 'Add Comment', new_todo_todo_comment_path(todo) %>
 
     <!-- <a href="<%= todo_path(todo) %>" data-method="DELETE">Delete</a> -->
     <!-- <%= link_to 'Delete', todo_path(todo), 'data-method': 'DELETE' %> -->

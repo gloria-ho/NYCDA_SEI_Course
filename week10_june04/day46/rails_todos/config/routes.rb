@@ -8,6 +8,23 @@ Rails.application.routes.draw do
   # put '/todos/edit/:id', to: 'todos#update'
   # delete '/todos/:id', to: 'todos#destroy'
 
-  resources :todos
+  resources :todos do
+    resources :todo_comments, only: [:new, :create]
+
+    # collection do
+    #   get '/search', to: 'todos#search'
+    #   get '/visible', to: 'todos#visible'
+    #   get '/hidden', to: 'todos#hidden'
+    #   post '/mark_as_read', to: 'todos#mark_as_read'
+    # end
+
+    # member do
+    #   get '/mark_complete', to: 'todos#mark_complete'
+    #   get '/hide', to: 'todos#hide'
+    #   get '/share', to: 'todos#share'
+    # end
+
+  end
   
+  # resources :todo_comments
 end

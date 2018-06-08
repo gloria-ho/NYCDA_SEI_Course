@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   root :to => 'home#index'
 
-  get '/cakes/:id/toggle_status', to: 'cakes#toggle_status'
+  get '/cakes/:id/toggle_status', to: 'cakes#toggle_status', as: :cake_toggle_status
   
   resources :cakes
   resources :muffins

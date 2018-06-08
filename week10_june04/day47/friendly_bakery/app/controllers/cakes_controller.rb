@@ -1,7 +1,16 @@
 class CakesController < ApplicationController
+  
+
   def index
-    @cakes = Cake.where(status: 1).order(:created_at)
-    
+    if params[:status] == '0'
+      @cakes = Cake.where(status: 0).order(:created_at)
+      # change hide link to show
+      @status = 'hidden'
+      # change view hidden link to back
+    else
+      @cakes = Cake.where(status: 1).order(:created_at)
+      @status = 'visible'
+    end
   end
 
   def show
