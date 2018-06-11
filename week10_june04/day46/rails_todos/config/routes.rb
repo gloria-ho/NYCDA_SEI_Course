@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   # get '/todos', to: 'todos#index'
@@ -8,6 +11,7 @@ Rails.application.routes.draw do
   # put '/todos/edit/:id', to: 'todos#update'
   # delete '/todos/:id', to: 'todos#destroy'
 
+  root to: "home#index"
   resources :todos do
     resources :todo_comments, only: [:new, :create]
 
