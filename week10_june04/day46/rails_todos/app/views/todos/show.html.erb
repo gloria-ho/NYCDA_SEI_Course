@@ -7,8 +7,15 @@
   Description: <%= @todo.description %>    
 </div>
 <div>
+  Priority: <%= @todo.priority %>
+</div>
+<div>
   Created At: <%= @todo.created_at %>
 </div>
 <div>
   Updated At: <%= @todo.updated_at %>
+</div>
+
+<div>
+  <%= link_to 'Cancel', todos_path %>
 </div>

@@ -10,6 +10,11 @@
   </div>
 
   <div>
+    <%= f.label :priority %>
+    <%= f.select :priority, options_for_select([['High Priority', 'H'], ['Medium Priority', 'M'], ['Low Priority', 'L']]) %>
+  </div>
+
+  <div>
     <%= f.submit %>
   </div>
 <% end %>
